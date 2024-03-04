@@ -1,7 +1,16 @@
-import React from "react";
+import Trending from "@/components/common/Trending";
+import Hero from "@/components/product/Hero";
+import TabsData from "@/components/product/TabsData";
 
 const page = () => {
-  return <div>page</div>;
+  return (
+    <>
+      <Hero />
+      <TabsData />
+      <Trending />
+      <Trending />
+    </>
+  );
 };
 
 export default page;
