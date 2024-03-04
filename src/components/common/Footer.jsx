@@ -15,7 +15,7 @@ const Footer = () => {
                     width={203}
                     height={56}
                     className="w-[160px] lg:w-[204px]"
-                    src="/footer-logo.svg"
+                    src="assets/images/svg/footer-logo.svg"
                     alt="logo"
                   />
                 </Link>
