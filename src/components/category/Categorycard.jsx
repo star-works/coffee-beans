@@ -13,7 +13,10 @@ const CategoryCard = () => {
       <div className="flex flex-col w-full gap-4">
         {beanProductList.map((value, index) => {
           return (
-            <Card className="max-w-[680px] p-2 sm:p-3 lg:p-6 shadow-[0px_16px_64px_0px_#00000008] w-full border border-[#F2F4F4] bg-white rounded-2xl md:rounded-3xl flex sm:flex-col md:flex-row gap-2 sm:gap-2 md:gap-3 lg:gap-8">
+            <Card
+              key={index}
+              className="max-w-[680px] p-2 sm:p-3 lg:p-6 shadow-[0px_16px_64px_0px_#00000008] w-full border border-[#F2F4F4] bg-white rounded-2xl md:rounded-3xl flex sm:flex-col md:flex-row gap-2 sm:gap-2 md:gap-3 lg:gap-8"
+            >
               <CardHeader>
                 <Image
                   width={200}
