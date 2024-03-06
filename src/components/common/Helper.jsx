@@ -6,6 +6,7 @@ import {
   OrangeBadge,
   RedeBadge,
 } from "./AllBadges";
+import { CheckboxInputs, ImageInput, RadioInputs } from "../category/AllInput";
 
 export const roasterKeyFeatures = [
   {
@@ -265,5 +266,275 @@ export const newSliderCard = [
     badgeFirst: <GreenBadge name={"Bean"} />,
     badgeThird: <OrangeBadge name={"Honey"} />,
     badgeFourth: <RedeBadge name={"caramel"} />,
+  },
+];
+export const beanProductList = [
+  {
+    id: "1",
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
+  },
+  {
+    id: "2",
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
+  },
+  {
+    id: "3",
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
+  },
+  {
+    id: "4",
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
+  },
+  {
+    id: "5",
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
+  },
+  {
+    id: "6",
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
+  },
+  {
+    id: "7",
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
+  },
+  {
+    id: "8",
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
+  },
+  {
+    id: "9",
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
+  },
+  {
+    id: "10",
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
+  },
+  {
+    id: "11",
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
+    badgeSecond: (
+      <RedeBadge className={"py-[6px] px-[10px]"} name={"caramel"} />
+    ),
+    badgeThird: (
+      <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+    ),
+    badgeFourth: (
+      <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+    ),
+  },
+];
+
+// ====== BEAN CATEGORY ===========
+export const beanCategories = [
+  {
+    id: 1,
+    heading: "Roast level",
+    placeholder: "Search Roast level...",
+    type: (
+      <RadioInputs firstName="Light" secondName="Medium" thirdName="Dark" />
+    ),
+  },
+  {
+    id: 2,
+    heading: "Coffee notes ",
+    placeholder: "Search Coffee notes...",
+    type: (
+      <RadioInputs firstName="Fruits" secondName="Honey" thirdName="Nuts" />
+    ),
+  },
+  {
+    id: 3,
+    heading: "Bean sort",
+    placeholder: "Search Bean sort...",
+    type: (
+      <CheckboxInputs
+        firstName="Arabica"
+        secondName="Robusta SL28"
+        className="hidden"
+      />
+    ),
+  },
+  {
+    id: 4,
+    heading: "Bean origin ",
+    placeholder: "Search Bean origin...",
+    type: (
+      <RadioInputs firstName="Columbia" secondName="Peru" className="hidden" />
+    ),
+  },
+  {
+    id: 5,
+    classHidden: "hidden",
+    heading: "Altitude (m)",
+    type: <ImageInput />,
+  },
+  {
+    id: 6,
+    heading: "Coffee type ",
+    placeholder: "Search Coffee type...",
+    type: (
+      <RadioInputs
+        firstName="Whole bean"
+        secondName="Pre-grind"
+        thirdName="Pod"
+      />
+    ),
+  },
+  {
+    id: 1,
+    heading: "Roaster location ",
+    placeholder: "Search Roaster location...",
+    type: (
+      <CheckboxInputs firstName="Sweden" secondName="France" thirdName="USA" />
+    ),
+  },
+  {
+    id: 7,
+    heading: "Certifications ",
+    placeholder: "Search Certifications...",
+    type: (
+      <CheckboxInputs
+        firstName="Rainforest"
+        secondName="fair trade"
+        className="hidden"
+      />
+    ),
+  },
+  {
+    id: 8,
+    classHidden: "hidden",
+    heading: "Subscription ",
+    type: (
+      <RadioInputs
+        firstName="Yes"
+        secondName="No"
+        className="hidden"
+        padding="!pt-0"
+        flex="flex item-center gap-6"
+      />
+    ),
   },
 ];
