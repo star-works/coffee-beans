@@ -13,7 +13,13 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/Logo.png" />
       </head>
-      <body>
+      <body
+        style={{
+          overflow: "auto !important",
+          paddingRight: "0 !important",
+          marginRight: "0 !important",
+        }}
+      >
         <Header />
         {children}
         <Footer />
