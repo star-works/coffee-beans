@@ -489,7 +489,7 @@ export const beanCategories = [
     id: 5,
     classHidden: "hidden",
     heading: "Altitude (m)",
-    type: <ImageInput />,
+    type: "range",
   },
   {
     id: 6,

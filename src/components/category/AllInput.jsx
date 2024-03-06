@@ -63,16 +63,3 @@ export const CheckboxInputs = (props) => {
   );
 };
 
-export const ImageInput = () => {
-  return (
-    <>
-      <Image
-        className="max-w-[400px] w-full"
-        src="/assets/images/png/range_slide.png"
-        alt="range_slide"
-        height={43}
-        width={400}
-      />
-    </>
-  );
-};
