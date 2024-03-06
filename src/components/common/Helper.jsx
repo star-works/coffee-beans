@@ -1,5 +1,11 @@
 import React from "react";
 import { CheckMark, Database, ProductData, SearchIcon } from "./Icons";
+import {
+  ChocolateBadge,
+  GreenBadge,
+  OrangeBadge,
+  RedeBadge,
+} from "./AllBadges";
 
 export const roasterKeyFeatures = [
   {
@@ -73,6 +79,7 @@ export const sliderCard = [
       "Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de Plantilla de informe de resonancia magnética (RM) de articulación de",
   },
 ];
+
 export const serviceData = [
   {
     icon: <SearchIcon />,
@@ -128,5 +135,135 @@ export const blogData = [
     title: "How To Make Chemex Coffee",
     description:
       "Pour over coffee sounds complicated, but this coffee brewing process is surprisingly simple and the results can be amazing with just a little practice. If...",
+  },
+];
+
+// ============== COFFEE BEAN =========
+export const coffeeBeanDetails = [
+  {
+    tittle: "Altitude",
+    discription: "900-1000",
+  },
+  {
+    tittle: "Country",
+    discription: "Mexico",
+  },
+  {
+    tittle: "Process",
+    discription: "Fully washed",
+  },
+  {
+    tittle: "Plantation",
+    discription: "Manual",
+  },
+  {
+    tittle: "Weight",
+    discription: "50g",
+  },
+  {
+    tittle: "Type",
+    discription: "Rubusta",
+  },
+  {
+    tittle: "Bean sort",
+    discription: "5",
+  },
+  {
+    tittle: "Roast level",
+    discription: "12",
+  },
+  {
+    tittle: "Season",
+    discription: "Fall",
+  },
+  {
+    tittle: "Roaster location",
+    discription: "South America",
+  },
+];
+
+export const qualityData = [
+  {
+    title: "Acidity",
+    value: 10,
+  },
+  {
+    title: "Body",
+    value: 45,
+  },
+  {
+    title: "Sweetness",
+    value: 25,
+  },
+  {
+    title: "Bitterness/",
+    span: "Aroma",
+    value: 5,
+  },
+  {
+    title: "Aftertaste",
+    value: 15,
+  },
+  {
+    title: "Balance",
+    value: 80,
+  },
+];
+export const newSliderCard = [
+  {
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <ChocolateBadge name={"Chocolate"} />,
+    badgeSecond: <GreenBadge name={"Bean"} />,
+    badgeThird: <OrangeBadge name={"Honey"} />,
+    badgeFourth: <RedeBadge name={"caramel"} />,
+  },
+  {
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <ChocolateBadge name={"Chocolate"} />,
+    badgeSecond: <GreenBadge name={"Bean"} />,
+    badgeThird: <OrangeBadge name={"Honey"} />,
+  },
+  {
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <ChocolateBadge name={"Chocolate"} />,
+    badgeSecond: <RedeBadge name={"caramel"} />,
+  },
+  {
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <GreenBadge name={"Bean"} />,
+    badgeSecond: <OrangeBadge name={"Honey"} />,
+    badgeThird: <RedeBadge name={"caramel"} />,
+  },
+  {
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <GreenBadge name={"Bean"} />,
+    badgeSecond: <RedeBadge name={"caramel"} />,
+  },
+  {
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <ChocolateBadge name={"Chocolate"} />,
+    badgeSecond: <GreenBadge name={"Bean"} />,
+    badgeThird: <OrangeBadge name={"Honey"} />,
+    badgeFourth: <RedeBadge name={"caramel"} />,
+  },
+  {
+    image: "/assets/images/png/new_slider_bean.png",
+    title: "Coffee Bean",
+    description: "Malerapaso",
+    badgeFirst: <GreenBadge name={"Bean"} />,
+    badgeThird: <OrangeBadge name={"Honey"} />,
+    badgeFourth: <RedeBadge name={"caramel"} />,
   },
 ];

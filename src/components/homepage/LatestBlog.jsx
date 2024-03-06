@@ -12,7 +12,7 @@ import { Badge } from "@/components/ui/badge";
 
 const LatestBlog = () => {
   return (
-    <div className="max-w-[1120px] mx-auto px-3 xl:px-0 py-16">
+    <div className="max-w-[1120px] mx-auto px-3 xl:px-0 py-12 sm:py-16 md:py-20">
       <h2 className="text-center font-medium sm:text-3xl text-3xl md:text-4xxl text-DarkBlack mb-5 sm:mb-8 lg:mb-12">
         Latest <span className="font-extrabold text-[#d3756b]">Blog </span>
         posts
@@ -26,11 +26,11 @@ const LatestBlog = () => {
                   className={`flex flex-col sm:flex-row items-center p-0 gap-3 sm:gap-6 md:gap-3 lg:gap-6 bg-white ${value.blogclass}`}
                 >
                   <CardHeader className="relative m-0 md:min-w-[150px] min-w-[120px] sm:min-w-[170px] lg:min-w-[170px]">
-                    <Badge className="absolute py-2 px-4 text-xs left-2 top-2 font-semibold hover:bg-opacity-60 duration-300 hover:bg-white bg-white text-[#090909] uppercase">
+                    <Badge className="absolute py-2 px-4 text-xs left-2 top-2 font-semibold hover:bg-opacity-90 duration-300 hover:bg-white bg-white text-[#090909] uppercase">
                       {value.badge}
                     </Badge>
                     <Image
-                      className="w-[170px] rounded-[20px] !m-0 h-[134px]"
+                      className="w-[470px] h-[200px] object-cover sm:w-[170px] rounded-[20px] !m-0 sm:h-[134px]"
                       height={134}
                       width={170}
                       src={value.image}
@@ -59,7 +59,7 @@ const LatestBlog = () => {
         <div className="md:w-5/12 lg:w-6/12 xl:w-7/12 hidden xl:-ms-3 md:flex">
           <Card className="p-0 bg-white">
             <CardHeader className="relative w-full">
-              <Badge className="absolute py-2 px-4 text-xs left-2 top-2 font-semibold hover:bg-opacity-60 duration-300 hover:bg-white bg-white text-[#090909] uppercase">
+              <Badge className="absolute py-2 px-4 text-xs left-4 top-4 font-semibold hover:bg-opacity-90 duration-300 hover:bg-white bg-white text-[#090909] uppercase">
                 Coffee
               </Badge>
               <Image

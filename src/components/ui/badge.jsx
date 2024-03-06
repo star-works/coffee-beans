@@ -1,3 +1,4 @@
+"use client";
 import * as React from "react";
 import { cva } from "class-variance-authority";
 
@@ -9,7 +10,7 @@ const badgeVariants = cva(
     variants: {
       variant: {
         default:
-          "border-transparent bg-primary text-primary-foreground hover:bg-primary/80",
+          "border-transparent bg-[#ececea] text-[#776B5D] hover:opacity-80",
         secondary:
           "border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80",
         destructive:
