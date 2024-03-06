@@ -1,11 +1,10 @@
 "use client";
-import Image from "next/image";
-import React from "react";
-import Link from "next/link";
-import { MainLogo, SignUpPeople } from "./Icons";
-import AllSelect from "./AllSelect";
-import MobileHeader from "./MobileHeader";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Link from "next/link";
+import { CategorySelect } from "./AllSelect";
+import { MainLogo, SignUpPeople } from "./Icons";
+import MobileHeader from "./MobileHeader";
 
 const Header = () => {
   return (
@@ -34,7 +33,7 @@ const Header = () => {
               >
                 <MainLogo />
               </Link>
-              <AllSelect />
+              <CategorySelect />
               <div className="hidden sm:flex gap-5 md:gap-10">
                 <Link
                   href="/"

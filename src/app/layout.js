@@ -1,7 +1,6 @@
 import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
 import "./globals.css";
-import Head from "next/head";
 
 export const metadata = {
   title: "Coffee Bean",
