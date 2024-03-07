@@ -59,7 +59,7 @@ const Trending = () => {
             href="/"
             className="text-black flex gap-1 items-center text-opacity-50 text-base font-normal hover:text-opacity-100 group duration-300"
           >
-            See all{" "}
+            See all
             <span>
               <RotateArrow />
             </span>
@@ -125,7 +125,6 @@ const Trending = () => {
                         <p className="flex items-center text-[#090909] font-semibold text-xl ">
                           $80
                           <span className="text-sm font-normal ms-1 text-[#c1c1c1] relative before:absolute before:w-full before:h-[1px] before:bg-[#c1c1c1] before:start-0 before:top-1/2 before:-translate-y-1/2">
-                            {" "}
                             $55.99
                           </span>
                         </p>
