@@ -34,7 +34,6 @@ const CategoryCard = () => {
                   <p className="flex items-center pt-2 text-[#090909] font-semibold text-xl">
                     $80
                     <span className="text-sm font-normal ms-1 text-[#c1c1c1] relative before:absolute before:w-full before:h-[1px] before:bg-[#c1c1c1] before:start-0 before:top-1/2 before:-translate-y-1/2">
-                      {" "}
                       $55.99
                     </span>
                   </p>
@@ -70,10 +69,19 @@ const CategoryCard = () => {
                   </div>
                 </CardContent>
                 <CardFooter className="flex flex-wrap gap-1 lg:gap-2">
-                  {value.badgeFirst}
-                  {value.badgeSecond}
-                  {value.badgeThird}
-                  {value.badgeFourth}
+                  <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
+                  <RedeBadge
+                    className={"py-[6px] px-[10px]"}
+                    name={"caramel"}
+                  />
+                  <ChocolateBadge
+                    className={"py-[6px] px-[10px]"}
+                    name={"Bean"}
+                  />
+                  <OrangeBadge
+                    className={"py-[6px] px-[10px]"}
+                    name={"Honey"}
+                  />
                 </CardFooter>
               </div>
             </Card>

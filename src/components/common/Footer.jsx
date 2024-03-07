@@ -107,7 +107,7 @@ const Footer = () => {
                       className="flex gap-2 lg:gap-3 xl:gap-4 hover:opacity-75 transition-all ease-in-out duration-300 items-center text-xs md:text-sm font-normal  text-white  "
                     >
                       <PhoneIcon />
-                      +1 (999) 245 4563
+                      +1(999) 245 4563
                     </Link>
                   </li>
                   <li className="pt-5">
