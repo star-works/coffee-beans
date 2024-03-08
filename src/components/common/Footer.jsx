@@ -21,7 +21,7 @@ const Footer = () => {
                     alt="logo"
                   />
                 </Link>
-                <p className="text-white pt-4 text-xs sm:text-sm font-normal leading-[160%] opacity-70">
+                <p className="text-white pt-4 text-sm sm:text-base font-[300] leading-[160%] opacity-70">
                   We seek to establish a comprehensive online platform dedicated
                   to celebrating the diversity of coffee beans sourced from
                   local roasters worldwide.
