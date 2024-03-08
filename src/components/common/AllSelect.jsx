@@ -46,7 +46,7 @@ export const LocationSelect = (props) => {
           <div className={` text-[#090909] !flex me-2`}>
             <CategoryIcon />
           </div>
-          <SelectValue className="p-0" placeholder="Categories" />
+          <SelectValue className="p-0" placeholder="Location" />
         </SelectTrigger>
         <SelectContent>
           <SelectGroup>

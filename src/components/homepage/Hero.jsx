@@ -6,22 +6,22 @@ import { BlackSearch } from "../common/Icons";
 const Hero = () => {
   return (
     <>
-      <div className="bg-[#F9FAFA] relative pt-28">
+      <div className="bg-[#F9FAFA] relative pt-28 overflow-hidden">
         <Image
-          className="absolute z-[-1] hidden md:flex top-0 start-0"
+          className="absolute max-w-[100px] sm:max-w-[200px] md:max-w-full top-0 start-0"
           height={400}
           width={250}
           src="/assets/images/webp/header_top_start_img_bean.webp"
           alt="image"
         />
         <Image
-          className="absolute z-[-1] hidden md:flex -bottom-5 lg:bottom-0 end-[-5%] lg:end-0"
+          className="absolute max-w-[100px] sm:max-w-[200px] md:max-w-full -bottom-5 lg:bottom-0 end-[-5%] lg:end-0"
           height={400}
           width={250}
           src="/assets/images/webp/header_bottom_end_img_bean.webp"
           alt="image"
         />
-        <div className="max-w-[1120px] mx-auto px-3 xl:px-0 py-12 md:py-16">
+        <div className="max-w-[1120px] mx-auto px-3 xl:px-0 py-12 md:py-16 relative z-[1]">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-normal capitalize text-center text-[#090909] !leading-[120%]">
             Unveiling the
             <span className="font-extrabold sm:block">
