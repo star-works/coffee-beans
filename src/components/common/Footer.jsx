@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="mx-3 pb-4 xl:pb-7">
       <div className="max-w-[1360px] mx-auto bg-[url('/assets/images/png/footer_bg.png')] bg-cover xl:bg-[length:100%_100%] bg-center bg-no-repeat rounded-[32px_32px_0px_0px]">
-        <div className="max-w-[1232px] mx-auto md:pb-[55px] md:pt-12 py-12 xl:px-0 px-3">
+        <div className="max-w-[1232px] mx-auto md:pb-[55px] md:pt-12 py-12 xl:px-0 px-5">
           <div className="flex justify-between flex-wrap gap-4">
             <div className="w-full md:w-5/12">
               <div className="md:max-w-[378px]">
