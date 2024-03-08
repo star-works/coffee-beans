@@ -19,7 +19,7 @@ import { coffeeBeanDetails, qualityData } from "../common/Helper";
 const Hero = () => {
   return (
     <div className="py-10">
-      <div className="max-w-[1120px] mx-auto xl:px-0 px-3 flex min-[950px]:flex-row flex-col-reverse min-[950px]:gap-10 gap-6">
+      <div className="max-w-[1120px] mx-auto xl:px-0 px-3 flex min-[950px]:flex-row flex-col-reverse min-[950px]:gap-10 gap-6 mt-20 md:pt-10">
         <div className="min-[950px]:max-w-[320px] w-full flex min-[950px]:flex-col gap-5 min-[950px]:gap-0 sm:flex-row flex-col">
           <div className="min-[950px]:mb-8 flex sm:justify-normal justify-center">
             <Image

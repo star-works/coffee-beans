@@ -1,10 +1,11 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import TabsCard from "./TabsCard";
 import RoasterTab from "./RoasterTab";
+import { Button } from "@/components/ui/button";
 
 const TabsData = () => {
   return (
-    <div className="max-w-[1120px] mx-auto xl:px-0 px-3">
+    <div className="max-w-[1120px] mx-auto xl:px-0 px-3 pt-3">
       <Tabs defaultValue="account" className="">
         <TabsList className="grid w-full grid-cols-2 max-w-[350px] mx-auto my-7">
           <TabsTrigger className="text-[16px] font-normal" value="account">
@@ -14,10 +15,10 @@ const TabsData = () => {
             Comments (24)
           </TabsTrigger>
         </TabsList>
-        <TabsContent className=" pt-10 lg:pb-20 pb-10" value="account">
+        <TabsContent className=" pt-5 lg:pb-20 pb-10" value="account">
           <RoasterTab />
         </TabsContent>
-        <TabsContent className=" pt-10 lg:pb-20 pb-10" value="password">
+        <TabsContent className="pt-3  lg:pb-20 pb-10" value="password">
           <div className="w-full md:flex gap-6">
             <div className="flex flex-col gap-6 w-full">
               <TabsCard
@@ -40,6 +41,11 @@ const TabsData = () => {
 `}
               />
             </div>
+          </div>
+          <div className="text-center">
+            <Button className="sm:text-[20px] text-[18px] font-medium px-7 py-3 rounded-full mt-10">
+              Load more
+            </Button>
           </div>
         </TabsContent>
       </Tabs>
