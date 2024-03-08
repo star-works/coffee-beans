@@ -6,6 +6,12 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 import { beanProductList } from "../common/Helper";
+import {
+  ChocolateBadge,
+  GreenBadge,
+  OrangeBadge,
+  RedeBadge,
+} from "../common/AllBadges";
 
 const CategoryCard = () => {
   return (
