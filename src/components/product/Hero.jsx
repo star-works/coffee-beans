@@ -139,8 +139,8 @@ const Hero = () => {
                 />
               </span>
             </div>
-            <div className="flex items-center gap-4 mb-10 justify-center">
-              <Button className="bg-[#776B5D] h-full sm:px-20 py-4 flex items-center text-white font-medium text-[20px] leading-[25px] rounded-[40px] min-[950px]:w-full sm:w-1/2 px-14  hover:opacity-80 hover:bg-[#776B5D] transition-all duration-300">
+            <div className="flex items-center gap-4 mb-10 lg:justify-center">
+              <Button className="bg-[#776B5D] h-full sm:px-20 py-4 flex items-center text-white font-medium text-[20px] leading-[25px] rounded-[40px] min-[950px]:w-full w-full px-14  hover:opacity-80 hover:bg-[#776B5D] transition-all duration-300">
                 Buy Now
                 <span className="ms-2">
                   <ButtonArrow />
@@ -152,7 +152,7 @@ const Hero = () => {
             </div>
           </CardContent>
           <CardFooter>
-            <div className="grid sm:grid-cols-2 sm:w-full min-[400px]:w-3/4 w-full mx-auto gap-3">
+            <div className="grid sm:grid-cols-2 sm:w-full  w-full sm:mx-auto gap-3">
               {coffeeBeanDetails.map((details, index) => {
                 return (
                   <div
