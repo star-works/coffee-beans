@@ -86,7 +86,7 @@ export const serviceData = [
   {
     cardPadding: "pt-6 md:pt-0",
     icon: <ProductData />,
-    title: "High quality products",
+    title: "High Quality Products",
     description:
       "We understand the importance of quality when it comes to coffee beans. We are committed to ensuring that the coffee bean varieties featured on our platform meet the highest standards of excellence and authenticity.",
   },
