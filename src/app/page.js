@@ -11,9 +11,13 @@ export default function Home() {
     <>
       <Hero />
       <Services />
-      <Trending />
+      <div className="bg-[#F9FAFA] py-12">
+        <Trending title="Trending!" />
+      </div>
       <RoasterSlider />
-      <Trending />
+      <div className="bg-[#F9FAFA] py-12">
+        <Trending title="Newly added" />
+      </div>
       <ArebicaCards />
       <LatestBlog />
     </>

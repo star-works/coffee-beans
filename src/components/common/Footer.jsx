@@ -6,9 +6,9 @@ let currentYear = new Date().getFullYear();
 
 const Footer = () => {
   return (
-    <div className="mx-3">
+    <div className="mx-3 pb-4 xl:pb-7">
       <div className="max-w-[1360px] mx-auto bg-[url('/assets/images/png/footer_bg.png')] bg-cover xl:bg-[length:100%_100%] bg-center bg-no-repeat rounded-[32px_32px_0px_0px]">
-        <div className="max-w-[1232px] mx-auto md:pb-[55px] md:pt-12 py-12 xl:px-0 px-3">
+        <div className="max-w-[1232px] mx-auto md:pb-[55px] md:pt-12 py-12 xl:px-0 px-5">
           <div className="flex justify-between flex-wrap gap-4">
             <div className="w-full md:w-5/12">
               <div className="md:max-w-[378px]">
@@ -21,7 +21,7 @@ const Footer = () => {
                     alt="logo"
                   />
                 </Link>
-                <p className="text-white pt-4 text-xs sm:text-sm font-normal leading-[160%] opacity-70">
+                <p className="text-white pt-4 text-sm sm:text-base font-[300] leading-[160%] opacity-70">
                   We seek to establish a comprehensive online platform dedicated
                   to celebrating the diversity of coffee beans sourced from
                   local roasters worldwide.
@@ -107,7 +107,7 @@ const Footer = () => {
                       className="flex gap-2 lg:gap-3 xl:gap-4 hover:opacity-75 transition-all ease-in-out duration-300 items-center text-xs md:text-sm font-normal  text-white  "
                     >
                       <PhoneIcon />
-                      +1 (999) 245 4563
+                      +1(999) 245 4563
                     </Link>
                   </li>
                   <li className="pt-5">

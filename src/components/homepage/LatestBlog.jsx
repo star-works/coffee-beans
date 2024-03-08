@@ -13,7 +13,7 @@ import { Badge } from "@/components/ui/badge";
 const LatestBlog = () => {
   return (
     <div className="max-w-[1120px] mx-auto px-3 xl:px-0 py-12 sm:py-16 md:py-20">
-      <h2 className="text-center font-medium sm:text-3xl text-3xl md:text-4xxl text-DarkBlack mb-5 sm:mb-8 lg:mb-12">
+      <h2 className="text-center font-medium sm:text-3xl text-3xl md:text-[40px]  text-DarkBlack mb-5 sm:mb-8 lg:mb-12">
         Latest <span className="font-extrabold text-[#d3756b]">Blog </span>
         posts
       </h2>

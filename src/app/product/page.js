@@ -7,8 +7,12 @@ const page = () => {
     <>
       <Hero />
       <TabsData />
-      <Trending />
-      <Trending />
+      <div className="bg-[#F9FAFA] py-12">
+        <Trending title="Newly added" />
+      </div>
+      <div className=" py-12">
+        <Trending title="Trending" />
+      </div>
     </>
   );
 };

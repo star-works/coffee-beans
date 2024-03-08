@@ -1,20 +1,11 @@
-import React from "react";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import TabsCard from "./TabsCard";
+import RoasterTab from "./RoasterTab";
+import { Button } from "@/components/ui/button";
 
 const TabsData = () => {
   return (
-    <div className="max-w-[1120px] mx-auto xl:px-0 px-3">
+    <div className="max-w-[1120px] mx-auto xl:px-0 px-3 pt-3">
       <Tabs defaultValue="account" className="">
         <TabsList className="grid w-full grid-cols-2 max-w-[350px] mx-auto my-7">
           <TabsTrigger className="text-[16px] font-normal" value="account">
@@ -24,7 +15,10 @@ const TabsData = () => {
             Comments (24)
           </TabsTrigger>
         </TabsList>
-        <TabsContent value="account">
+        <TabsContent className=" pt-5 lg:pb-20 pb-10" value="account">
+          <RoasterTab />
+        </TabsContent>
+        <TabsContent className="pt-3  lg:pb-20 pb-10" value="password">
           <div className="w-full md:flex gap-6">
             <div className="flex flex-col gap-6 w-full">
               <TabsCard
@@ -48,26 +42,11 @@ const TabsData = () => {
               />
             </div>
           </div>
-        </TabsContent>
-        <TabsContent value="password">
-          <Card>
-            <CardHeader>
-              <CardTitle>Password</CardTitle>
-              <CardDescription>
-                Change your password here. After saving, you&apos;ll be logged
-                out.
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod rem
-              non harum illo doloribus libero alias atque eum reprehenderit
-              veniam quidem laboriosam quisquam voluptas est nostrum reiciendis
-              fugit, perferendis a?
-            </CardContent>
-            <CardFooter>
-              <Button>Save password</Button>
-            </CardFooter>
-          </Card>
+          <div className="text-center">
+            <Button className="sm:text-[20px] text-[18px] font-medium px-7 py-3 rounded-full mt-10">
+              Load more
+            </Button>
+          </div>
         </TabsContent>
       </Tabs>
     </div>

@@ -20,8 +20,8 @@ const AccordionComponent = () => {
           return (
             <AccordionItem
               key={index}
-              value={obj.id}
-              defaultOpen={obj.id === 1}
+              value={index}
+              defaultOpen={index === 0}
               className="mb-6  border-b-0"
             >
               <AccordionTrigger className="ps-6 pe-5 py-4 bg-[#f9fafa] rounded-2xl hover:no-underline font-medium text-lg text-[#090909]">
