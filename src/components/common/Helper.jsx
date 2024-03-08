@@ -93,7 +93,7 @@ export const serviceData = [
 ];
 export const blogData = [
   {
-    image: "/assets/images/webp/blog_img_1.webp",
+    image: "/assets/images/webp/blog_img_2.webp",
     badge: "Bean",
     blogDate: "September 18, 20230",
     title: "How To Make Pour Over Coffee",
@@ -101,7 +101,7 @@ export const blogData = [
       "Pour over coffee sounds complicated, but this coffee brewing process is surprisingly simple and the results can be amazing with just a little practice. If...",
   },
   {
-    image: "/assets/images/webp/blog_img_2.webp",
+    image: "/assets/images/webp/blog_img_1.webp",
     badge: "Bean",
     blogDate: "September 18, 20230",
     title: "How to Make French Press Coffee",
