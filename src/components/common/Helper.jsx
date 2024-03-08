@@ -5,8 +5,43 @@ import {
   OrangeBadge,
   RedeBadge,
 } from "./AllBadges";
-import { Database, ProductData, SearchIcon } from "./Icons";
-
+import { CheckMark, Database, ProductData, SearchIcon } from "./Icons";
+export const roasterKeyFeatures = [
+  {
+    feature: "Gemma Roasting System",
+  },
+  {
+    feature: "Fully Automated",
+  },
+  {
+    feature:
+      "Consistently roast up to 4.5 lbs of beans per cycle and over 100 lbs",
+  },
+  {
+    feature: "10 pre-set programmed profiles",
+  },
+  {
+    feature: "Cooling Automatic Internal",
+  },
+  {
+    feature: "Beans roasted gently inside & out",
+  },
+  {
+    feature:
+      "Chaff and small particles are blown away by air steam; not present later to affect taste",
+  },
+  {
+    feature:
+      "Narrow roast profiles attained (inside and outside of bean roasted to same degree)",
+  },
+  {
+    feature: "No bitter or sour tastes",
+  },
+  {
+    feature:
+      "Consistency delivered by computerized roast master, same roast profile every time.",
+  },
+];
 export const sliderCard = [
   {
     image: "/assets/images/webp/slider_image_first.webp",
