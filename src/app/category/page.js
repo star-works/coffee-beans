@@ -11,13 +11,13 @@ const page = () => {
           Category Page
         </h2>
         <div className="flex gap-3 items-center">
-          <Button className="flex items-center py-3 px-4 text-base font-normal text-[#090909] rounded-[24px] bg-[#F2F4F4] h-full hover:opacity-80">
+          <Button className="flex items-center py-3 px-4 text-base font-normal text-[#090909] rounded-[24px] bg-[#F2F4F4] h-full hover:opacity-70">
             Coffee
             <span className="ms-1">
               <CrossIcon />
             </span>
           </Button>
-          <Button className="flex items-center py-3 px-4 text-base font-normal text-[#090909] rounded-[24px] bg-[#F2F4F4] h-full hover:opacity-80">
+          <Button className="flex items-center py-3 px-4 text-base font-normal text-[#090909] rounded-[24px] bg-[#F2F4F4] h-full hover:opacity-70">
             Dark
             <span className="ms-1">
               <CrossIcon />
