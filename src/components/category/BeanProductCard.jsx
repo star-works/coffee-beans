@@ -18,7 +18,7 @@ const BeanProductCard = ({ value, setCategory }) => {
         <Image
           width={200}
           height={180}
-          className="md:h-[180px] sm:w-3/4 md:w-full mx-auto sm:h-[120px] h-[180px] md:max-w-[154px] lg:max-w-[200px] object-cover rounded-2xl"
+          className="md:h-[180px] sm:w-3/4 md:w-full mx-auto sm:h-[120px]  md:max-w-[154px] lg:max-w-[200px] object-cover rounded-2xl"
           src={value.image}
           alt="coffee image"
         />
