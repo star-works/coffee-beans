@@ -78,7 +78,7 @@ const CategoryCard = () => {
                   </div>
                 </CardContent>
                 <CardFooter className="flex flex-wrap gap-1 lg:gap-2">
-                  <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />,
+                  <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
                   <RedeBadge
                     className={"py-[6px] px-[10px]"}
                     name={"caramel"}
