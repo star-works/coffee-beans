@@ -64,12 +64,12 @@ const Trending = ({ title }) => {
           </span>
         </Link>
       </div>
-      <Carousel setApi={setApi} className="pt-0 w-full max-auto">
-        <CarouselContent>
+      <Carousel setApi={setApi} className="pt-0 w-full max-auto rounded-xl ">
+        <CarouselContent className="p-5">
           {newSliderCard.map((value, index) => (
             <>
-              <CarouselItem className="basis-8/12 sm:basis-5/12 md:basis-4/12 lg:basis-3/12 xl:basis-1/5 pt-0 lg:ps-6">
-                <Card className="p-3 sm:p-4 md:p-5 cursor-pointer group bg-white">
+              <CarouselItem className="basis-8/12 sm:basis-5/12 md:basis-4/12 lg:basis-3/12 xl:basis-1/5 py-5 rounded-lg lg:ps-5">
+                <Card className="p-3 sm:p-4 md:p-5 cursor-pointer group bg-white shadow_card ">
                   <CardHeader>
                     <div className="overflow-hidden rounded-2xl">
                       <Image
@@ -145,7 +145,7 @@ const Trending = ({ title }) => {
           }
         />
       </Carousel>
-      <div className="pt-8 sm:pt-10 md:pt-12 text-center text-sm text-muted-foreground">
+      <div className="pt-2 text-center text-sm text-muted-foreground">
         <div className=" flex justify-center gap-1">
           {Array.from({ length: count }, (_, i) => (
             <span
