@@ -13,7 +13,7 @@ import {
   RedeBadge,
 } from "../common/AllBadges";
 
-const CategoryCard = () => {
+const CategoryCard = ({ setCategory }) => {
   return (
     <>
       <div className="flex flex-col w-full gap-4">
@@ -78,16 +78,23 @@ const CategoryCard = () => {
                   </div>
                 </CardContent>
                 <CardFooter className="flex flex-wrap gap-1 lg:gap-2">
-                  <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
-                  <RedeBadge
+                  <GreenBadge
+                    setCategory={setCategory}
                     className={"py-[6px] px-[10px]"}
-                    name={"caramel"}
+                    name={"Bean"}
+                  />
+                  <RedeBadge
+                    setCategory={setCategory}
+                    className={"py-[6px] px-[10px]"}
+                    name={"Caramel"}
                   />
                   <ChocolateBadge
                     className={"py-[6px] px-[10px]"}
                     name={"Bean"}
+                    setCategory={setCategory}
                   />
                   <OrangeBadge
+                    setCategory={setCategory}
                     className={"py-[6px] px-[10px]"}
                     name={"Honey"}
                   />
