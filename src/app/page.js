@@ -4,8 +4,13 @@ import Hero from "@/components/homepage/Hero";
 import LatestBlog from "@/components/homepage/LatestBlog";
 import RoasterSlider from "@/components/homepage/RoasterSlider";
 import Services from "@/components/homepage/Services";
-import Image from "next/image";
-
+export const metadata = {
+  title: "Coffee Bean",
+  description: "Unveiling the world of coffee varieties",
+  openGraph: {
+    images: "/Logo.png",
+  },
+};
 export default function Home() {
   return (
     <>

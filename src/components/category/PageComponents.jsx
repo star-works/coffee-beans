@@ -3,7 +3,13 @@ import { useEffect, useState } from "react";
 import CategoryCard from "./Categorycard";
 import AccordionComponent from "./Accordion";
 import { CrossIcon } from "../common/Icons";
-
+export const metadata = {
+  title: "Coffee Bean Category",
+  description: "Category Page",
+  openGraph: {
+    images: "/Logo.png",
+  },
+};
 const PageComponent = () => {
   const [category, setCategory] = useState("");
   const [selectedCategory, setSelectedCategory] = useState([]);
