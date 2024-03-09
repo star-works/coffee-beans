@@ -69,26 +69,18 @@ const BeanProductCard = ({ value, setCategory }) => {
           </div>
         </CardContent>
         <CardFooter className="flex flex-wrap gap-1 lg:gap-2">
-          <GreenBadge
-            setCategory={setCategory}
-            className={"py-[6px] px-[10px]"}
-            name={"Bean"}
-          />
-          <RedeBadge
-            setCategory={setCategory}
-            className={"py-[6px] px-[10px]"}
-            name={"Caramel"}
-          />
-          <ChocolateBadge
-            className={"py-[6px] px-[10px]"}
-            name={"Bean"}
-            setCategory={setCategory}
-          />
-          <OrangeBadge
-            setCategory={setCategory}
-            className={"py-[6px] px-[10px]"}
-            name={"Honey"}
-          />
+          <div onClick={() => setCategory("Bean")}>
+            <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+          </div>
+          <div onClick={() => setCategory("Caramel")}>
+            <RedeBadge className={"py-[6px] px-[10px]"} name={"Caramel"} />
+          </div>
+          <div onClick={() => setCategory("Bean")}>
+            <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
+          </div>
+          <div onClick={() => setCategory("Honey")}>
+            <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
+          </div>
         </CardFooter>
       </div>
     </Card>
