@@ -43,7 +43,7 @@ const Trending = ({ title }) => {
   };
   return (
     <div className="w-full px-3 xl:px-0 max-w-[1140px] mx-auto">
-      <div className="flex items-center justify-between pb-6">
+      <div className="flex items-center justify-between">
         <h3 className="text-2xl text-[#090909] font-semibold">{title}</h3>
         <Link
           href="/"
