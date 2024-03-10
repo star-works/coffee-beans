@@ -69,16 +69,16 @@ const BeanProductCard = ({ value, setCategory }) => {
           </div>
         </CardContent>
         <CardFooter className="flex flex-wrap gap-1 lg:gap-2">
-          <div onClick={() => setCategory("Bean")}>
+          <div onClick={() => setCategory("Bean")} className="cursor-pointer">
             <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
           </div>
-          <div onClick={() => setCategory("Caramel")}>
+          <div onClick={() => setCategory("Caramel")} className="cursor-pointer">
             <RedeBadge className={"py-[6px] px-[10px]"} name={"Caramel"} />
           </div>
-          <div onClick={() => setCategory("Bean")}>
+          <div onClick={() => setCategory("Bean")} className="cursor-pointer">
             <ChocolateBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
           </div>
-          <div onClick={() => setCategory("Honey")}>
+          <div onClick={() => setCategory("Honey")} className="cursor-pointer">
             <OrangeBadge className={"py-[6px] px-[10px]"} name={"Honey"} />
           </div>
         </CardFooter>

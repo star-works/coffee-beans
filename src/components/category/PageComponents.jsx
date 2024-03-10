@@ -25,7 +25,7 @@ const PageComponent = () => {
   }, [category]);
   return (
     <div className="pt-[45px] md:pb-20 pb-[45px] max-w-[1120px] mx-auto xl:px-0 px-3 ">
-      <div className="flex gap-6 sm:items-center sm:flex-row flex-col mb-10 pt-20 sm:mt-12 ">
+      <div className="flex gap-6 sm:items-center sm:flex-row flex-col mb-10 pt-20 sm:mt-12 h-[128px]">
         <h2
           className="font-semibold text-[32px] leading-[38.4px] text-[#090909]"
           onClick={selectCategoryFilter}
