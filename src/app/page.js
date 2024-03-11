@@ -1,3 +1,4 @@
+import { ComboboxDemo } from "@/components/Testing";
 import Trending from "@/components/common/Trending";
 import ArebicaCards from "@/components/homepage/ArebicaCards";
 import Hero from "@/components/homepage/Hero";
@@ -14,7 +15,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Hero />
+      {/* <Hero />
       <Services />
       <div className="bg-[#F9FAFA] py-12">
         <Trending title="Trending!" />
@@ -24,7 +25,8 @@ export default function Home() {
         <Trending title="Newly added" />
       </div>
       <ArebicaCards />
-      <LatestBlog />
+      <LatestBlog /> */}
+      <ComboboxDemo />
     </>
   );
 }
