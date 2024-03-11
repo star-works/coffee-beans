@@ -1,7 +1,14 @@
 import Trending from "@/components/common/Trending";
 import Hero from "@/components/product/Hero";
 import TabsData from "@/components/product/TabsData";
-
+export const metadata = {
+  title: "Coffee Bean Product",
+  description:
+    "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a consequat pulvinar. ",
+  openGraph: {
+    images: "/Logo.png",
+  },
+};
 const page = () => {
   return (
     <>

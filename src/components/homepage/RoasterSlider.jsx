@@ -1,14 +1,11 @@
-import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
-  CarouselItem,
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
 import { sliderCard } from "../common/Helper";
+import RoasterSliderCard from "./RoasterSliderCard";
 
 const RoasterSlider = () => {
   return (
@@ -21,33 +18,7 @@ const RoasterSlider = () => {
         <Carousel className="pt-0 w-full max-auto">
           <CarouselContent>
             {sliderCard.map((value, index) => (
-              <CarouselItem
-                className="sm:basis-1/2 lg:basis-1/3 pt-0 lg:ps-6"
-                key={index}
-              >
-                <Card className="p-0 bg-white cursor-pointer group">
-                  <CardContent className="flex flex-col pt-0">
-                    <div className="overflow-hidden rounded-2xl">
-                      <Image
-                        width={357}
-                        className="duration-300 group-hover:scale-105 w-full max-h-[280px] object-cover"
-                        height={280}
-                        src={value.image}
-                        alt="image slider"
-                      />
-                    </div>
-                    <h3 className="font-semibold text-xl pt-4 text-[#090909]">
-                      {value.title}
-                    </h3>
-                    <p className="font-normal text-sm pt-2 text-[#090909]">
-                      {value.description}
-                    </p>
-                    <button className="py-4 hover:bg-black hover:text-white duration-300 border-opacity-15 border rounded-3xl mt-4 text-base font-normal">
-                      More
-                    </button>
-                  </CardContent>
-                </Card>
-              </CarouselItem>
+              <RoasterSliderCard value={value} key={index} />
             ))}
           </CarouselContent>
           <CarouselPrevious />

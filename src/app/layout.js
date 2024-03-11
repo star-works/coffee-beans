@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/Logo.png" />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body
         style={{
@@ -20,9 +20,9 @@ export default function RootLayout({ children }) {
           marginRight: "0 !important",
         }}
       >
-        <Header />
+        {/* <Header /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
