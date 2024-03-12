@@ -383,7 +383,6 @@ export const beanCategories = [
     ),
   },
   {
-    classHidden: "hidden",
     heading: "Subscription ",
     type: (
       <RadioInputs

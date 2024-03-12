@@ -4,40 +4,21 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import Image from "next/image";
 export const RadioInputs = (props) => {
+  console.log(props.search[0], "ghbjnklm");
   return (
     <>
-      <RadioGroup defaultValue="comfortable" className={`gap-0 ${props.flex}`}>
-        <div className="flex items-center space-x-2">
-          <RadioGroupItem value="default" id="r1" className="cursor-pointer" />
-          <Label
-            className="text-base text-[#090909] font-normal cursor-pointer"
-            htmlFor="r1"
-          >
-            {props.firstName}
-          </Label>
-        </div>
-        <div className={`flex items-center space-x-2 pt-4 ${props.padding} `}>
-          <RadioGroupItem
-            value="comfortable"
-            id="r2"
-            className="cursor-pointer"
-          />
-          <Label
-            className="text-base text-[#090909] font-normal cursor-pointer"
-            htmlFor="r2"
-          >
-            {props.secondName}
-          </Label>
-        </div>
-        <div className={`flex items-center space-x-2 pt-4 ${props.className}`}>
-          <RadioGroupItem value="compact" id="r3" className="cursor-pointer" />
-          <Label
-            className="text-base text-[#090909] font-normal cursor-pointer"
-            htmlFor="r3"
-          >
-            {props.thirdName}
-          </Label>
-        </div>
+      <RadioGroup defaultValue="comfortable" className={`gap-0`}>
+        {props.search.map((obj, i) => (
+          <div className="flex items-center space-x-2 py-[4px]">
+            <RadioGroupItem value={obj} id={obj} className="cursor-pointer" />
+            <Label
+              className="text-base text-[#090909] font-normal cursor-pointer"
+              htmlFor={obj}
+            >
+              {obj}
+            </Label>
+          </div>
+        ))}
       </RadioGroup>
     </>
   );
