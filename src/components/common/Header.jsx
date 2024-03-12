@@ -44,7 +44,7 @@ const Header = () => {
               </Link>{" "}
               <Button
                 variant="outline"
-                className="text-base bg-white flex items-center border border-transparent hover:border-white hover:bg-transparent hover:opacity-80 hover:text-white group gap-2 duration-300 py-3 px-5 rounded-3xl"
+                className="text-base bg-white flex items-center border border-transparent hover:border-white hover:bg-transparent hover:opacity-80 hover:text-white group gap-2  py-3 px-5 rounded-3xl active:scale-[.9] transition-all duration-300 ease-in-out"
               >
                 <span>
                   <SignUpPeople />
