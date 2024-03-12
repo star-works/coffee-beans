@@ -9,6 +9,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { BlackSearch } from "../common/Icons";
+import { useSelectedProvider } from "../context/SelectedProvider";
 const Roastlevel = () => {
   const options = ["Light", "Medium", "Dark"];
   const [search, setSerach] = useState(options);
