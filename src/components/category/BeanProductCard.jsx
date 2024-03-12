@@ -11,7 +11,9 @@ import {
   OrangeBadge,
   RedeBadge,
 } from "../common/AllBadges";
-const BeanProductCard = ({ value, setCategory }) => {
+import { useSelectedProvider } from "../context/SelectedProvider";
+const BeanProductCard = ({ value }) => {
+  const { setCategory } = useSelectedProvider();
   return (
     <Card className="max-w-[680px] p-2 sm:p-3 lg:p-6 shadow-[0px_16px_64px_0px_#00000008] w-full border border-[#F2F4F4] bg-white rounded-2xl md:rounded-3xl flex sm:flex-col md:flex-row gap-2 sm:gap-2 md:gap-3 lg:gap-8">
       <CardHeader>
@@ -72,7 +74,10 @@ const BeanProductCard = ({ value, setCategory }) => {
           <div onClick={() => setCategory("Bean")} className="cursor-pointer">
             <GreenBadge className={"py-[6px] px-[10px]"} name={"Bean"} />
           </div>
-          <div onClick={() => setCategory("Caramel")} className="cursor-pointer">
+          <div
+            onClick={() => setCategory("Caramel")}
+            className="cursor-pointer"
+          >
             <RedeBadge className={"py-[6px] px-[10px]"} name={"Caramel"} />
           </div>
           <div onClick={() => setCategory("Bean")} className="cursor-pointer">
