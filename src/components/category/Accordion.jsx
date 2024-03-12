@@ -1,14 +1,14 @@
 "use client";
 import { Accordion } from "@/components/ui/accordion";
-import Roastlevel from "./Roastlevel";
-import CoffeeNotes from "./CoffeeNotes";
-import BeanSort from "./BeanSort";
-import BeanOrigin from "./BeanOrigin";
 import Altitude from "./Altitude";
-import CoffeeType from "./Coffeetype";
-import RoasterLocation from "./RoasterLocation";
+import BeanOrigin from "./BeanOrigin";
+import BeanSort from "./BeanSort";
 import Certifications from "./Certifications";
+import CoffeeNotes from "./CoffeeNotes";
+import RoasterLocation from "./RoasterLocation";
+import Roastlevel from "./Roastlevel";
 import Subscriptions from "./Subscription";
+import CoffeeType from "./CoffeeTypes";
 
 const AccordionComponent = () => {
   return (
