@@ -1,4 +1,3 @@
-import { ComboboxDemo } from "@/components/Testing";
 import Trending from "@/components/common/Trending";
 import ArebicaCards from "@/components/homepage/ArebicaCards";
 import Hero from "@/components/homepage/Hero";
@@ -26,7 +25,6 @@ export default function Home() {
       </div>
       <ArebicaCards />
       <LatestBlog /> */}
-      <ComboboxDemo />
     </>
   );
 }
