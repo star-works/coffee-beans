@@ -26,33 +26,17 @@ export const RadioInputs = (props) => {
 export const CheckboxInputs = (props) => {
   return (
     <>
-      <div className="flex items-center space-x-2">
-        <Checkbox id="first" className="cursor-pointer" />
-        <label
-          htmlFor="first"
-          className="text-base font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
-        >
-          {props.firstName}
-        </label>
-      </div>
-      <div className="flex items-center pt-4 space-x-2">
-        <Checkbox id="second" className="cursor-pointer" />
-        <label
-          htmlFor="second"
-          className="text-base font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
-        >
-          {props.secondName}
-        </label>
-      </div>
-      <div className={`flex items-center pt-4 space-x-2 ${props.className}`}>
-        <Checkbox id="third" className="cursor-pointer" />
-        <label
-          htmlFor="third"
-          className="text-base font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
-        >
-          {props.thirdName}
-        </label>
-      </div>
+      {props.search.map((obj, i) => (
+        <div className="flex items-center space-x-2 py-2" key={i}>
+          <Checkbox id={obj} className="cursor-pointer" />
+          <label
+            htmlFor={obj}
+            className="text-base font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
+          >
+            {obj}
+          </label>
+        </div>
+      ))}
     </>
   );
 };
