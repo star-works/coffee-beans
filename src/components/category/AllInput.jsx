@@ -30,6 +30,8 @@ export const RadioInputs = (props) => {
   );
 };
 export const CheckboxInputs = (props) => {
+  const { setCategory } = useSelectedProvider();
+
   return (
     <>
       {props.search.map((obj, i) => (
