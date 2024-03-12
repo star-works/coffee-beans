@@ -13,7 +13,7 @@ import Subscriptions from "./Subscription";
 const AccordionComponent = () => {
   return (
     <div className="lg:max-w-[400px] md:max-w-[300px] w-full">
-      <Accordion type="single" collapsible className="w-full">
+      <Accordion type="multiple" collapsible className="w-full">
         <Roastlevel />
         <CoffeeNotes />
         <BeanSort />
