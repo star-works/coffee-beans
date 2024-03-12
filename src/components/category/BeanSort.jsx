@@ -38,7 +38,7 @@ const BeanSort = () => {
           />
         </div>
         <div className="px-4">
-          <CheckboxInputs search={search} />
+          <CheckboxInputs search={search} type="Bean sort" />
         </div>
       </AccordionContent>
     </AccordionItem>

@@ -1,15 +1,13 @@
-import React, { useState } from "react";
-import { RadioInputs } from "./AllInput";
 import {
-  Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { useState } from "react";
 import { BlackSearch } from "../common/Icons";
-import { useSelectedProvider } from "../context/SelectedProvider";
+import { RadioInputs } from "./AllInput";
 const Roastlevel = () => {
   const options = ["Light", "Medium", "Dark"];
   const [search, setSerach] = useState(options);
@@ -39,7 +37,7 @@ const Roastlevel = () => {
           />
         </div>
         <div className="px-4">
-          <RadioInputs search={search} />
+          <RadioInputs search={search} type="Roast level" />
         </div>
       </AccordionContent>
     </AccordionItem>

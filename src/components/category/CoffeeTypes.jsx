@@ -38,7 +38,7 @@ const CoffeeType = () => {
           />
         </div>
         <div className="px-4">
-          <RadioInputs search={search} />
+          <RadioInputs search={search} type="Coffee type" />
         </div>
       </AccordionContent>
     </AccordionItem>

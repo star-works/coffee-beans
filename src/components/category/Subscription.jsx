@@ -24,7 +24,7 @@ const Subscriptions = () => {
       </AccordionTrigger>
       <AccordionContent className="pt-5">
         <div className="px-4">
-          <RadioInputs search={search} />
+          <RadioInputs search={search} type="Subscription" />
         </div>
       </AccordionContent>
     </AccordionItem>

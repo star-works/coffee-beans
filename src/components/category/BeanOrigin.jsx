@@ -38,7 +38,7 @@ const BeanOrigin = () => {
           />
         </div>
         <div className="px-4">
-          <RadioInputs search={search} />
+          <RadioInputs search={search} type="Bean origin" />
         </div>
       </AccordionContent>
     </AccordionItem>

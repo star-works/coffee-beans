@@ -38,7 +38,7 @@ const RoasterLocation = () => {
           />
         </div>
         <div className="px-4">
-          <CheckboxInputs search={search} />
+          <CheckboxInputs search={search} type="Roaster location" />
         </div>
       </AccordionContent>
     </AccordionItem>

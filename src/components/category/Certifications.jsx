@@ -38,7 +38,7 @@ const Certifications = () => {
           />
         </div>
         <div className="px-4">
-          <CheckboxInputs search={search} />
+          <CheckboxInputs search={search} type="Certifications" />
         </div>
       </AccordionContent>
     </AccordionItem>
