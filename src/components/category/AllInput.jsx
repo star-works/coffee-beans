@@ -1,77 +1,70 @@
-import React from "react";
-import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import Image from "next/image";
 export const RadioInputs = (props) => {
+  const { setValue, options, value } = props;
+
+  const onchangeHandler = (obj) => {
+    if (value === obj) {
+      setValue(obj);
+    } else {
+      setValue(obj);
+    }
+  };
+
   return (
     <>
-      <RadioGroup defaultValue="comfortable" className={`gap-0 ${props.flex}`}>
-        <div className="flex items-center space-x-2">
-          <RadioGroupItem value="default" id="r1" className="cursor-pointer" />
-          <Label
-            className="text-base text-[#090909] font-normal cursor-pointer"
-            htmlFor="r1"
+      <RadioGroup defaultValue="comfortable" className={`gap-0`}>
+        {options.map((obj, i) => (
+          <div
+            key={i}
+            className="flex items-center space-x-2 py-[4px]"
+            onClick={() => onchangeHandler(obj)}
           >
-            {props.firstName}
-          </Label>
-        </div>
-        <div className={`flex items-center space-x-2 pt-4 ${props.padding} `}>
-          <RadioGroupItem
-            value="comfortable"
-            id="r2"
-            className="cursor-pointer"
-          />
-          <Label
-            className="text-base text-[#090909] font-normal cursor-pointer"
-            htmlFor="r2"
-          >
-            {props.secondName}
-          </Label>
-        </div>
-        <div className={`flex items-center space-x-2 pt-4 ${props.className}`}>
-          <RadioGroupItem value="compact" id="r3" className="cursor-pointer" />
-          <Label
-            className="text-base text-[#090909] font-normal cursor-pointer"
-            htmlFor="r3"
-          >
-            {props.thirdName}
-          </Label>
-        </div>
+            <RadioGroupItem
+              checked={obj === value}
+              id={obj}
+              className="cursor-pointer"
+            />
+            <Label
+              className="text-base text-[#090909] font-normal cursor-pointer"
+              htmlFor={obj}
+            >
+              {obj}
+            </Label>
+          </div>
+        ))}
       </RadioGroup>
     </>
   );
 };
 export const CheckboxInputs = (props) => {
+  const { setValue, options, value } = props;
+
+  const onchangeHandler = (obj) => {
+    if (value.includes(obj)) {
+      const newValue = value.filter((v) => v != obj);
+
+      setValue(newValue);
+    } else {
+      setValue([...value, obj]);
+    }
+  };
+  console.log(value);
   return (
     <>
-      <div className="flex items-center space-x-2">
-        <Checkbox id="first" className="cursor-pointer" />
-        <label
-          htmlFor="first"
-          className="text-base font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
+      {options.map((obj, i) => (
+        <div
+          className="flex items-center space-x-2 py-2"
+          key={i}
+          onClick={() => onchangeHandler(obj)}
         >
-          {props.firstName}
-        </label>
-      </div>
-      <div className="flex items-center pt-4 space-x-2">
-        <Checkbox id="second" className="cursor-pointer" />
-        <label
-          htmlFor="second"
-          className="text-base font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
-        >
-          {props.secondName}
-        </label>
-      </div>
-      <div className={`flex items-center pt-4 space-x-2 ${props.className}`}>
-        <Checkbox id="third" className="cursor-pointer" />
-        <label
-          htmlFor="third"
-          className="text-base font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
-        >
-          {props.thirdName}
-        </label>
-      </div>
+          <Checkbox checked={value.includes(obj)} className="cursor-pointer" />
+          <label className="text-base font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer">
+            {obj}
+          </label>
+        </div>
+      ))}
     </>
   );
 };

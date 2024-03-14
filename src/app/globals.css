@@ -104,3 +104,25 @@ body {
 .shadow_card {
   box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.031);
 }
+.custom_scrollbar ::-webkit-scrollbar {
+  height: 3px;
+  border-radius: 50px;
+}
+
+/* Track */
+.custom_scrollbar ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 50px;
+}
+
+/* Handle */
+.custom_scrollbar ::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+.custom_scrollbar ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 50px;
+}

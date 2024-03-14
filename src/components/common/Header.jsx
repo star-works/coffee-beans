@@ -11,7 +11,7 @@ const Header = () => {
     <>
       <div className="max-w-[1920px] fixed w-full mx-auto overflow-hidden z-10 left-[50%] translate-x-[-50%]">
         <div className="max-w-[1120px] relative z-10 mx-auto px-3 xl:px-0 pt-4 md:pt-6 ">
-          <div className="py-3 md:py-5 px-4 md:px-6 bg-black rounded-[50px] md:rounded-[96px] flex justify-between items-center">
+          <div className="py-3 md:py-2 px-4 md:px-3 bg-black rounded-[50px] md:rounded-[96px] flex justify-between items-center">
             <div className="flex gap-5 md:gap-10 items-center">
               <Link
                 href="/"
@@ -44,7 +44,7 @@ const Header = () => {
               </Link>{" "}
               <Button
                 variant="outline"
-                className="text-base bg-white flex items-center border border-transparent hover:border-white hover:bg-transparent hover:opacity-80 hover:text-white group gap-2 duration-300 py-3 px-5 rounded-3xl"
+                className="text-base bg-white flex items-center border border-transparent hover:border-white hover:bg-transparent hover:opacity-80 hover:text-white group gap-2  py-3 px-5 rounded-3xl active:scale-[.9] transition-all duration-300 ease-in-out"
               >
                 <span>
                   <SignUpPeople />
