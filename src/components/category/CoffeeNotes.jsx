@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { RadioInputs } from "./AllInput";
+import { CheckboxInputs, RadioInputs } from "./AllInput";
 import {
   Accordion,
   AccordionContent,
@@ -38,7 +38,7 @@ const CoffeeNotes = () => {
           />
         </div>
         <div className="px-4">
-          <RadioInputs search={search} type="Coffee notes" />
+          <CheckboxInputs search={search} type="Coffee notes" />
         </div>
       </AccordionContent>
     </AccordionItem>

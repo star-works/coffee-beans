@@ -1,17 +1,33 @@
+"use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import TabsCard from "./TabsCard";
 import RoasterTab from "./RoasterTab";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 const TabsData = () => {
+  const [active, setActive] = useState(1);
   return (
     <div className="max-w-[1120px] mx-auto xl:px-0 px-3 pt-3">
       <Tabs defaultValue="account" className="">
-        <TabsList className="grid w-full grid-cols-2 max-w-[350px] mx-auto my-7">
-          <TabsTrigger className="text-[16px] font-normal" value="account">
+        <TabsList className="grid w-full grid-cols-2 max-w-[350px] mx-auto my-7 relative">
+          <div
+            className={`absolute w-1/2 h-[90%] bg-[#D3756B] left-0 rounded-full transition-all duration-300 ease-in-out z-[-1]  ${
+              active === 1 ? "translate-x-[3px]" : "translate-x-[98%]"
+            }`}
+          ></div>
+          <TabsTrigger
+            onClick={() => setActive(1)}
+            className="text-[16px] font-normal "
+            value="account"
+          >
             About The Roaster
           </TabsTrigger>
-          <TabsTrigger className="text-[16px] font-normal" value="password">
+          <TabsTrigger
+            onClick={() => setActive(2)}
+            className="text-[16px] font-normal"
+            value="password"
+          >
             Comments (24)
           </TabsTrigger>
         </TabsList>
