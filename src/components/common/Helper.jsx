@@ -327,7 +327,7 @@ export const beanCategories = [
     heading: "Coffee notes ",
     placeholder: "Search Coffee notes...",
     type: (
-      <RadioInputs firstName="Fruits" secondName="Honey" thirdName="Nuts" />
+      <CheckboxInputs firstName="Fruits" secondName="Honey" thirdName="Nuts" />
     ),
   },
   {
