@@ -15,7 +15,7 @@ import AccordionCardItem from "./AccordionCardItem";
 const AccordionComponent = () => {
   return (
     <div className="lg:max-w-[400px] md:max-w-[300px] w-full">
-      <Accordion type="single" collapsible className="w-full">
+      <Accordion type="multiple" collapsible className="w-full">
         {beanCategories.map((obj, index) => {
           return <AccordionCardItem key={index} index={index} obj={obj} />;
         })}

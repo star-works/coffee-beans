@@ -25,14 +25,14 @@ const PageComponent = () => {
   }, [category]);
   return (
     <div className="pt-[45px] md:pb-20 pb-[45px] max-w-[1120px] mx-auto xl:px-0 px-3 ">
-      <div className="flex gap-6 sm:items-center sm:flex-row flex-col mb-10 pt-20 sm:mt-12 h-[128px]">
+      <div className="flex gap-6 sm:items-center sm:flex-row flex-col mb-10 pt-20 sm:mt-12 ">
         <h2
-          className="font-semibold text-[32px] leading-[38.4px] text-[#090909]"
+          className="font-semibold text-[32px] leading-[38.4px] text-[#090909] min-w-[220px]"
           onClick={selectCategoryFilter}
         >
           Category Page
         </h2>
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-3 items-center flex-wrap">
           {selectedCategory.length > 0 &&
             selectedCategory.map((obj, i) => (
               <Button

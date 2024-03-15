@@ -10,6 +10,7 @@ import { blogData } from "../common/Helper";
 import { CalenderIcon } from "../common/Icons";
 import { Badge } from "@/components/ui/badge";
 import BlogCard from "./BlogCard";
+import Link from "next/link";
 
 const LatestBlog = () => {
   return (
@@ -25,41 +26,45 @@ const LatestBlog = () => {
           })}
         </div>
         <div className="md:w-5/12 lg:w-6/12 xl:w-7/12 hidden xl:-ms-3 md:flex">
-          <Card className="p-0 bg-white">
-            <CardHeader className="relative w-full">
-              <Badge className="absolute py-2 px-4 text-xs left-4 top-4 font-semibold hover:bg-opacity-90 duration-300 hover:bg-white bg-white text-[#090909] uppercase">
-                Coffee
-              </Badge>
-              <Image
-                className="w-full rounded-[20px] !m-0"
-                height={315}
-                width={640}
-                src="/assets/images/webp/blog_img_main.webp"
-                alt="images blog"
-              />
-            </CardHeader>
-            <CardContent className="flex flex-col mt-4 p-0">
-              <p className="text-[#b5b5b5] text-sm pt-3 sm:pt-0 lg:leading-[18px] text-center sm:text-start flex gap-[6px] justify-center sm:justify-start">
-                <span>
-                  <CalenderIcon />
-                </span>
-                September 18, 20230
-              </p>
-              <CardTitle className="!mt-4 text-base font-semibold text-[#090909]">
-                How To Make Chemex Coffee
-              </CardTitle>
-              <CardDescription className="!mt-2 text-sm font-light text-[#090909] ">
-                Pour over coffee sounds complicated, but this coffee brewing
-                process is surprisingly simple and the results can be amazing
-                with just a little practice. If you drink a single cup each
-                morning, or want to try different types of coffee, making pour
-                over coffee can be even easier than setting up your home coffee
-                machine (bonus — cleanup takes seconds). And because you’re in
-                control of factors like water temperature and brew time, you can
-                expect amazing flavor in the finished cup.
-              </CardDescription>
-            </CardContent>
-          </Card>
+          <Link href="#">
+            <Card className="p-0 bg-white group transition-all duration-300 cursor-pointer">
+              <CardHeader className="relative w-full">
+                <Badge className="absolute py-2 px-4 text-xs left-4 top-4 font-semibold hover:bg-opacity-90 duration-300 hover:bg-white bg-white text-[#090909] uppercase z-10">
+                  Coffee
+                </Badge>
+                <div className="overflow-hidden rounded-[20px]">
+                  <Image
+                    className="w-full rounded-[20px] !m-0 group-hover:scale-[1.1] transition-all duration-300 cursor-pointer"
+                    height={315}
+                    width={640}
+                    src="/assets/images/webp/blog_img_main.webp"
+                    alt="images blog"
+                  />
+                </div>
+              </CardHeader>
+              <CardContent className="flex flex-col mt-4 p-0">
+                <p className="text-[#b5b5b5] text-sm pt-3 sm:pt-0 lg:leading-[18px] text-center sm:text-start flex gap-[6px] justify-center sm:justify-start">
+                  <span>
+                    <CalenderIcon />
+                  </span>
+                  September 18, 20230
+                </p>
+                <CardTitle className="!mt-4 text-base font-semibold text-[#090909]">
+                  How To Make Chemex Coffee
+                </CardTitle>
+                <CardDescription className="!mt-2 text-sm font-light text-[#090909] ">
+                  Pour over coffee sounds complicated, but this coffee brewing
+                  process is surprisingly simple and the results can be amazing
+                  with just a little practice. If you drink a single cup each
+                  morning, or want to try different types of coffee, making pour
+                  over coffee can be even easier than setting up your home
+                  coffee machine (bonus — cleanup takes seconds). And because
+                  you’re in control of factors like water temperature and brew
+                  time, you can expect amazing flavor in the finished cup.
+                </CardDescription>
+              </CardContent>
+            </Card>
+          </Link>
         </div>
       </div>
     </div>
