@@ -1,15 +1,14 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import Link from "next/link";
-import { CategorySelect } from "./AllSelect";
+import { NavigationMenuDemo } from "./Categorymenu";
 import { MainLogo, SignUpPeople } from "./Icons";
 import MobileHeader from "./MobileHeader";
 
 const Header = () => {
   return (
     <>
-      <div className="max-w-[1920px] fixed w-full mx-auto overflow-hidden z-10 left-[50%] translate-x-[-50%]">
+      <div className="max-w-[1920px] fixed w-full mx-auto  z-10 left-[50%] translate-x-[-50%]">
         <div className="max-w-[1120px] relative z-10 mx-auto px-3 xl:px-0 pt-4 md:pt-6 ">
           <div className="py-3 md:py-2 px-4 md:px-3 bg-black rounded-[50px] md:rounded-[96px] flex justify-between items-center">
             <div className="flex gap-5 md:gap-10 items-center">
@@ -19,7 +18,7 @@ const Header = () => {
               >
                 <MainLogo />
               </Link>
-              <CategorySelect />
+              <NavigationMenuDemo />
               <div className="hidden sm:flex gap-5 md:gap-10">
                 <Link
                   href="/"
