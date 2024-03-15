@@ -24,7 +24,7 @@ const PageComponent = () => {
           Category Page
         </h2>
         <div className="overflow-hidden custom_scrollbar ">
-          <div className="flex gap-3 items-center overflow-auto py-1">
+          <div className="flex gap-3 items-center flex-wrap py-1">
             {selectedCategory.length > 0 &&
               selectedCategory.map((obj, i) => (
                 <Button
