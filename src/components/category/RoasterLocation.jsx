@@ -9,9 +9,11 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { BlackSearch } from "../common/Icons";
+import { useSelectedProvider } from "../context/SelectedProvider";
 const RoasterLocation = () => {
   const options = ["Sweden", "France", "USA"];
   const [search, setSerach] = useState(options);
+  const { roasterLocation, setRoasterLocation } = useSelectedProvider();
   const searchHandler = (e) => {
     const newArr = options.filter((obj) =>
       obj.toLocaleLowerCase().includes(e.toLocaleLowerCase())
@@ -38,7 +40,12 @@ const RoasterLocation = () => {
           />
         </div>
         <div className="px-4">
-          <CheckboxInputs search={search} type="Roaster location" />
+          <CheckboxInputs
+            value={roasterLocation}
+            setValue={setRoasterLocation}
+            options={search}
+            type="Roaster location"
+          />
         </div>
       </AccordionContent>
     </AccordionItem>

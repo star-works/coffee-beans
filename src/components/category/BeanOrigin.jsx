@@ -9,9 +9,11 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { BlackSearch } from "../common/Icons";
+import { useSelectedProvider } from "../context/SelectedProvider";
 const BeanOrigin = () => {
   const options = ["Columbia", "Peru"];
   const [search, setSerach] = useState(options);
+  const { beanOrigin, setBeanOrigin } = useSelectedProvider();
   const searchHandler = (e) => {
     const newArr = options.filter((obj) =>
       obj.toLocaleLowerCase().includes(e.toLocaleLowerCase())
@@ -38,7 +40,12 @@ const BeanOrigin = () => {
           />
         </div>
         <div className="px-4">
-          <RadioInputs search={search} type="Bean origin" />
+          <RadioInputs
+            value={beanOrigin}
+            setValue={setBeanOrigin}
+            options={search}
+            type="Bean origin"
+          />
         </div>
       </AccordionContent>
     </AccordionItem>

@@ -9,9 +9,11 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { BlackSearch } from "../common/Icons";
+import { useSelectedProvider } from "../context/SelectedProvider";
 const BeanSort = () => {
   const options = ["Arabica", "Robusta SL28"];
   const [search, setSerach] = useState(options);
+  const { beanSort, setBeanSort } = useSelectedProvider();
   const searchHandler = (e) => {
     const newArr = options.filter((obj) =>
       obj.toLocaleLowerCase().includes(e.toLocaleLowerCase())
@@ -38,7 +40,12 @@ const BeanSort = () => {
           />
         </div>
         <div className="px-4">
-          <CheckboxInputs search={search} type="Bean sort" />
+          <CheckboxInputs
+            setValue={setBeanSort}
+            value={beanSort}
+            options={search}
+            type="Bean sort"
+          />
         </div>
       </AccordionContent>
     </AccordionItem>

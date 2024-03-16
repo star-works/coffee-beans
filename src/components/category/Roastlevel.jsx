@@ -8,9 +8,11 @@ import { Label } from "@/components/ui/label";
 import { useState } from "react";
 import { BlackSearch } from "../common/Icons";
 import { RadioInputs } from "./AllInput";
+import { useSelectedProvider } from "../context/SelectedProvider";
 const Roastlevel = () => {
   const options = ["Light", "Medium", "Dark"];
   const [search, setSerach] = useState(options);
+  const { setRoastLevel, roastLevel } = useSelectedProvider();
   const searchHandler = (e) => {
     const newArr = options.filter((obj) =>
       obj.toLocaleLowerCase().includes(e.toLocaleLowerCase())
@@ -37,7 +39,12 @@ const Roastlevel = () => {
           />
         </div>
         <div className="px-4">
-          <RadioInputs search={search} type="Roast level" />
+          <RadioInputs
+            setValue={setRoastLevel}
+            value={roastLevel}
+            options={search}
+            type="Roast level"
+          />
         </div>
       </AccordionContent>
     </AccordionItem>

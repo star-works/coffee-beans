@@ -9,9 +9,11 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { BlackSearch } from "../common/Icons";
+import { useSelectedProvider } from "../context/SelectedProvider";
 const CoffeeType = () => {
   const options = ["Whole bean", "Pre-grind", "Pod"];
   const [search, setSerach] = useState(options);
+  const { coffeeType, setCoffeeType } = useSelectedProvider();
   const searchHandler = (e) => {
     const newArr = options.filter((obj) =>
       obj.toLocaleLowerCase().includes(e.toLocaleLowerCase())
@@ -38,7 +40,12 @@ const CoffeeType = () => {
           />
         </div>
         <div className="px-4">
-          <RadioInputs search={search} type="Coffee type" />
+          <RadioInputs
+            setValue={setCoffeeType}
+            value={coffeeType}
+            options={search}
+            type="Coffee type"
+          />
         </div>
       </AccordionContent>
     </AccordionItem>

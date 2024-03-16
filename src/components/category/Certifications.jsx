@@ -9,9 +9,11 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { BlackSearch } from "../common/Icons";
+import { useSelectedProvider } from "../context/SelectedProvider";
 const Certifications = () => {
   const options = ["Rainforest", "fair trade"];
   const [search, setSerach] = useState(options);
+  const { certifications, setCertifications } = useSelectedProvider();
   const searchHandler = (e) => {
     const newArr = options.filter((obj) =>
       obj.toLocaleLowerCase().includes(e.toLocaleLowerCase())
@@ -38,7 +40,12 @@ const Certifications = () => {
           />
         </div>
         <div className="px-4">
-          <CheckboxInputs search={search} type="Certifications" />
+          <CheckboxInputs
+            value={certifications}
+            setValue={setCertifications}
+            options={search}
+            type="Certifications"
+          />
         </div>
       </AccordionContent>
     </AccordionItem>
