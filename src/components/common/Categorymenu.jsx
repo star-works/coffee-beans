@@ -20,9 +20,9 @@ export function NavigationMenuDemo() {
           <NavigationMenuTrigger className="bg-transparent text-white font-normal text-base px-0">
             Categories
           </NavigationMenuTrigger>
-          <NavigationMenuContent className="z-10 ">
+          <NavigationMenuContent className="z-10 pb-3">
             <div className="sm:p-4 p-3">
-              <ul className="flex flex-wrap">
+              <ul className="flex flex-wrap sm:flex-nowrap">
                 <li className="px-2 text-nowrap pt-1">
                   <span className="text-[14px] uppercase font-bold">
                     Coffee by price point
