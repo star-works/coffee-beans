@@ -49,7 +49,6 @@ export const CheckboxInputs = (props) => {
       setValue([...value, obj]);
     }
   };
-  console.log(value);
   return (
     <>
       {options.map((obj, i) => (
