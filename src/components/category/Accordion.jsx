@@ -13,7 +13,11 @@ import CoffeeType from "./CoffeeTypes";
 const AccordionComponent = () => {
   return (
     <div className="lg:max-w-[400px] md:max-w-[300px] w-full">
-      <Accordion type="multiple" className="w-full">
+      <Accordion
+        defaultValue={["1", "2", "3", "4", "5", "6", "7", "8", "9"]}
+        type="multiple"
+        className="w-full"
+      >
         <Roastlevel />
         <CoffeeNotes />
         <BeanSort />
