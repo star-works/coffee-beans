@@ -24,19 +24,19 @@ const MobileHeader = () => {
           <div className="flex flex-col items-start h-full gap-5">
             <Link
               href="/"
-              className="text-base text-white hover:opacity-80 duration-300"
+              className="text-base text-white hover:opacity-80 duration-300 hover:text-white"
             >
               Newly added
             </Link>
             <Link
               href="/"
-              className="text-base text-white hover:opacity-80 duration-300"
+              className="text-base text-white hover:opacity-80 duration-300 hover:text-white"
             >
               Newsroom
             </Link>
             <Link
               href="/"
-              className="text-base text-white hover:opacity-80 duration-300"
+              className="text-base text-white hover:opacity-80 duration-300 hover:text-white"
             >
               Sign in
             </Link>

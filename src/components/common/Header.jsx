@@ -14,7 +14,7 @@ const Header = () => {
             <div className="flex gap-5 md:gap-10 items-center">
               <Link
                 href="/"
-                className="text-base text-white hover:opacity-80 duration-300"
+                className="text-base text-white hover:opacity-80  duration-300"
               >
                 <MainLogo />
               </Link>
@@ -22,13 +22,13 @@ const Header = () => {
               <div className="hidden sm:flex gap-5 md:gap-10">
                 <Link
                   href="/"
-                  className="text-base text-white hover:opacity-80 duration-300"
+                  className="text-base text-white hover:opacity-80 hover:text-white duration-300"
                 >
                   Newly added
                 </Link>
                 <Link
                   href="/"
-                  className="text-base text-white hover:opacity-80 duration-300"
+                  className="text-base text-white hover:opacity-80 hover:text-white duration-300 "
                 >
                   Newsroom
                 </Link>
@@ -37,7 +37,7 @@ const Header = () => {
             <div className="hidden sm:flex items-center gap-5 md:gap-6">
               <Link
                 href="/"
-                className="text-base text-white hover:opacity-80 duration-300"
+                className="text-base text-white hover:opacity-80 duration-300 hover:text-white"
               >
                 Sign in
               </Link>{" "}
