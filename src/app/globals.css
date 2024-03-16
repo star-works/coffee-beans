@@ -87,3 +87,6 @@ body {
 .rs-slider-progress-bar {
   background-color: #d3756b !important;
 }
+a {
+  text-decoration: none !important;
+}
