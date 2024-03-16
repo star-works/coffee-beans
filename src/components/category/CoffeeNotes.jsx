@@ -1,15 +1,14 @@
-import React, { useState } from "react";
-import { CheckboxInputs, RadioInputs } from "./AllInput";
 import {
-  Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { useState } from "react";
 import { BlackSearch } from "../common/Icons";
 import { useSelectedProvider } from "../context/SelectedProvider";
+import { CheckboxInputs } from "./AllInput";
 const CoffeeNotes = () => {
   const options = ["Fruits", "Honey", "Nuts"];
   const [search, setSerach] = useState(options);
@@ -40,7 +39,7 @@ const CoffeeNotes = () => {
           />
         </div>
         <div className="px-4">
-          <RadioInputs
+          <CheckboxInputs
             setValue={setCoffeeNotes}
             value={coffeeNotes}
             options={search}

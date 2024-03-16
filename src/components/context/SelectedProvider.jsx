@@ -8,7 +8,7 @@ export function useSelectedProvider() {
 
 export default function SelectedProvider({ children }) {
   const [roastLevel, setRoastLevel] = useState();
-  const [coffeeNotes, setCoffeeNotes] = useState();
+  const [coffeeNotes, setCoffeeNotes] = useState([]);
   const [beanSort, setBeanSort] = useState([]);
   const [category, setCategory] = useState();
   const [beanOrigin, setBeanOrigin] = useState();

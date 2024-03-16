@@ -67,19 +67,21 @@ const PageComponent = () => {
                 </div>
               </div>
             )}
-            {coffeeNotes && (
-              <div className="flex space-x-1 items-center">
+            {coffeeNotes && coffeeNotes.length > 0 && (
+              <div className="flex space-x-1 items-center ">
                 <span className="text-[16px] whitespace-nowrap">
                   Coffee Notes:
                 </span>
-                <div className="flex space-x-2">
-                  <Button className="flex items-center py-2 px-2 text-[12px] font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
-                    {coffeeNotes}
-                    <span className="ms-1" onClick={() => setCoffeeNotes()}>
-                      <CrossIcon />
-                    </span>
-                  </Button>
-                </div>
+                {coffeeNotes.map((obj, i) => (
+                  <div className="flex space-x-2">
+                    <Button className="flex items-center py-2 px-2 text-[12px] font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
+                      {coffeeNotes}
+                      <span className="ms-1" onClick={() => setCoffeeNotes()}>
+                        <CrossIcon />
+                      </span>
+                    </Button>
+                  </div>
+                ))}
               </div>
             )}
             {beanSort && beanSort.length > 0 && (
