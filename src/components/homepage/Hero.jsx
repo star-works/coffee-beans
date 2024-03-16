@@ -35,13 +35,13 @@ const Hero = () => {
               celebrating the diversity of coffee beans sourced from local
               roasters worldwide.
             </p>
-            <div className="mt-6 max-w-[580px] lg:max-w-[720px] mx-auto px-4 sm:px-6 md:px-8 py-[18px] bg-white rounded-full">
-              <div className="flex  items-center justify-center ">
-                <div className="border-e pe-4 pt-0">
+            <div className="mt-6 max-w-[720px] mx-auto bg-white rounded-full">
+              <div className="flex  items-center justify-center border border-[#A79A9A] rounded-full overflow-hidden">
+                <div className="border-e pe-4 bg-[#F5E1DE] px-4 sm:ps-6 md:px-8 py-[18px] border-r border-[#A79A9A]">
                   <LocationSelect />
                 </div>
-                <div className="relative max-w-[380px] xl:max-w-[600px] w-full order-1 ms-6">
-                  <div className="absolute end-0 top-1.5 z-0 cursor-pointer">
+                <div className="relative max-w-[600px] w-full order-1 px-4 sm:pe-6 md:px-8 py-[18px] ">
+                  <div className="absolute right-[20px] top-[50%] translate-y-[-50%] z-0 cursor-pointer">
                     <BlackSearch />
                   </div>
                   <input

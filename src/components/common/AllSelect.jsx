@@ -23,7 +23,7 @@ export const LocationSelect = (props) => {
           <SelectValue className="p-0" placeholder="Location" />
         </SelectTrigger>
         <SelectContent>
-          <SelectGroup className="flex flex-wrap p-3">
+          <SelectGroup className="p-3">
             <SelectLabel className="text-[14px]">Location</SelectLabel>
             <SelectItem value="India">India</SelectItem>
             <SelectItem value="Australia">Australia</SelectItem>
