@@ -73,7 +73,7 @@ const PageComponent = () => {
                   Coffee Notes:
                 </span>
                 {coffeeNotes.map((obj, i) => (
-                  <div className="flex space-x-2">
+                  <div key={i} className="flex space-x-2">
                     <Button className="flex items-center py-2 px-2 text-[12px] font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
                       {coffeeNotes}
                       <span className="ms-1" onClick={() => setCoffeeNotes()}>
@@ -90,7 +90,7 @@ const PageComponent = () => {
                   Bean Sort:
                 </span>
                 {beanSort.map((obj, i) => (
-                  <div className="flex space-x-2">
+                  <div key={i} className="flex space-x-2">
                     <Button className="flex items-center py-2 px-2 text-[12px] font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
                       {obj}
                       <span
@@ -143,7 +143,7 @@ const PageComponent = () => {
                   Roaster Location:
                 </span>
                 {roasterLocation.map((obj, i) => (
-                  <div className="flex space-x-2">
+                  <div key={i} className="flex space-x-2">
                     <Button className="flex items-center py-2 px-2 text-[12px] font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
                       {obj}
                       <span
@@ -164,7 +164,7 @@ const PageComponent = () => {
                   Roaster Location:
                 </span>
                 {certifications.map((obj, i) => (
-                  <div className="flex space-x-2">
+                  <div key={i} className="flex space-x-2">
                     <Button className="flex items-center py-2 px-2 text-[12px] font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
                       {obj}
                       <span
