@@ -4,7 +4,6 @@ import { useState } from "react";
 
 const RangeS = () => {
   const [value, setvalue] = useState([0, 0]);
-  console.log(value);
   return (
     <>
       <div className="flex w-full items-center">
