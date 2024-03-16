@@ -44,7 +44,6 @@ export const CheckboxInputs = (props) => {
   const onchangeHandler = (obj) => {
     if (value.includes(obj)) {
       const newValue = value.filter((v) => v != obj);
-
       setValue(newValue);
     } else {
       setValue([...value, obj]);

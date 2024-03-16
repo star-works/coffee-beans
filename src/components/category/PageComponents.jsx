@@ -53,9 +53,9 @@ const PageComponent = () => {
           Category Page
         </h2>
         <div className="overflow-hidden flex items-center ">
-          <div className="flex space-x-6 items-center overflow-auto py-1">
+          <div className="flex space-x-6 items-center flex-wrap py-1">
             {roastLevel && (
-              <div className="flex space-x-1 items-center">
+              <div className="flex space-x-1 items-center py-2">
                 <span className="text-[16px] whitespace-nowrap">Roast:</span>
                 <div className="flex space-x-2">
                   <Button className="flex items-center py-2 px-2 text-[12px] font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
