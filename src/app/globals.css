@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "rsuite/dist/rsuite.css";
 
 @layer base {
   :root {
@@ -79,50 +80,10 @@
 body {
   font-family: "Outfit", sans-serif;
 }
-.input {
-  -webkit-appearance: none;
-  appearance: none;
-  position: absolute;
-  pointer-events: none;
-  z-index: 3;
-  height: 3px;
-  top: 0;
-  width: 100%;
-  opacity: 0;
-  margin: 0;
+.rs-slider-handle::before {
+  background-color: #d3756b !important;
+  border: 2px solid #d3756b !important;
 }
-
-.input::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  pointer-events: all;
-  border-radius: 50%;
-  cursor: pointer;
-  width: 18px;
-  height: 18px;
-}
-.shadow_card {
-  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.031);
-}
-.custom_scrollbar ::-webkit-scrollbar {
-  height: 3px;
-  border-radius: 50px;
-}
-
-/* Track */
-.custom_scrollbar ::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 50px;
-}
-
-/* Handle */
-.custom_scrollbar ::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 50px;
-}
-
-/* Handle on hover */
-.custom_scrollbar ::-webkit-scrollbar-thumb:hover {
-  background: #555;
-  border-radius: 50px;
+.rs-slider-progress-bar {
+  background-color: #d3756b !important;
 }

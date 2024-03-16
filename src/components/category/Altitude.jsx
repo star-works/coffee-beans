@@ -1,15 +1,10 @@
-import React, { useState } from "react";
-import { RadioInputs } from "./AllInput";
 import {
-  Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { BlackSearch } from "../common/Icons";
-import RangeSlider from "./RangeSlider";
+import { useState } from "react";
+import RangeS from "./RangeSlider";
 const Altitude = () => {
   const options = ["Light", "Medium", "Dark"];
   const [search, setSerach] = useState(options);
@@ -25,7 +20,7 @@ const Altitude = () => {
         Altitude (m)
       </AccordionTrigger>
       <AccordionContent className="pt-5">
-        <RangeSlider />
+        <RangeS />
       </AccordionContent>
     </AccordionItem>
   );
