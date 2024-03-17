@@ -1,14 +1,14 @@
 "use client";
-import PageComponent from "@/components/category/PageComponents";
+import CategorySelectedComponent from "@/components/category/CategorySelectedComponent";
 import SelectedProvider from "@/components/context/SelectedProvider";
 import { useEffect, useState } from "react";
 
-const page = () => {
+const CategoryPage = () => {
   return (
     <SelectedProvider>
-      <PageComponent />
+      <CategorySelectedComponent />
     </SelectedProvider>
   );
 };
 
-export default page;
+export default CategoryPage;

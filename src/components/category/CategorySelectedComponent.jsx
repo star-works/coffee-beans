@@ -11,7 +11,7 @@ export const metadata = {
     images: "/Logo.png",
   },
 };
-const PageComponent = () => {
+const CategorySelectedComponent = () => {
   const {
     selectCategoryFilter,
     coffeeNotes,
@@ -224,4 +224,4 @@ const PageComponent = () => {
   );
 };
 
-export default PageComponent;
+export default CategorySelectedComponent;
