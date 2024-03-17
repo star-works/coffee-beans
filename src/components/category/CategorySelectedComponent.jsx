@@ -11,7 +11,7 @@ export const metadata = {
     images: "/Logo.png",
   },
 };
-const PageComponent = () => {
+const CategorySelectedComponent = () => {
   const {
     selectCategoryFilter,
     coffeeNotes,
@@ -30,10 +30,16 @@ const PageComponent = () => {
     setCertifications,
     subscription,
     setSubscription,
+    sliderValue,
+    setSliderValue,
   } = useSelectedProvider();
   const delRoasterLocationHandler = (obj) => {
     const filter = roasterLocation.filter((o) => o !== obj);
     setRoasterLocation(filter);
+  };
+  const delNotes = (obj) => {
+    const filter = coffeeNotes.filter((o) => o !== obj);
+    setCoffeeNotes(filter);
   };
   const delBeanSortHandler = (obj) => {
     const filter = beanSort.filter((o) => o !== obj);
@@ -49,7 +55,7 @@ const PageComponent = () => {
   };
   return (
     <div className="pt-[45px] md:pb-20 pb-[45px] max-w-[1120px] mx-auto xl:px-0 px-3 ">
-      <div className="flex gap-6 sm:items-center sm:flex-row flex-col mb-10 pt-20 sm:mt-12 ">
+      <div className="flex gap-6  sm:flex-row flex-col mb-10 pt-20 sm:mt-12 min-h-[140px] ">
         <h2
           className="font-semibold text-[32px] leading-[38.4px] text-[#090909] min-w-[220px]"
           onClick={selectCategoryFilter}
@@ -57,9 +63,9 @@ const PageComponent = () => {
           Category Page
         </h2>
         <div className="overflow-hidden flex items-center ">
-          <div className="flex space-x-6 items-center flex-wrap py-1">
+          <div className="flex gap-x-5 gap-y-3 items-center flex-wrap py-1">
             {roastLevel && (
-              <div className="flex space-x-1 items-center py-2">
+              <div className="flex space-x-1 items-center">
                 <span className="text-[16px] whitespace-nowrap">Roast:</span>
                 <div className="flex space-x-2">
                   <Button className="flex items-center py-2 px-2 text-[12px] font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
@@ -72,7 +78,7 @@ const PageComponent = () => {
               </div>
             )}
             {coffeeNotes && coffeeNotes.length > 0 && (
-              <div className="flex space-x-1 items-center ">
+              <div className="flex space-x-1 items-center">
                 <span className="text-[16px] whitespace-nowrap">
                   Coffee Notes:
                 </span>
@@ -111,7 +117,6 @@ const PageComponent = () => {
                 ))}
               </div>
             )}
-
             {beanOrigin && (
               <div className="flex space-x-1 items-center">
                 <span className="text-[16px] whitespace-nowrap">
@@ -127,7 +132,6 @@ const PageComponent = () => {
                 </div>
               </div>
             )}
-
             {coffeeType && (
               <div className="flex space-x-1 items-center">
                 <span className="text-[16px] whitespace-nowrap">
@@ -143,7 +147,6 @@ const PageComponent = () => {
                 </div>
               </div>
             )}
-
             {roasterLocation && roasterLocation.length > 0 && (
               <div className="flex space-x-1 items-center">
                 <span className="text-[16px] whitespace-nowrap">
@@ -164,11 +167,10 @@ const PageComponent = () => {
                 ))}
               </div>
             )}
-
             {certifications && certifications.length > 0 && (
               <div className="flex space-x-1 items-center">
                 <span className="text-[16px] whitespace-nowrap">
-                  Roaster Location:
+                  Certifications
                 </span>
                 {certifications.map((obj, i) => (
                   <div key={i} className="flex space-x-2">
@@ -185,7 +187,6 @@ const PageComponent = () => {
                 ))}
               </div>
             )}
-
             {subscription && (
               <div className="flex space-x-1 items-center">
                 <span className="text-[16px] whitespace-nowrap">
@@ -195,6 +196,24 @@ const PageComponent = () => {
                   <Button className="flex items-center py-2 px-2 text-[12px] font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
                     {subscription}
                     <span className="ms-1" onClick={() => setSubscription()}>
+                      <CrossIcon />
+                    </span>
+                  </Button>
+                </div>
+              </div>
+            )}
+            {sliderValue && sliderValue[1] > 0 && (
+              <div className="flex space-x-1 items-center">
+                <span className="text-[16px] whitespace-nowrap">Altitude:</span>
+
+                <div className="flex space-x-2">
+                  <Button className="flex items-center py-2 px-2 text-[12px] font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
+                    <span className="pe-3">MIN: {sliderValue[0]}</span> Max:
+                    {sliderValue[1]}
+                    <span
+                      className="ms-1"
+                      onClick={() => setSliderValue([0, 0])}
+                    >
                       <CrossIcon />
                     </span>
                   </Button>
@@ -212,4 +231,4 @@ const PageComponent = () => {
   );
 };
 
-export default PageComponent;
+export default CategorySelectedComponent;

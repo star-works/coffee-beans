@@ -9,7 +9,7 @@ export const metadata = {
     images: "/Logo.png",
   },
 };
-const page = () => {
+const ProductPage = () => {
   return (
     <>
       <Hero />
@@ -24,4 +24,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ProductPage;

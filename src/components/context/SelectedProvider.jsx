@@ -17,6 +17,8 @@ export default function SelectedProvider({ children }) {
   const [roasterLocation, setRoasterLocation] = useState([]);
   const [certifications, setCertifications] = useState([]);
   const [subscription, setSubscription] = useState();
+  const [sliderValue, setSliderValue] = useState([0, 0]);
+
   const selectCategoryFilter = () => {
     category !== "" ? setSelectedCategory([...selectedCategory, category]) : [];
   };
@@ -49,6 +51,8 @@ export default function SelectedProvider({ children }) {
     setCertifications,
     subscription,
     setSubscription,
+    setSliderValue,
+    sliderValue,
   };
 
   return (
