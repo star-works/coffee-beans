@@ -35,6 +35,10 @@ const PageComponent = () => {
     const filter = roasterLocation.filter((o) => o !== obj);
     setRoasterLocation(filter);
   };
+  const delNotes = (obj) => {
+    const filter = coffeeNotes.filter((o) => o !== obj);
+    setCoffeeNotes(filter);
+  };
   const delBeanSortHandler = (obj) => {
     const filter = beanSort.filter((o) => o !== obj);
     setBeanSort(filter);
@@ -53,9 +57,9 @@ const PageComponent = () => {
           Category Page
         </h2>
         <div className="overflow-hidden flex items-center ">
-          <div className="flex space-x-6 items-center flex-wrap py-1">
+          <div className="flex gap-x-5 gap-y-3 items-center flex-wrap py-1">
             {roastLevel && (
-              <div className="flex space-x-1 items-center py-2">
+              <div className="flex space-x-1 items-center">
                 <span className="text-[16px] whitespace-nowrap">Roast:</span>
                 <div className="flex space-x-2">
                   <Button className="flex items-center py-2 px-2 text-[12px] font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
@@ -68,15 +72,15 @@ const PageComponent = () => {
               </div>
             )}
             {coffeeNotes && coffeeNotes.length > 0 && (
-              <div className="flex space-x-1 items-center ">
+              <div className="flex space-x-1 items-center">
                 <span className="text-[16px] whitespace-nowrap">
                   Coffee Notes:
                 </span>
                 {coffeeNotes.map((obj, i) => (
                   <div key={i} className="flex space-x-2">
                     <Button className="flex items-center py-2 px-2 text-[12px] font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
-                      {coffeeNotes}
-                      <span className="ms-1" onClick={() => setCoffeeNotes()}>
+                      {obj}
+                      <span className="ms-1" onClick={() => delNotes(obj)}>
                         <CrossIcon />
                       </span>
                     </Button>
@@ -104,7 +108,6 @@ const PageComponent = () => {
                 ))}
               </div>
             )}
-
             {beanOrigin && (
               <div className="flex space-x-1 items-center">
                 <span className="text-[16px] whitespace-nowrap">
@@ -120,7 +123,6 @@ const PageComponent = () => {
                 </div>
               </div>
             )}
-
             {coffeeType && (
               <div className="flex space-x-1 items-center">
                 <span className="text-[16px] whitespace-nowrap">
@@ -136,7 +138,6 @@ const PageComponent = () => {
                 </div>
               </div>
             )}
-
             {roasterLocation && roasterLocation.length > 0 && (
               <div className="flex space-x-1 items-center">
                 <span className="text-[16px] whitespace-nowrap">
@@ -157,7 +158,6 @@ const PageComponent = () => {
                 ))}
               </div>
             )}
-
             {certifications && certifications.length > 0 && (
               <div className="flex space-x-1 items-center">
                 <span className="text-[16px] whitespace-nowrap">
@@ -178,7 +178,6 @@ const PageComponent = () => {
                 ))}
               </div>
             )}
-
             {subscription && (
               <div className="flex space-x-1 items-center">
                 <span className="text-[16px] whitespace-nowrap">
