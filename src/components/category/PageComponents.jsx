@@ -43,6 +43,10 @@ const PageComponent = () => {
     const filter = certifications.filter((o) => o !== obj);
     setCertifications(filter);
   };
+  const delCoffeeNotesHandler = (obj) => {
+    const filter = coffeeNotes.filter((o) => o !== obj);
+    setCoffeeNotes(filter);
+  };
   return (
     <div className="pt-[45px] md:pb-20 pb-[45px] max-w-[1120px] mx-auto xl:px-0 px-3 ">
       <div className="flex gap-6 sm:items-center sm:flex-row flex-col mb-10 pt-20 sm:mt-12 ">
@@ -76,7 +80,10 @@ const PageComponent = () => {
                   <div key={i} className="flex space-x-2">
                     <Button className="flex items-center py-2 px-2 text-[12px] font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
                       {coffeeNotes}
-                      <span className="ms-1" onClick={() => setCoffeeNotes()}>
+                      <span
+                        className="ms-1"
+                        onClick={() => delCoffeeNotesHandler(obj)}
+                      >
                         <CrossIcon />
                       </span>
                     </Button>
