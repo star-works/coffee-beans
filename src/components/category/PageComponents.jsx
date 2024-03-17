@@ -30,6 +30,8 @@ const PageComponent = () => {
     setCertifications,
     subscription,
     setSubscription,
+    sliderValue,
+    setSliderValue,
   } = useSelectedProvider();
   const delRoasterLocationHandler = (obj) => {
     const filter = roasterLocation.filter((o) => o !== obj);
@@ -187,6 +189,24 @@ const PageComponent = () => {
                   <Button className="flex items-center py-2 px-2 text-[12px] font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
                     {subscription}
                     <span className="ms-1" onClick={() => setSubscription()}>
+                      <CrossIcon />
+                    </span>
+                  </Button>
+                </div>
+              </div>
+            )}
+            {sliderValue && sliderValue[1] > 0 && (
+              <div className="flex space-x-1 items-center">
+                <span className="text-[16px] whitespace-nowrap">Altitude:</span>
+
+                <div className="flex space-x-2">
+                  <Button className="flex items-center py-2 px-2 text-[12px] font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
+                    <span className="pe-3">MIN: {sliderValue[0]}</span> Max:
+                    {sliderValue[1]}
+                    <span
+                      className="ms-1"
+                      onClick={() => setSliderValue([0, 0])}
+                    >
                       <CrossIcon />
                     </span>
                   </Button>
