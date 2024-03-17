@@ -161,7 +161,7 @@ const PageComponent = () => {
             {certifications && certifications.length > 0 && (
               <div className="flex space-x-1 items-center">
                 <span className="text-[16px] whitespace-nowrap">
-                  Roaster Location:
+                  Certifications
                 </span>
                 {certifications.map((obj, i) => (
                   <div key={i} className="flex space-x-2">
