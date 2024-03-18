@@ -90,3 +90,21 @@ body {
 a {
   text-decoration: none !important;
 }
+.scrollbar_style ::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+.scrollbar_style ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.scrollbar_style ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.scrollbar_style ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

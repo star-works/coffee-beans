@@ -12,13 +12,17 @@ const Header = () => {
         <div className="max-w-[1120px] relative z-10 mx-auto px-3 xl:px-0 pt-4 md:pt-6 ">
           <div className="py-3 md:py-2 px-4 md:px-3 bg-black rounded-[50px] md:rounded-[96px] flex justify-between items-center">
             <div className="flex gap-5 md:gap-10 items-center">
-              <Link
-                href="/"
-                className="text-base text-white hover:opacity-80  duration-300"
-              >
-                <MainLogo />
-              </Link>
-              <NavigationMenuDemo />
+              <div className="absolute z-[10] bg-transparent w-[70px] flex flex-col justify-center">
+                <Link
+                  href="/"
+                  className="text-base text-white duration-300  inline-block"
+                >
+                  <MainLogo />
+                </Link>
+              </div>
+              <div className="relative z-[1]">
+                <NavigationMenuDemo />
+              </div>
               <div className="hidden sm:flex gap-5 md:gap-10">
                 <Link
                   href="/"
