@@ -85,7 +85,7 @@ const CategorySelectedComponent = () => {
                 {coffeeNotes.map((obj, i) => (
                   <div key={i} className="flex space-x-2">
                     <Button className="flex items-center py-2 px-2 text-[12px] font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
-                      {coffeeNotes}
+                      {obj}
                       <span
                         className="ms-1"
                         onClick={() => delCoffeeNotesHandler(obj)}
@@ -170,7 +170,7 @@ const CategorySelectedComponent = () => {
             {certifications && certifications.length > 0 && (
               <div className="flex space-x-1 items-center">
                 <span className="text-[16px] whitespace-nowrap">
-                  Certifications
+                  Certifications:
                 </span>
                 {certifications.map((obj, i) => (
                   <div key={i} className="flex space-x-2">
