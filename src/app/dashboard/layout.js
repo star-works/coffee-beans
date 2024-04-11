@@ -1,4 +1,5 @@
-import Footer from "@/components/common/Footer";
+import Header from "@/components/dashboard/Header";
+import Sidebar from "@/components/dashboard/Sidebar";
 import "../dashboard.css";
 
 export const metadata = {
@@ -19,8 +20,12 @@ export default function RootLayout({ children }) {
           marginRight: "0 !important",
         }}
       >
-        {children}
-        <Footer />
+        <div className="flex items-start">
+          <Sidebar />
+          <div className="w-full">
+            <Header /> {children}
+          </div>
+        </div>
       </body>
     </html>
   );
