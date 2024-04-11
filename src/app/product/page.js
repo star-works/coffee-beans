@@ -1,8 +1,8 @@
 import Footer from "@/components/common/Footer";
+import Header from "@/components/common/Header";
 import Trending from "@/components/common/Trending";
 import Hero from "@/components/product/Hero";
 import TabsData from "@/components/product/TabsData";
-import { Header } from "@radix-ui/react-accordion";
 export const metadata = {
   title: "Coffee Bean Product",
   description:
