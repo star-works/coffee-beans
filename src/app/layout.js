@@ -20,9 +20,7 @@ export default function RootLayout({ children }) {
           marginRight: "0 !important",
         }}
       >
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );

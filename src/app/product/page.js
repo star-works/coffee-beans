@@ -1,6 +1,8 @@
+import Footer from "@/components/common/Footer";
 import Trending from "@/components/common/Trending";
 import Hero from "@/components/product/Hero";
 import TabsData from "@/components/product/TabsData";
+import { Header } from "@radix-ui/react-accordion";
 export const metadata = {
   title: "Coffee Bean Product",
   description:
@@ -12,6 +14,7 @@ export const metadata = {
 const ProductPage = () => {
   return (
     <>
+      <Header />
       <Hero />
       <TabsData />
       <div className="bg-[#F9FAFA] py-12">
@@ -20,6 +23,7 @@ const ProductPage = () => {
       <div className=" py-12">
         <Trending title="Trending" />
       </div>
+      <Footer />
     </>
   );
 };
