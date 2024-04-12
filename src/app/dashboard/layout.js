@@ -14,6 +14,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body
+        className="inter_font bg-[#F9FAFB]"
         style={{
           overflow: "auto !important",
           paddingRight: "0 !important",
@@ -23,7 +24,10 @@ export default function RootLayout({ children }) {
         <div className="flex items-start ">
           <Sidebar />
           <div className="w-full">
-            <Header /> {children}
+            <Header />{" "}
+            <div className="p-8 overflow-auto custom_height bg-[#F9FAFB]">
+              {children}
+            </div>
           </div>
         </div>
       </body>

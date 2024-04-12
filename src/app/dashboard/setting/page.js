@@ -11,9 +11,9 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <div className="p-8 rounded-[12px]">
+      <div className="rounded-[12px]">
         <DashboardTabs />
-        </div>
+      </div>
     </>
   );
 }

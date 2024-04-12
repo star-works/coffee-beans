@@ -72,12 +72,9 @@
   * {
     @apply border-border;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
 }
 
-body {
+body.outfit {
   font-family: "Outfit" !important;
 }
 .rs-slider-handle::before {

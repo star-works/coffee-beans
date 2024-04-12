@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body
-        className="bg-[#F9FAFB]"
+        className=""
         style={{
           overflow: "auto !important",
           paddingRight: "0 !important",
