@@ -10,7 +10,7 @@ const MyBean = () => {
   return (
     <div>
       <div className="ps-4">
-        <div className="flex justify-between">
+        <div className="sm:flex justify-between">
           <div className="flex items-center w-full">
             <h3 className="xs:text-[20px] text-[18px] font-semibold text-[#111827] me-4">
               My Beans
@@ -19,8 +19,8 @@ const MyBean = () => {
               <Plus /> Add new bean
             </Button>
           </div>
-          <div className="flex items-center w-full">
-            <div className="bg-white border border-[#E5E7EB] rounded-[6px] shadow-[0px_2px_4px_2px_#f9fafa] flex items-center w-full max-w-[240px] ms-auto">
+          <div className="flex items-center w-full mt-3 sm:mt-0">
+            <div className="bg-white border border-[#E5E7EB] rounded-[6px] shadow-[0px_2px_4px_2px_#f9fafa] flex items-center w-full max-w-[240px] sm:ms-auto ">
               <img
                 className="ps-2"
                 src="/assets/images/png/search.png"

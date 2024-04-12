@@ -5,13 +5,13 @@ import Link from "next/link";
 import { sidebarLinks } from "./Helper";
 import { SettingsIcon, SupportIcon } from "./Icons";
 
-const Sidebar = () => {
-  const [showNav, setShowNav] = useState(true);
-  const OpenNav = () => {
-    setShowNav(!showNav);
-  };
+const Sidebar = ({ showNav, setShowNav }) => {
   return (
-    <div className="w-[240px] custom_height ">
+    <div
+      className={`w-[240px] custom_height transition-all duration-300 ease-in-out absolute md:relative  ${
+        showNav ? "ms-[0px]" : "-ms-[240px]"
+      }`}
+    >
       <div
         className={`flex items-center  justify-between bg-white py-5 px-6 border-r border-r-solid border-r-[#F3F4F6] ${
           showNav ? "" : "border-b border-b-solid border-b-[#F3F4F6]"
@@ -29,8 +29,10 @@ const Sidebar = () => {
           </p>
         </Link>
         <div
-          onClick={OpenNav}
-          className="flex flex-col gap-[2px] cursor-pointer"
+          onClick={() => setShowNav(!showNav)}
+          className={`flex flex-col gap-[2px] cursor-pointer absolute  ${
+            showNav ? "left-[210px]" : "left-[260px]"
+          }`}
         >
           <span
             className={`transition-all duration-500 ${

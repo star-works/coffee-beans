@@ -1,10 +1,14 @@
 import React from "react";
 import { NotificationsIcons, SearchIcon } from "./Icons";
 
-const Header = () => {
+const Header = ({ showNav }) => {
   return (
     <div className="bg-white  border-b border-l border-solid border-[#F3F4F6] h-[72px]">
-      <div className="flex justify-between items-center  px-6 py-4">
+      <div
+        className={`flex justify-between items-center transition-all duration-300 ease-in-out pe-6 py-4 ${
+          showNav ? "ps-6" : "ps-12"
+        }`}
+      >
         <div className="w-[202px] flex items-center ">
           <div className="w-auto">
             <SearchIcon />
