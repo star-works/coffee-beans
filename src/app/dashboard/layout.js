@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           marginRight: "0 !important",
         }}
       >
-        <div className="flex items-start">
+        <div className="flex items-start ">
           <Sidebar />
           <div className="w-full">
             <Header /> {children}

@@ -11,7 +11,7 @@ const Sidebar = () => {
     setShowNav(!showNav);
   };
   return (
-    <div className="w-[240px] h-screen">
+    <div className="w-[240px] h-screen ">
       <div
         className={`flex items-center  justify-between bg-white py-5 px-6 border-r border-r-solid border-r-[#F3F4F6] ${
           showNav ? "" : "border-b border-b-solid border-b-[#F3F4F6]"
@@ -68,17 +68,17 @@ const Sidebar = () => {
               return (
                 <div
                   key={index}
-                  className={`w-full flex items-center transition-all group cursor-pointer gap-2 ${obj.class}`}
+                  className={`w-full flex items-center transition-all group cursor-pointer justify-start gap-2 ${obj.class}`}
                 >
                   {obj.icon && <span>{obj.icon}</span>}
-                  <div className="text-sm -tracking-[3%] text-[#4B5563] font-semibold group-hover:text-[#D3756B] transition-all duration-300 w-full">
+                  <div className="text-sm -tracking-[3%] text-[#4B5563] font-semibold group-hover:text-[#D3756B] transition-all duration-300 w-full ">
                     {obj.tittle}
                   </div>
                 </div>
               );
             })}
           </div>
-          <div className="p-4 bg-white">
+          <div className="px-4 bg-white">
             <div className="px-2 py-2 mb-1 rounded-[8px] hover:bg-[#F9FAFB] transition-all duration-300 flex items-center gap-2 group">
               <span>
                 <SupportIcon />

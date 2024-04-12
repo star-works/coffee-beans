@@ -13,7 +13,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <div className="p-6">
+      <div className="p-6 ">
         <DashboardTopCards />
         <SalesChart />
         <TopCoffee />
