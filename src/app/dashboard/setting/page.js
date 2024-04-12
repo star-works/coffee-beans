@@ -1,3 +1,4 @@
+import DashboardTabs from "@/components/dashboard/DashBoardTabs";
 import Profile from "@/components/dashboard/Profile";
 import Services from "@/components/homepage/Services";
 export const metadata = {
@@ -10,7 +11,9 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Profile />{" "}
+      <div className="p-8 rounded-[12px]">
+        <DashboardTabs />
+        </div>
     </>
   );
 }

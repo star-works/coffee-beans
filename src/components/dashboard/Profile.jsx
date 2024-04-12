@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 const Profile = () => {
   return (
-    <div className="p-10">
+    <div className=" bg-white rounded-[12px]">
       <h3 className="text-[20px] font-semibold pt-4">Profile</h3>
       <p className="xs:text-[16px] text-[14px] font-normal text-[#6B7280]">
         Update your roaster details here

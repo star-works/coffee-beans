@@ -1,5 +1,3 @@
-import Footer from "@/components/common/Footer";
-import Header from "@/components/common/Header";
 import "./globals.css";
 
 export const metadata = {
@@ -14,6 +12,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body
+        className="bg-[#F9FAFB]"
         style={{
           overflow: "auto !important",
           paddingRight: "0 !important",

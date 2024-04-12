@@ -11,7 +11,7 @@ const Sidebar = () => {
     setShowNav(!showNav);
   };
   return (
-    <div className="w-[240px] h-screen ">
+    <div className="w-[240px] custom_height ">
       <div
         className={`flex items-center  justify-between bg-white py-5 px-6 border-r border-r-solid border-r-[#F3F4F6] ${
           showNav ? "" : "border-b border-b-solid border-b-[#F3F4F6]"
@@ -78,7 +78,7 @@ const Sidebar = () => {
               );
             })}
           </div>
-          <div className="px-4 bg-white">
+          <div className="px-4 bg-white py-[14px]">
             <div className="px-2 py-2 mb-1 rounded-[8px] hover:bg-[#F9FAFB] transition-all duration-300 flex items-center gap-2 group">
               <span>
                 <SupportIcon />
