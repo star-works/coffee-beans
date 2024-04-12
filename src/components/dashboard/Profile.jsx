@@ -3,11 +3,11 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 
 const Profile = () => {
   return (
-    <div>
+    <div className="p-10">
       <h3 className="text-[20px] font-semibold pt-4">Profile</h3>
       <p className="xs:text-[16px] text-[14px] font-normal text-[#6B7280]">
         Update your roaster details here
@@ -61,7 +61,7 @@ const Profile = () => {
             <p className="cursor-pointer text-[#1F2937] text-[12px] font-semibold hover:text-[#D3756B] mb-0">
               Remove
             </p>
-            <p className="cursor-pointer text-[#1F2937] text-[12px] font-semibold hover:text-[#D3756B] mb-0">
+            <p className="cursor-pointer text-[#1F2937] text-[12px] font-semibold hover:text-[#D3756B] mb-0 mt-0">
               Update
             </p>
           </div>

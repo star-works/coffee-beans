@@ -1,3 +1,4 @@
+import Profile from "@/components/dashboard/Profile";
 import Services from "@/components/homepage/Services";
 export const metadata = {
   title: "Coffee Bean",
@@ -9,7 +10,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Services />
+      <Profile />{" "}
     </>
   );
 }
