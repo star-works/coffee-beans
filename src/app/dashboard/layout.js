@@ -5,7 +5,7 @@ import "../dashboard.css";
 import { useState } from "react";
 
 export default function RootLayout({ children }) {
-  const [showNav, setShowNav] = useState(true);
+  const [showNav, setShowNav] = useState(false);
 
   return (
     <html lang="en">

@@ -78,7 +78,7 @@ export const coffeeData = [
     comments: 15,
     status: "Active",
     statusClassName:
-      "text-[#239636] cursor-pointer bg-[#F1FCF2] border-[#C0F2C8] border py-[2px] px-2 rounded-full",
+      "text-[#239636] cursor-pointer bg-[#F1FCF2] border-[#C0F2C8] border py-[2px] px-2 rounded-full text-[12px]",
   },
   {
     nameData: "Jiwaka - Papua New Guniea",
@@ -89,7 +89,7 @@ export const coffeeData = [
     comments: 8,
     status: "Out of stock",
     statusClassName:
-      "text-[#DA7E05] cursor-pointer border-[#FFFCEB] border bg-[#FEEA89] py-[2px] px-2 rounded-full",
+      "text-[#DA7E05] cursor-pointer border-[#FFFCEB] border bg-[#FEEA89] py-[2px] px-2 rounded-full text-[12px]",
   },
   {
     nameData: "Yiver Vargas, Gesga",
@@ -100,7 +100,7 @@ export const coffeeData = [
     comments: 3,
     status: "Waiting",
     statusClassName:
-      "text-[#2570EB] cursor-pointer border-[#BFD7FE] border bg-[#EFF5FF] py-[2px] px-2 rounded-full",
+      "text-[#2570EB] cursor-pointer border-[#BFD7FE] border bg-[#EFF5FF] py-[2px] px-2 rounded-full text-[12px]",
   },
   {
     nameData: "Don't let me down",
@@ -111,7 +111,7 @@ export const coffeeData = [
     comments: 32,
     status: "Active",
     statusClassName:
-      "text-[#239636] cursor-pointer bg-[#F1FCF2] border-[#C0F2C8] border py-[2px] px-2 rounded-full",
+      "text-[#239636] cursor-pointer bg-[#F1FCF2] border-[#C0F2C8] border py-[2px] px-2 rounded-full text-[12px]",
   },
   {
     nameData: "Donna Blend",
@@ -122,7 +122,7 @@ export const coffeeData = [
     comments: 28,
     status: "Error",
     statusClassName:
-      "text-[#E51D1D] cursor-pointer bg-[#FFF1F1] py-[2px] px-2 rounded-full",
+      "text-[#E51D1D] cursor-pointer bg-[#FFF1F1] py-[2px] px-2 rounded-full text-[12px]",
   },
 ];
 export const activitiesData = [
