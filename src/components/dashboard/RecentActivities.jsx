@@ -5,7 +5,7 @@ import { activitiesData } from "./Helper";
 const RecentActivities = () => {
   return (
     <div className="xl:pt-6">
-      <div className="bg-white p-6 rounded-xl w-full">
+      <div className="bg-white lg:p-6 p-3 rounded-xl w-full">
         <p className="font-bold text-lg text-darkGray pb-4">
           Recent activities
         </p>
