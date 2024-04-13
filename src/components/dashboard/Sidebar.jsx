@@ -69,9 +69,8 @@ const Sidebar = ({ showNav, setShowNav }) => {
           <div className="bg-white px-4 pb-4 h-[calc(100vh-176px)] overflow-auto flex flex-col gap-1 my_sidebar">
             {sidebarLinks.map((obj, index) => {
               return (
-                <Link href={`${obj.path}`}>
+                <Link href={`${obj.path}`} key={index}>
                   <div
-                    key={index}
                     className={`w-full flex items-center transition-all group cursor-pointer justify-start gap-2 ${
                       obj.class
                     } ${

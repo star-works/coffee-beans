@@ -57,6 +57,7 @@ const Profile = () => {
               src="/assets/images/png/Avatars.png"
               width={64}
               height={64}
+              alt="avatar"
             />
             <p className="cursor-pointer text-[#1F2937] text-[12px] font-semibold hover:text-[#D3756B] mb-0">
               Remove
