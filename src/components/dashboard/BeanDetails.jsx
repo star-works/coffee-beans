@@ -21,15 +21,17 @@ const BeanDetails = ({ value }) => {
             <AccordionItem
               key={index}
               value={obj.item}
-              className="border-2 border-solid border-[#E5E7EB] sm:p-4 p-3 rounded-lg [&[data-state=open]]:bg-[#D3756B] [&[data-state=open]]:bg-opacity-5 [&[data-state=open]]:border-[#D3756B] [&[data-state=open]]:border-opacity-10"
+              className="border-2 border-solid border-[#E5E7EB] px-3  rounded-lg [&[data-state=open]]:bg-[#D3756B] [&[data-state=open]]:bg-opacity-5 [&[data-state=open]]:border-[#D3756B] [&[data-state=open]]:border-opacity-10"
             >
-              <AccordionTrigger className=" !flex !items-center">
-                <span>{obj.titleIcon}</span>
-                <p className="mb-0 ff_inter font-semibold sm:text-base text-sm leading-[20px] -tracking-[3%] text-[#111827] mt-2">
-                  {obj.title}
-                </p>
+              <AccordionTrigger className=" !flex !items-center py-2">
+                <div className="flex">
+                  <span className="pe-3">{obj.titleIcon}</span>
+                  <p className="mb-0 ff_inter font-semibold sm:text-base text-sm leading-[20px] -tracking-[3%] text-[#111827] mt-2">
+                    {obj.title}
+                  </p>
+                </div>
               </AccordionTrigger>
-              <AccordionContent className="mt-4">
+              <AccordionContent className="mt-4 ps-0">
                 {obj.details}
               </AccordionContent>
             </AccordionItem>

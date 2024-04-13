@@ -13,7 +13,7 @@ const CategoryDetails = (props) => {
   return (
     <div>
       <Select>
-        <SelectTrigger className="w-full !p-0 ff_inter font-normal text-xs leading-[15px] tracking-[-3%] text-black">
+        <SelectTrigger className="w-full  ff_inter font-normal text-xs leading-[15px] tracking-[-3%] text-black ">
           <SelectValue placeholder={props.placeholder} />
         </SelectTrigger>
         <SelectContent>

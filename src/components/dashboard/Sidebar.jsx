@@ -1,11 +1,12 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { sidebarLinks } from "./Helper";
 import { SettingsIcon, SupportIcon } from "./Icons";
 
 const Sidebar = ({ showNav, setShowNav }) => {
+  const router = usePathname();
   return (
     <div
       className={`w-[240px] custom_height transition-all duration-300 ease-in-out absolute md:relative  ${
@@ -68,20 +69,32 @@ const Sidebar = ({ showNav, setShowNav }) => {
           <div className="bg-white px-4 pb-4 h-[calc(100vh-176px)] overflow-auto flex flex-col gap-1 my_sidebar">
             {sidebarLinks.map((obj, index) => {
               return (
-                <div
-                  key={index}
-                  className={`w-full flex items-center transition-all group cursor-pointer justify-start gap-2 ${obj.class}`}
-                >
-                  {obj.icon && <span>{obj.icon}</span>}
-                  <div className="text-sm -tracking-[3%] text-[#4B5563] font-semibold group-hover:text-[#D3756B] transition-all duration-300 w-full ">
-                    {obj.tittle}
+                <Link href={`${obj.path}`}>
+                  <div
+                    key={index}
+                    className={`w-full flex items-center transition-all group cursor-pointer justify-start gap-2 ${
+                      obj.class
+                    } ${
+                      router === obj.path
+                        ? "bg-[#F9FAFB] px-2 py-2  rounded-[8px]"
+                        : ""
+                    }`}
+                  >
+                    {obj.icon && <span>{obj.icon}</span>}
+                    <div
+                      className={`text-sm -tracking-[3%] text-[#4B5563] font-semibold group-hover:text-[#D3756B] transition-all duration-300 w-full ${
+                        router === obj.path ? "text-[#D3756B]" : ""
+                      } `}
+                    >
+                      {obj.tittle}
+                    </div>
                   </div>
-                </div>
+                </Link>
               );
             })}
           </div>
           <div className="px-4 bg-white py-[14px]">
-            <div className="px-2 py-2 mb-1 rounded-[8px] hover:bg-[#F9FAFB] transition-all duration-300 flex items-center gap-2 group">
+            <div className="px-2 py-2 mb-1 rounded-[8px] hover:bg-[#F9FAFB] transition-all duration-300 flex items-center gap-2 group cursor-pointer">
               <span>
                 <SupportIcon />
               </span>
@@ -89,7 +102,7 @@ const Sidebar = ({ showNav, setShowNav }) => {
                 Support
               </p>
             </div>
-            <div className="px-2 py-2 rounded-[8px] hover:bg-[#F9FAFB] transition-all duration-300 flex items-center gap-2 group">
+            <div className="px-2 py-2 rounded-[8px] hover:bg-[#F9FAFB] transition-all duration-300 flex items-center gap-2 group cursor-pointer">
               <span>
                 <SettingsIcon />
               </span>

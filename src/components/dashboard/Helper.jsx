@@ -24,6 +24,7 @@ export const sidebarLinks = [
   {
     icon: <DashboardIcon />,
     tittle: "Dashboard",
+    path: "/dashboard",
     class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
   },
   {
@@ -41,6 +42,7 @@ export const sidebarLinks = [
   {
     icon: <MyBeansIcon />,
     tittle: "My Beans",
+    path: "/dashboard/my-bean",
     class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
   },
   {

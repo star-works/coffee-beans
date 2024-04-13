@@ -15,9 +15,7 @@ export const ProfileCharacteristic = () => {
                 <p className="ff_inter font-semibold text-xs leading-[15px] tracking-[-3%] text-[#1F2937] text-nowrap">
                   {obj.category}
                 </p>
-                <div className="border border-solid border-[#E5E7EB] px-2 py-[10px] rounded-[6px] mt-1">
-                  {obj.option}
-                </div>
+                <div className="mt-3">{obj.option}</div>
               </div>
             );
           })}

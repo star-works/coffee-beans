@@ -11,14 +11,11 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
-import { BtnRightArrow, ImgIcon, Plus } from "./Icons";
-import { useRouter } from "next/navigation";
-import TopBtns from "./TopBtns";
 import { useState } from "react";
-import CategoryDetails from "./CategoryDetails";
-import { ProfileCharacteristic } from "./AccordionDetail";
 import BeanDetails from "./BeanDetails";
+import { BtnRightArrow, ImgIcon, Plus } from "./Icons";
 import ProductPreview from "./ProductReview";
+import TopBtns from "./TopBtns";
 
 const AddBeanForm = () => {
   const [value, setvalue] = useState(1);
