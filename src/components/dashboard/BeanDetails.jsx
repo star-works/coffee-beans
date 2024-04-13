@@ -10,7 +10,7 @@ import { AddIcon, BackArrow, NextArrow } from "./Icons";
 import { beanDetails } from "./Helper";
 const BeanDetails = () => {
   return (
-    <div className="max-w-[1312px] bg-white rounded-xl sm:p-6 p-3 lg:mx-6 mx-3 lg:my-6 my-3">
+    <div className="max-w-[1312px] bg-white rounded-xl mt-6">
       <Accordion
         type="single"
         collapsible

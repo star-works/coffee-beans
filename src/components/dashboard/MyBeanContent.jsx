@@ -10,9 +10,11 @@ const MyBeanContent = () => {
 
   return (
     <div>
-      {addBean ? <ProductPreview /> : <MyBean setAddBean={setAddBean} />}
-      <AddBeanForm />
-      <BeanDetails />
+      {addBean ? (
+        <AddBeanForm  />
+      ) : (
+        <MyBean setAddBean={setAddBean} />
+      )}
     </div>
   );
 };
