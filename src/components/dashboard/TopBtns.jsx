@@ -7,7 +7,7 @@ const TopBtns = ({ value }) => {
     <div className="flex sm:flex-nowrap flex-wrap gap-4">
       <Button
         className={` text-[#A2A8B3] w-full text-[14px] font-semibold flex justify-start border-[2px] border-[#E9BAB5] bg-transparent text-[#D3756B] ${
-          value === 2 ? "bg-[#F6E3E1]" : ""
+          value === 2 || value === 3 ? "bg-[#F6E3E1]" : ""
         } `}
       >
         <span
@@ -21,20 +21,32 @@ const TopBtns = ({ value }) => {
         className={`bg-[#F9FAFB] text-[#A2A8B3] w-full text-[14px] font-semibold flex justify-start  border-[2px]  ${
           value === 2
             ? "border-[#E9BAB5] bg-transparent text-[#D3756B]"
-            : "border-transparent"
+            : `border-transparent ${
+                value === 3
+                  ? "bg-[#F6E3E1] border-[#E9BAB5] text-[#D3756B]"
+                  : ""
+              }`
         }`}
       >
         <span
           className={`flex me-3 h-[16px] w-[16px] rounded-full justify-center text-[12px] items-center text-white bg-[#D1D5DB] ${
-            value === 2 ? " bg-[#D3756B]" : ""
+            value === 2 || value === 3 ? " bg-[#D3756B]" : ""
           }`}
         >
           2
         </span>
         Details
       </Button>
-      <Button className="bg-[#F9FAFB] text-[#A2A8B3] w-full text-[14px] font-semibold flex justify-start">
-        <span className="flex me-3 h-[16px] w-[16px] rounded-full justify-center text-[12px] items-center text-white bg-[#D1D5DB]">
+      <Button
+        className={`bg-[#F9FAFB] text-[#A2A8B3] w-full text-[14px] font-semibold flex justify-start  border-[2px]  ${
+          value === 3 ? "border-[#E9BAB5] bg-transparent text-[#D3756B]" : ""
+        }`}
+      >
+        <span
+          className={`flex me-3 h-[16px] w-[16px] rounded-full justify-center text-[12px] items-center text-white bg-[#D1D5DB] ${
+            value === 3 ? "bg-[#D3756B]" : ""
+          }`}
+        >
           3
         </span>
         Review & publish

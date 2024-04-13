@@ -18,9 +18,11 @@ import { useState } from "react";
 import CategoryDetails from "./CategoryDetails";
 import { ProfileCharacteristic } from "./AccordionDetail";
 import BeanDetails from "./BeanDetails";
+import ProductPreview from "./ProductReview";
 
 const AddBeanForm = () => {
   const [value, setvalue] = useState(1);
+  console.log(value);
   return (
     <div className="bg-white rounded-[12px] p-6 ">
       <TopBtns value={value} />
@@ -137,8 +139,10 @@ const AddBeanForm = () => {
             </Button>
           </div>
         </div>
+      ) : value === 2 ? (
+        <BeanDetails value={setvalue} />
       ) : (
-        <BeanDetails />
+        <ProductPreview />
       )}
     </div>
   );

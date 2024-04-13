@@ -8,7 +8,7 @@ import {
 import { Button } from "../ui/button";
 import { AddIcon, BackArrow, NextArrow } from "./Icons";
 import { beanDetails } from "./Helper";
-const BeanDetails = () => {
+const BeanDetails = ({ value }) => {
   return (
     <div className="max-w-[1312px] bg-white rounded-xl mt-6">
       <Accordion
@@ -49,12 +49,14 @@ const BeanDetails = () => {
           </span>
           Back
         </Button>
-        <Button className="sm:px-4 px-3 sm:py-3 py-1 group bg-[#D3756B] flex items-center gap-2 rounded-lg border border-solid border-[#E5E7EB] shadow-[0px_1px_2px_0px_#11182712] font-semibold sm:text-base text-sm leading-[20px] -tracking-[3%] text-white ff_inter">
-          Review and publish{" "}
-          <span className="group-hover:translate-x-2 transition-all duration-300">
-            <NextArrow />
-          </span>
-        </Button>
+        <div onClick={() => value(3)}>
+          <Button className="sm:px-4 px-3 sm:py-3 py-1 group bg-[#D3756B] flex items-center gap-2 rounded-lg border border-solid border-[#E5E7EB] shadow-[0px_1px_2px_0px_#11182712] font-semibold sm:text-base text-sm leading-[20px] -tracking-[3%] text-white ff_inter">
+            Review and publish
+            <span className="group-hover:translate-x-2 transition-all duration-300">
+              <NextArrow />
+            </span>
+          </Button>
+        </div>
       </div>
     </div>
   );

@@ -1,21 +1,13 @@
 "use client";
-import React, { useState } from "react";
-import MyBean from "./MyBean";
-import ProductPreview from "./ProductReview";
+import { useState } from "react";
 import AddBeanForm from "./AddBeanForm";
-import BeanDetails from "./BeanDetails";
+import MyBean from "./MyBean";
 
 const MyBeanContent = () => {
   const [addBean, setAddBean] = useState(false);
 
   return (
-    <div>
-      {addBean ? (
-        <AddBeanForm  />
-      ) : (
-        <MyBean setAddBean={setAddBean} />
-      )}
-    </div>
+    <div>{addBean ? <AddBeanForm /> : <MyBean setAddBean={setAddBean} />}</div>
   );
 };
 
