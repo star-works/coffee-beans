@@ -443,3 +443,160 @@ export const GridToggle = () => {
     </svg>
   );
 };
+export const EarningsArrow = () => {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2 11.3333L6 7.33333L8.66667 10L14 4.66666M14 4.66666H9.33333M14 4.66666V9.33333"
+        stroke="#239636"
+        strokeWidth="1.33"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const BackArrow = () => {
+  return (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M4.1665 10H15.8332M4.1665 10L9.1665 15M4.1665 10L9.1665 5"
+        stroke="#1F2937"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+export const NextArrow = () => {
+  return (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M4.1665 10H15.8332M15.8332 10L10.8332 15M15.8332 10L10.8332 5"
+        stroke="white"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const GreenTick = () => {
+  return (
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 40 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="40" height="40" rx="18" fill="#F1FCF2" />
+      <path
+        d="M13.0002 20L18.0002 25L28.0002 15"
+        stroke="#31B648"
+        strokeWidth="1.995"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+export const ErrorIcon = () => {
+  return (
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 40 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="40" height="40" rx="18" fill="#FFF1F1" />
+      <path
+        d="M20 16V20M20 24H20.01M20 11C27.2 11 29 12.8 29 20C29 27.2 27.2 29 20 29C12.8 29 11 27.2 11 20C11 12.8 12.8 11 20 11Z"
+        stroke="#F83B3B"
+        strokeWidth="1.995"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+export const AddIcon = () => {
+  return (
+    <svg
+      width="28"
+      height="28"
+      viewBox="0 0 28 28"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="28" height="28" rx="14" fill="#D3756B" fillOpacity="0.05" />
+      <path
+        d="M14.0001 8.16675V19.8334M8.16675 14.0001H19.8334"
+        stroke="#D3756B"
+        strokeWidth="1.995"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+export const DeleteIcon = () => {
+  return (
+    <svg
+      width="18"
+      height="19"
+      viewBox="0 0 18 19"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M3 5.75H15M7.5 8.75V13.25M10.5 8.75V13.25M3.75 5.75L4.5 14.75C4.5 15.1478 4.65804 15.5294 4.93934 15.8107C5.22064 16.092 5.60218 16.25 6 16.25H12C12.3978 16.25 12.7794 16.092 13.0607 15.8107C13.342 15.5294 13.5 15.1478 13.5 14.75L14.25 5.75M6.75 5.75V3.5C6.75 3.30109 6.82902 3.11032 6.96967 2.96967C7.11032 2.82902 7.30109 2.75 7.5 2.75H10.5C10.6989 2.75 10.8897 2.82902 11.0303 2.96967C11.171 3.11032 11.25 3.30109 11.25 3.5V5.75"
+        stroke="#F83B3B"
+        strokeWidth="1.33"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+export const RedArrows = () => {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2 4.66666L6 8.66666L8.66667 6L14 11.3333M14 11.3333V6.66666M14 11.3333H9.33333"
+        stroke="#F83B3B"
+        stroke-width="1.33"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};

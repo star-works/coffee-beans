@@ -1,13 +1,19 @@
+import { ProfileCharacteristic } from "./AccordionDetail";
+import CategoryDetails from "./CategoryDetails";
 import CommonAccordion from "./CommonAccordion";
 import {
   AnalyticsIcon,
   Coffee,
   DashboardIcon,
+  EarningsArrow,
+  ErrorIcon,
+  GreenTick,
   Heart,
   Message,
   MyBeansIcon,
   NotificationsIcon,
   OrdersIcon,
+  RedArrows,
   Report,
   ReviewsIcon,
   Store,
@@ -158,5 +164,177 @@ export const activitiesData = [
     action: "A new analytic report is ready for you!",
     time: "2 min. ago",
     iconBg: " border border-[#F3F4F6]",
+  },
+];
+export const CardsData = [
+  {
+    title: "Earnings",
+    percentage: "3%",
+    amount: "$7,989",
+    icon: <EarningsArrow />,
+    className: "border-[#C0F2C8] text-[#239636] bg-[#F1FCF2]",
+  },
+  {
+    title: "Products sold",
+    percentage: "8%",
+    amount: "187",
+    icon: <EarningsArrow />,
+    className: "border-[#C0F2C8] text-[#239636] bg-[#F1FCF2]",
+  },
+  {
+    title: "Product views",
+    percentage: "1%",
+    amount: "579",
+    icon: <RedArrows />,
+    className: "border-[#FFC7C7] text-[#F83B3B] bg-[#FFF1F1]",
+  },
+  {
+    title: "Favourites",
+    percentage: "32%",
+    amount: "1,134",
+    icon: <EarningsArrow />,
+    className: "border-[#C0F2C8] text-[#239636] bg-[#F1FCF2]",
+  },
+];
+
+export const beanDetails = [
+  {
+    titleIcon: <GreenTick />,
+    title: "Taste notes ",
+    item: "item-1",
+    details: <ProfileCharacteristic />,
+  },
+  {
+    titleIcon: <GreenTick />,
+    title: "Profile characteristic ",
+    item: "item-2",
+    details: <ProfileCharacteristic />,
+  },
+  {
+    titleIcon: <GreenTick />,
+    title: "Bean sort",
+    item: "item-3",
+    details: <ProfileCharacteristic />,
+  },
+  {
+    titleIcon: <GreenTick />,
+    title: "Bean origin",
+    item: "item-4",
+    details: <ProfileCharacteristic />,
+  },
+  {
+    titleIcon: <GreenTick />,
+    title: "Process",
+    item: "item-5",
+    details: <ProfileCharacteristic />,
+  },
+  {
+    titleIcon: <ErrorIcon />,
+    title: "Certifications",
+    item: "item-6",
+    details: <ProfileCharacteristic />,
+  },
+];
+
+export const profileCharacteristic = [
+  {
+    category: "Acidity",
+    option: (
+      <CategoryDetails
+        placeholder={"1-10"}
+        item1={"1-10"}
+        item2={"11-20"}
+        item3={"21-30"}
+        item4={"31-40"}
+      />
+    ),
+  },
+  {
+    category: "Bitterness / Aroma",
+    option: (
+      <CategoryDetails
+        placeholder={"1-10"}
+        item1={"1-10"}
+        item2={"11-20"}
+        item3={"21-30"}
+        item4={"31-40"}
+      />
+    ),
+  },
+  {
+    category: "Body",
+    option: (
+      <CategoryDetails
+        placeholder={"1-10"}
+        item1={"1-10"}
+        item2={"11-20"}
+        item3={"21-30"}
+        item4={"31-40"}
+      />
+    ),
+  },
+  {
+    category: "Aftertaste",
+    option: (
+      <CategoryDetails
+        placeholder={"1-10"}
+        item1={"1-10"}
+        item2={"11-20"}
+        item3={"21-30"}
+        item4={"31-40"}
+      />
+    ),
+  },
+  {
+    category: "Sweetness",
+    option: (
+      <CategoryDetails
+        placeholder={"1-10"}
+        item1={"1-10"}
+        item2={"11-20"}
+        item3={"21-30"}
+        item4={"31-40"}
+      />
+    ),
+  },
+  {
+    category: "Balance",
+    option: (
+      <CategoryDetails
+        placeholder={"1-10"}
+        item1={"1-10"}
+        item2={"11-20"}
+        item3={"21-30"}
+        item4={"31-40"}
+      />
+    ),
+  },
+];
+
+export const qualityData = [
+  {
+    title: "Acidity",
+    value: 10,
+  },
+  {
+    title: "Body",
+    value: 45,
+  },
+  {
+    title: "Sweetness",
+    value: 25,
+  },
+  {
+    title: "Bitterness/",
+    span: "Aroma",
+    value: 5,
+  },
+  {
+    title: "Aftertaste",
+    value: 15,
+  },
+  {
+    title: "Balance",
+    value: 80,
   },
 ];
