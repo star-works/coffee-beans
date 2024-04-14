@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const MyBeanCard = () => {
   return (
-    <Card className="xs:max-w-[20%] xl:min-w-[300px] lg:min-w-[240px] min-w-[233px] bg-[#F9FAFB] border-0 px-4 pt-0 pb-2">
+    <Card className="xs:max-w-[20%] xl:min-w-[300px] lg:min-w-[240px] min-w-[230px] bg-[#F9FAFB] border-0 px-4 pt-0 pb-2">
       <CardContent className="pt-4">
         <Image
           className="rounded-[10px] mb-4"
