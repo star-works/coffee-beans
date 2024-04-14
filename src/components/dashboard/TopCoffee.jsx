@@ -5,15 +5,15 @@ import { coffeeData } from "./Helper";
 import CustomPopup from "./CustomPopup";
 const TopCoffees = () => {
   return (
-    <div className="lg:px-6 px-3 lg:pb-6 pb-3 !w-full xl:min-w-[700px]">
+    <div className="lg:px-6 px-3 lg:pb-6 pb-3 !w-full xl:min-w-[600px]">
       <div className="border border-[#F3F4F6] bg-white rounded-t-xl w-full">
         <div className="px-6 py-[18px] flex justify-between items-center">
           <p className="font-semibold text-lg text-darkGray">Top coffees</p>
           <CustomPopup />
         </div>
       </div>
-      <div className="border border-[#F3F4F6] rounded-b-xl w-full overflow-x-scroll">
-        <table className="min-w-[780px] overflow-x-scrol w-full">
+      <div className="border border-[#F3F4F6] rounded-b-xl w-full overflow-x-auto max-w-full">
+        <table className="min-w-[780px]  w-full">
           <thead className="bg-gray-50">
             <tr>
               <th
@@ -87,7 +87,7 @@ const TopCoffees = () => {
             ))}
           </tbody>
         </table>
-        <div className="flex justify-center items-center gap-1 border-t border-t-[#F3F4F6] bg-white rounded-b-xl w-full min-w-[780px]">
+        <div className="flex justify-center items-center gap-1 border-t border-t-[#F3F4F6] bg-white rounded-b-xl w-full ">
           <p className="text-center  py-4 cursor-pointer font-semibold text-xs tracking-[-3%]">
             See all coffees
           </p>

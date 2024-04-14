@@ -120,13 +120,7 @@ const SalesChart = () => {
         <h2 className="font-semibold text-3xl text-darkGray py-4">
           $12,543,97
         </h2>
-        {/* <Image
-          className="w-full"
-          height="235"
-          width="875"
-          src="/assets/images/dasboard/svg/sales-chart.svg"
-          alt="chart"
-        /> */}
+
         <div className="h-[300px]">
           <MyResponsiveLine />
         </div>

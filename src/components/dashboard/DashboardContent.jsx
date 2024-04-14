@@ -11,7 +11,7 @@ const DashBoardContent = () => {
       <div className="flex flex-wrap bg-[#F8F9FA] overflow-hidden">
         <div className="xl:w-8/12 w-full">
           <SalesChart />
-          <div className="overflow-x-auto">
+          <div className="overflow-hidden Styled_scrollbar">
             <TopCoffees />
           </div>
         </div>

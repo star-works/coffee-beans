@@ -5,11 +5,11 @@ import "../dashboard.css";
 import { useEffect, useState } from "react";
 
 export default function RootLayout({ children }) {
-  const [showNav, setShowNav] = useState(false);
+  const [showNav, setShowNav] = useState(true);
   useEffect(() => {
     if (window !== undefined) {
-      if (window.innerWidth > 768) {
-        setShowNav(true);
+      if (window.innerWidth < 768) {
+        setShowNav(false);
       }
     }
   }, [showNav]);

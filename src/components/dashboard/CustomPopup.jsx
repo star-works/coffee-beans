@@ -19,7 +19,7 @@ const CustomPopup = () => {
           />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="max-w-80">
+      <PopoverContent className="max-w-[200px]">
         <div>
           <p className="py-2 border-b">Hangadhi Village</p>
           <p className="border-b py-2">Jiwaka - Papua New Guniea</p>
