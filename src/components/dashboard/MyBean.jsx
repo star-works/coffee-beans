@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import MyBeanCard from "./MyBeanCard";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -7,6 +7,7 @@ import { Grid, GridToggle, Plus, Search } from "./Icons";
 
 const MyBean = ({ setAddBean }) => {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const [gridToggle, setToggle] = useState(false);
   return (
     <div>
       <div className="ps-4">
@@ -36,11 +37,17 @@ const MyBean = ({ setAddBean }) => {
               />
             </div>
             <div className="flex border rounded-[6px] border-[#E5E7EB] bg-white ms-4">
-              <span className="border-r inline-block py-3 px-3 border-[#E5E7EB]">
-                <Grid />
+              <span
+                className="border-r inline-block py-3 px-3 border-[#E5E7EB] cursor-pointer"
+                onClick={() => setToggle(!gridToggle)}
+              >
+                <Grid gridToggle={gridToggle} />
               </span>
-              <span className="inline-block px-3 py-3">
-                <GridToggle />
+              <span
+                className="inline-block px-3 py-3 cursor-pointer"
+                onClick={() => setToggle(!gridToggle)}
+              >
+                <GridToggle gridToggle={gridToggle} />
               </span>
             </div>
           </div>
