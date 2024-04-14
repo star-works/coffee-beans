@@ -34,13 +34,13 @@ export const ProfileCharacteristic = () => {
         </div>
       </div>
       <div className="flex justify-between items-center xl:mt-[78px] mt-6">
-        <Button className="px-4 sm:px-[14px] sm:py-[10px] py-1 group bg-transparent flex items-center gap-2 rounded-lg border border-solid border-[#E5E7EB] shadow-[0px_1px_2px_0px_#11182712] font-semibold text-sm leading-[20px] -tracking-[3%] text-[#F83B3B] ff_inter">
-          <span className="group-hover:-translate-x-2 transition-all duration-300">
+        <Button className="px-4 sm:px-[14px] sm:py-[10px] py-1 group bg-transparent flex items-center gap-2 rounded-lg border border-solid border-[#E5E7EB] shadow-[0px_1px_2px_0px_#11182712] font-semibold text-sm leading-[20px] -tracking-[3%] text-[#F83B3B] ff_inter hover:border-[#F83B3B]">
+          <span className="group-hover:-translate-x-[-4px] transition-all duration-300">
             <DeleteIcon />
           </span>
           Remove
         </Button>
-        <Button className="px-4 sm:px-[44px] sm:py-[10px] py-1 group bg-transparent flex items-center gap-2 rounded-lg border border-solid border-[#E5E7EB] shadow-[0px_1px_2px_0px_#11182712] font-semibold text-sm leading-[20px] -tracking-[3%] text-[#F83B3B] ff_inter">
+        <Button className="px-4 sm:px-[44px] sm:py-[10px] py-1 group bg-transparent flex items-center gap-2 rounded-lg border border-solid border-[#E5E7EB] shadow-[0px_1px_2px_0px_#11182712] font-semibold text-sm leading-[20px] -tracking-[3%] text-[#F83B3B] ff_inter  hover:border-[#F83B3B]">
           Save
         </Button>
       </div>
