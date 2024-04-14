@@ -1,4 +1,4 @@
-import DashboardTabs from "@/components/dashboard/DashBoardTabs";
+import DashboardTabs from "@/components/dashboard/settings/DashBoardTabs";
 import DashboardLayout from "@/components/dashboard/hoc/DashboardLayout";
 export const metadata = {
   title: "Dashboard - Settings",

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { activitiesData } from "./Helper";
+import { activitiesData } from "./common/Helper";
 
 const RecentActivities = () => {
   return (

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Arrow } from "./Icons";
+import { Arrow } from "./common/Icons";
 import { ResponsiveBar } from "@nivo/bar";
 const data = [
   {

@@ -13,7 +13,7 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import BeanDetails from "./BeanDetails";
-import { BtnRightArrow, ImgIcon, Plus } from "./Icons";
+import { BtnRightArrow, ImgIcon, Plus } from "../common/Icons";
 import ProductPreview from "./ProductReview";
 import TopBtns from "./TopBtns";
 

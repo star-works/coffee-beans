@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import { Arrow } from "./Icons";
-import { coffeeData } from "./Helper";
-import CustomPopup from "./CustomPopup";
+import { Arrow } from "./common/Icons";
+import { coffeeData } from "./common/Helper";
+import CustomPopup from "./my-bean/CustomPopup";
 const TopCoffees = () => {
   return (
     <div className="lg:px-6 px-3 lg:pb-6 pb-3 !w-full xl:min-w-[600px]">

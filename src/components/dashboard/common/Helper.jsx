@@ -1,6 +1,6 @@
-import { ProfileCharacteristic } from "./AccordionDetail";
-import CategoryDetails from "./CategoryDetails";
-import CommonAccordion from "./CommonAccordion";
+import { ProfileCharacteristic } from "../my-bean/AccordionDetail";
+import CategoryDetails from "../my-bean/CategoryDetails";
+import CommonAccordion from "../my-bean/CommonAccordion";
 import {
   AnalyticsIcon,
   Coffee,

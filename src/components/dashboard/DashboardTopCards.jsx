@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { CardsData } from "./Helper";
-import { DataCardBadge } from "./CommonBadge";
+import { CardsData } from "./common/Helper";
+import { DataCardBadge } from "./common/CommonBadge";
 import CountUp from "react-countup";
 
 const DataCards = () => {

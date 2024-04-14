@@ -3,7 +3,7 @@ import MyBeanCard from "./MyBeanCard";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
-import { Grid, GridToggle, Plus, Search } from "./Icons";
+import { Grid, GridToggle, Plus, Search } from "../common/Icons";
 
 const MyBean = ({ setAddBean }) => {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];

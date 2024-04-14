@@ -1,6 +1,6 @@
 import React from "react";
-import { profileCharacteristic, qualityData } from "./Helper";
-import { DeleteIcon } from "./Icons";
+import { profileCharacteristic, qualityData } from "../common/Helper";
+import { DeleteIcon } from "../common/Icons";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 

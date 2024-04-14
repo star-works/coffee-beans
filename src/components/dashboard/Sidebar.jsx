@@ -2,8 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { sidebarLinks } from "./Helper";
-import { SettingsIcon, SupportIcon } from "./Icons";
+import { sidebarLinks } from "./common/Helper";
+import { SettingsIcon, SupportIcon } from "./common/Icons";
 
 const Sidebar = ({ showNav, setShowNav }) => {
   const router = usePathname();

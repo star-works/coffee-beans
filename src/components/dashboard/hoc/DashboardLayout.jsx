@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Sidebar from "../Sidebar";
-import Header from "../Header";
+import Header from "../common/Header";
 import "../../../app/dashboard.css";
 
 const DashboardLayout = ({ children }) => {

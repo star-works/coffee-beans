@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Button } from "../ui/button";
-import { BackArrow, NextArrow } from "./Icons";
+import { Button } from "../../ui/button";
+import { BackArrow, NextArrow } from "../common/Icons";
 
 const ProductPreview = ({ value }) => {
   return (

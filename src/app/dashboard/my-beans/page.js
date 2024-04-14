@@ -1,4 +1,4 @@
-import MyBeanContent from "@/components/dashboard/MyBeanContent";
+import MyBeanContent from "@/components/dashboard/my-bean/MyBeanContent";
 import DashboardLayout from "@/components/dashboard/hoc/DashboardLayout";
 export const metadata = {
   title: "Dashboard - My beans",

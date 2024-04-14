@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import CustomSelect from "./CustomSelect";
+import CustomSelect from "./my-bean/CustomSelect";
 import { ResponsiveLine } from "@nivo/line";
 const gradientDefs = [
   {

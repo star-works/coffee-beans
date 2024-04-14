@@ -5,9 +5,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Button } from "../ui/button";
-import { AddIcon, BackArrow, NextArrow } from "./Icons";
-import { beanDetails } from "./Helper";
+import { Button } from "../../ui/button";
+import { AddIcon, BackArrow, NextArrow } from "../common/Icons";
+import { beanDetails } from "../common/Helper";
 const BeanDetails = ({ value }) => {
   return (
     <div className="bg-white rounded-xl mt-6">
