@@ -1,7 +1,7 @@
 import MyBeanContent from "@/components/dashboard/MyBeanContent";
 import DashboardLayout from "@/components/dashboard/hoc/DashboardLayout";
 export const metadata = {
-  title: "Coffee Bean",
+  title: "Dashboard - My beans",
   description: "Unveiling the world of coffee varieties",
   openGraph: {
     images: "/Logo.png",
