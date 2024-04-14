@@ -46,6 +46,24 @@ const DashboardTabs = () => {
         <TabsContent value="Profile">
           <Profile />
         </TabsContent>
+        <TabsContent value="Security">
+          SECURITY Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Beatae nobis eos, sunt, praesentium ratione ea numquam asperiores,
+          repudiandae alias libero voluptatum quam. Doloremque facilis
+          recusandae reiciendis earum repellendus voluptatibus suscipit!
+        </TabsContent>
+        <TabsContent value="Billing">
+          BILLING Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Beatae nobis eos, sunt, praesentium ratione ea numquam asperiores,
+          repudiandae alias libero voluptatum quam. Doloremque facilis
+          recusandae reiciendis earum repellendus voluptatibus suscipit!
+        </TabsContent>
+        <TabsContent value="Notifications">
+          NOTIFICATION Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Beatae nobis eos, sunt, praesentium ratione ea numquam asperiores,
+          repudiandae alias libero voluptatum quam. Doloremque facilis
+          recusandae reiciendis earum repellendus voluptatibus suscipit!
+        </TabsContent>
       </Tabs>
     </div>
   );

@@ -38,11 +38,12 @@ export const sidebarLinks = [
         option4={"Option 4"}
       />
     ),
+    path: "#",
   },
   {
     icon: <MyBeansIcon />,
     tittle: "My Beans",
-    path: "/dashboard/my-bean",
+    path: "/dashboard/my-beans",
     class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
   },
   {
@@ -56,16 +57,19 @@ export const sidebarLinks = [
         option4={"Option 4"}
       />
     ),
+    path: "#",
   },
   {
     icon: <ReviewsIcon />,
     tittle: "Reviews",
     class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
+    path: "#",
   },
   {
     icon: <NotificationsIcon />,
     tittle: "Notifications",
     class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
+    path: "#",
   },
 ];
 export const coffeeData = [
