@@ -87,8 +87,8 @@ const TopCoffees = () => {
             ))}
           </tbody>
         </table>
-        <div className="flex justify-center items-center gap-1 border-t border-t-[#F3F4F6] bg-white rounded-b-xl w-full ">
-          <p className="text-center  py-4 cursor-pointer font-semibold text-xs tracking-[-3%]">
+        <div className="flex justify-center items-center gap-1 border-t border-t-[#F3F4F6] bg-white rounded-b-xl w-full cursor-pointer group">
+          <p className="text-center  py-4  font-semibold text-xs tracking-[-3%]">
             See all coffees
           </p>
           <Arrow />

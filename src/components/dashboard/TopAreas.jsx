@@ -13,8 +13,8 @@ const TopAreas = () => {
           src="/assets/images/dasboard/svg/areas.svg"
           alt="chart"
         />
-        <div className="flex justify-center items-center gap-1 pt-3">
-          <p className="text-center cursor-pointer font-semibold text-xs tracking-[-3%]">
+        <div className="flex justify-center items-center gap-1 pt-3 cursor-pointer group">
+          <p className="text-center  font-semibold text-xs tracking-[-3%]">
             See all analytics
           </p>
           <Arrow />

@@ -3,6 +3,7 @@ import { usePathname, useRouter } from "next/navigation";
 export const Arrow = () => {
   return (
     <svg
+      className="group-hover:translate-x-[5px] transition-all duration-300 ease-in-out"
       width="16"
       height="16"
       viewBox="0 0 16 16"
