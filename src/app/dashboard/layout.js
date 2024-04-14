@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
         setShowNav(true);
       }
     }
-  }, []);
+  }, [showNav]);
 
   return (
     <html lang="en">
