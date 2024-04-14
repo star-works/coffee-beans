@@ -128,7 +128,7 @@ const AddBeanForm = () => {
             </div>
           </div>
           <div className="text-end mt-6" onClick={() => setvalue(2)}>
-            <Button className="bg-[#D3756B] px-4 group font-normal hover:bg-transparent hover:text-[#D3756B] border border-[#D3756B]">
+            <Button className="bg-[#D3756B] px-4 group font-semibold text-[14px] sm:text-[16px] hover:bg-transparent hover:text-[#D3756B] border border-[#D3756B]">
               Continue to details
               <span className="ps-3">
                 <BtnRightArrow />

@@ -38,8 +38,10 @@ const TopBtns = ({ value }) => {
         Details
       </Button>
       <Button
-        className={`bg-[#F9FAFB] text-[#A2A8B3] w-full text-[14px] font-semibold flex justify-start  border-[2px]  ${
-          value === 3 ? "border-[#E9BAB5] bg-transparent text-[#D3756B]" : ""
+        className={`bg-[#F9FAFB] text-[#A2A8B3] w-full text-[14px] font-semibold flex justify-start   ${
+          value === 3
+            ? "border-[#E9BAB5] bg-transparent text-[#D3756B]  border-[2px]"
+            : ""
         }`}
       >
         <span
