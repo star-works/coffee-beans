@@ -520,6 +520,7 @@ export const NextArrow = () => {
 export const GreenTick = () => {
   return (
     <svg
+      className="w-[30px] md:w-[35px] lg:w-[40px]"
       width="40"
       height="40"
       viewBox="0 0 40 40"
@@ -540,6 +541,7 @@ export const GreenTick = () => {
 export const ErrorIcon = () => {
   return (
     <svg
+      className="w-[30px] md:w-[35px] lg:w-[40px]"
       width="40"
       height="40"
       viewBox="0 0 40 40"

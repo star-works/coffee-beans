@@ -21,7 +21,7 @@ const AddBeanForm = () => {
   const [value, setvalue] = useState(1);
   console.log(value);
   return (
-    <div className="bg-white rounded-[12px] p-6 ">
+    <div className="bg-white rounded-[12px] sm:p-6 p-4 ">
       <TopBtns value={value} />
       {value === 1 ? (
         <div>

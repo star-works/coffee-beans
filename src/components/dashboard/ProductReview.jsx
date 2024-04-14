@@ -4,7 +4,7 @@ import { BackArrow, NextArrow } from "./Icons";
 
 const ProductPreview = ({ value }) => {
   return (
-    <div className="max-w-[1312px] bg-white rounded-xl p-6 lg:mx-6 mx-3 lg:my-6 my-3">
+    <div className="max-w-[1312px] bg-white rounded-xl sm:p-6 p-2 lg:mx-6 md:mx-3 lg:my-6 mt-3">
       <div className="flex md:flex-row flex-col-reverse lg:gap-24 gap-10">
         <div className="flex flex-col xs:gap-6 gap-3">
           <div className="flex xs:flex-row flex-col sm:gap-6 xs:gap-3 gap-1 lg:flex-row md:flex-col lg:gap-6 md:gap-1">

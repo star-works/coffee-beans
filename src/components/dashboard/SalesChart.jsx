@@ -3,6 +3,16 @@ import React from "react";
 import Image from "next/image";
 import CustomSelect from "./CustomSelect";
 import { ResponsiveLine } from "@nivo/line";
+const gradientDefs = [
+  {
+    id: "gradientA",
+    type: "linearGradient",
+    colors: [
+      { offset: 0, color: "#D3756B" },
+      { offset: 100, color: "#D3756B" },
+    ],
+  },
+];
 const data = [
   {
     id: "japan",
@@ -64,8 +74,9 @@ const MyResponsiveLine = () => (
     data={data}
     margin={{ top: 10, right: 15, bottom: 50, left: 50 }}
     xScale={{ type: "point" }}
-    fill="red"
     colors="#D3756B"
+    gradientDefs={gradientDefs}
+    fill={[{ match: "red", id: "gradientA" }]}
     yScale={{
       type: "linear",
       min: "auto",
@@ -112,7 +123,7 @@ const MyResponsiveLine = () => (
 const SalesChart = () => {
   return (
     <div className="lg:p-6 p-3">
-      <div className="border border-[#F3F4F6] bg-white p-6 rounded-xl">
+      <div className="border border-[#F3F4F6] bg-white sm:p-6 p-4 rounded-xl">
         <div className="flex justify-between items-center">
           <p className="font-semibold text-lg text-darkGray">Your sales</p>
 

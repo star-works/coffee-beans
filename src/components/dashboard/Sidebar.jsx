@@ -9,7 +9,7 @@ const Sidebar = ({ showNav, setShowNav }) => {
   const router = usePathname();
   return (
     <div
-      className={`w-[240px] custom_height transition-all duration-300 ease-in-out absolute md:relative  ${
+      className={`w-[240px] h-screen transition-all duration-300 ease-in-out absolute md:relative z-10  ${
         showNav ? "ms-[0px]" : "-ms-[240px]"
       }`}
     >
@@ -109,7 +109,7 @@ const Sidebar = ({ showNav, setShowNav }) => {
                     : ""
                 }`}
               >
-                <span >
+                <span>
                   <SettingsIcon />
                 </span>
                 <p

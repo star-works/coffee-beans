@@ -31,7 +31,7 @@ const DataCards = () => {
                 />
               </div>
               {isCounted ? (
-                <h2 className="ff_inter text-gray-900 font-semibold text-2xl sm:text-3xl xl:text-[40px] pt-2">
+                <h2 className="ff_inter text-gray-900 font-semibold text-2xl sm:text-3xl xl:text-[40px] sm:pt-2">
                   {index === 0 && "$"}
                   <CountUp
                     start={0}
@@ -41,7 +41,7 @@ const DataCards = () => {
                   />
                 </h2>
               ) : (
-                <h2 className="ff_inter text-gray-900 font-semibold text-2xl sm:text-3xl xl:text-[40px] pt-2">
+                <h2 className="ff_inter text-gray-900 font-semibold text-2xl sm:text-3xl xl:text-[40px] sm:pt-2">
                   {item.amount}
                 </h2>
               )}

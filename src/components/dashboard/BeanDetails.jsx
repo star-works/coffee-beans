@@ -23,7 +23,7 @@ const BeanDetails = ({ value }) => {
               value={obj.item}
               className="border-2 border-solid border-[#E5E7EB] px-3  rounded-lg [&[data-state=open]]:bg-[#D3756B] [&[data-state=open]]:bg-opacity-5 [&[data-state=open]]:border-[#D3756B] [&[data-state=open]]:border-opacity-10"
             >
-              <AccordionTrigger className=" !flex !items-center py-2">
+              <AccordionTrigger className=" !flex !items-center sm:py-2 py-1">
                 <div className="flex">
                   <span className="pe-3">{obj.titleIcon}</span>
                   <p className="mb-0 ff_inter font-semibold sm:text-base text-sm leading-[20px] -tracking-[3%] text-[#111827] mt-2">

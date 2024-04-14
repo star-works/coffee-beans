@@ -1,6 +1,5 @@
 import DashboardTabs from "@/components/dashboard/DashBoardTabs";
-import Profile from "@/components/dashboard/Profile";
-import Services from "@/components/homepage/Services";
+import DashboardLayout from "@/components/dashboard/hoc/DashboardLayout";
 export const metadata = {
   title: "Coffee Bean",
   description: "Unveiling the world of coffee varieties",
@@ -8,12 +7,14 @@ export const metadata = {
     images: "/Logo.png",
   },
 };
-export default function Home() {
+export default function Settings() {
   return (
     <>
-      <div className="rounded-[12px]">
-        <DashboardTabs />
-      </div>
+      <DashboardLayout>
+        <div className="rounded-[12px]">
+          <DashboardTabs />
+        </div>
+      </DashboardLayout>
     </>
   );
 }
