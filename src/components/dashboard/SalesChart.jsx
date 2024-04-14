@@ -1,6 +1,113 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import CustomSelect from "./CustomSelect";
+import { ResponsiveLine } from "@nivo/line";
+const data = [
+  {
+    id: "japan",
+    color: "#D3756B",
+    data: [
+      {
+        x: "Jan",
+        y: 41,
+      },
+      {
+        x: "Feb",
+        y: 149,
+      },
+      {
+        x: "Mar",
+        y: 123,
+      },
+      {
+        x: "Apr",
+        y: 20,
+      },
+      {
+        x: "May",
+        y: 171,
+      },
+      {
+        x: "Jun",
+        y: 132,
+      },
+      {
+        x: "Jul",
+        y: 258,
+      },
+      {
+        x: "Aug",
+        y: 70,
+      },
+      {
+        x: "Sep",
+        y: 61,
+      },
+      {
+        x: "Oct",
+        y: 55,
+      },
+      {
+        x: "Nov",
+        y: 173,
+      },
+      {
+        x: "Dec",
+        y: 147,
+      },
+    ],
+  },
+];
+const MyResponsiveLine = () => (
+  <ResponsiveLine
+    data={data}
+    margin={{ top: 10, right: 15, bottom: 50, left: 50 }}
+    xScale={{ type: "point" }}
+    fill="red"
+    yScale={{
+      type: "linear",
+      min: "auto",
+      max: "auto",
+      stacked: true,
+      reverse: false,
+    }}
+    yFormat=" >-.2f"
+    curve="basis"
+    axisTop={null}
+    axisRight={null}
+    axisBottom={{
+      tickSize: 5,
+      tickPadding: 5,
+      tickRotation: 0,
+      legend: "transportation",
+      legendOffset: 36,
+      legendPosition: "middle",
+      truncateTickAt: 0,
+    }}
+    axisLeft={{
+      tickSize: 5,
+      tickPadding: 5,
+      tickRotation: 0,
+      legend: "count",
+      legendOffset: -40,
+      legendPosition: "middle",
+      truncateTickAt: 0,
+    }}
+    enableGridX={false}
+    lineWidth={3}
+    pointSize={2}
+    pointColor={{ theme: "background" }}
+    pointBorderColor={{ from: "serieColor" }}
+    pointLabelYOffset={-19}
+    areaOpacity={0.15}
+    isInteractive={false}
+    enableTouchCrosshair={true}
+    crosshairType="top-right"
+    useMesh={true}
+    legends={[]}
+  />
+);
 const SalesChart = () => {
   return (
     <div className="lg:p-6 p-3">
@@ -13,13 +120,16 @@ const SalesChart = () => {
         <h2 className="font-semibold text-3xl text-darkGray py-4">
           $12,543,97
         </h2>
-        <Image
+        {/* <Image
           className="w-full"
           height="235"
           width="875"
           src="/assets/images/dasboard/svg/sales-chart.svg"
           alt="chart"
-        />
+        /> */}
+        <div className="h-[300px]">
+          <MyResponsiveLine />
+        </div>
       </div>
     </div>
   );
