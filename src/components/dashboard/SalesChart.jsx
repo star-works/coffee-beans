@@ -65,6 +65,7 @@ const MyResponsiveLine = () => (
     margin={{ top: 10, right: 15, bottom: 50, left: 50 }}
     xScale={{ type: "point" }}
     fill="red"
+    colors="#D3756B"
     yScale={{
       type: "linear",
       min: "auto",
