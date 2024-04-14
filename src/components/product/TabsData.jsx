@@ -18,14 +18,14 @@ const TabsData = () => {
           ></div>
           <TabsTrigger
             onClick={() => setActive(1)}
-            className="text-[16px] font-normal "
+            className="text-base font-normal "
             value="account"
           >
             About The Roaster
           </TabsTrigger>
           <TabsTrigger
             onClick={() => setActive(2)}
-            className="text-[16px] font-normal"
+            className="text-base font-normal"
             value="password"
           >
             Comments (24)

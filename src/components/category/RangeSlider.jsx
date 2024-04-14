@@ -9,8 +9,8 @@ const AltitudeSlider = () => {
     <>
       <div className="flex w-full items-center">
         <div className=" w-[40px]">
-          <p className="text-[12px] font-medium text-black opacity-50">MIN</p>
-          <span className="text-[14px] font-medium text-black " id="min">
+          <p className="text-xs font-medium text-black opacity-50">MIN</p>
+          <span className="text-sm font-medium text-black " id="min">
             {sliderValue[0]}
           </span>
         </div>
@@ -23,8 +23,8 @@ const AltitudeSlider = () => {
           />
         </div>
         <div className=" w-[50px] text-end ">
-          <p className="text-[12px] font-medium text-black opacity-50">MAX</p>
-          <span className="text-[14px] font-medium text-black " id="max">
+          <p className="text-xs font-medium text-black opacity-50">MAX</p>
+          <span className="text-sm font-medium text-black " id="max">
             {sliderValue[1]}
           </span>
         </div>

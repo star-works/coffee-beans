@@ -11,7 +11,7 @@ const TabsCard = ({ name, desc }) => {
             <CardTitle className="pe-3">{name}</CardTitle>
             <StarsIcon />
           </div>
-          <p className="text-[12px] font-medium">2 months ago</p>
+          <p className="text-xs font-medium">2 months ago</p>
         </div>
         <div className="flex gap-3 pt-2">
           <Badge>Coffee Bean</Badge>
@@ -19,7 +19,7 @@ const TabsCard = ({ name, desc }) => {
         </div>
       </CardHeader>
       <CardContent className="space-y-2">
-        <p className="text-[16px] font-normal text-[#818181]">{desc}</p>
+        <p className="text-base font-normal text-[#818181]">{desc}</p>
       </CardContent>
     </Card>
   );

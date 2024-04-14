@@ -19,25 +19,25 @@ const DashboardTabs = () => {
       <Tabs defaultValue="Profile">
         <TabsList className="w-full flex bg-[#F9FAFB] border-0 rounded-[6px] px-4 py-4 justify-start gap-2 overflow-auto">
           <TabsTrigger
-            className="data-[state=active]:bg-white text-[14px] font-semibold text-[#374151] py-2 data-[state=active]:text-[#D3756B] rounded-[6px]"
+            className="data-[state=active]:bg-white text-sm font-semibold text-[#374151] py-2 data-[state=active]:text-[#D3756B] rounded-[6px]"
             value="Profile"
           >
             Profile
           </TabsTrigger>
           <TabsTrigger
-            className="data-[state=active]:bg-white text-[14px] font-semibold text-[#374151] py-2 data-[state=active]:text-[#D3756B] rounded-[6px]"
+            className="data-[state=active]:bg-white text-sm font-semibold text-[#374151] py-2 data-[state=active]:text-[#D3756B] rounded-[6px]"
             value="Security"
           >
             Security
           </TabsTrigger>
           <TabsTrigger
-            className="data-[state=active]:bg-white text-[14px] font-semibold text-[#374151] py-2 data-[state=active]:text-[#D3756B] rounded-[6px]"
+            className="data-[state=active]:bg-white text-sm font-semibold text-[#374151] py-2 data-[state=active]:text-[#D3756B] rounded-[6px]"
             value="Billing"
           >
             Billing
           </TabsTrigger>
           <TabsTrigger
-            className="data-[state=active]:bg-white text-[14px] font-semibold text-[#374151] py-2 data-[state=active]:text-[#D3756B] rounded-[6px]"
+            className="data-[state=active]:bg-white text-sm font-semibold text-[#374151] py-2 data-[state=active]:text-[#D3756B] rounded-[6px]"
             value="Notifications"
           >
             Notifications

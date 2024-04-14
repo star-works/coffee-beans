@@ -11,13 +11,11 @@ const MyBeanCard = () => {
           width={290}
           height={290}
         />
-        <p className="xs:text-[16px] text-[14px] font-normal">
+        <p className="xs:text-base text-sm font-normal">
           Nordic Roasting & Co.
         </p>
-        <p className="xs:text-[16px] text-[14px] font-bold ">
-          Rushashi - Washed
-        </p>
-        <p className="xs:text-[16px] text-[14px] font-normal">120 Kr.</p>
+        <p className="xs:text-base text-sm font-bold ">Rushashi - Washed</p>
+        <p className="xs:text-base text-sm font-normal">120 Kr.</p>
       </CardContent>
     </Card>
   );

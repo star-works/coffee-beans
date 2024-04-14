@@ -24,10 +24,10 @@ export function NavigationMenuDemo() {
             <div className="sm:p-4 p-3 flex flex-col md:flex-row gap-y-3 max-h-[70vh] overflow-auto">
               <ul className="flex flex-wrap sm:flex-nowrap">
                 <li className="px-5  pt-1 sm:min-w-[200px]">
-                  <span className="text-[14px] uppercase font-bold text-nowrap">
+                  <span className="text-sm uppercase font-bold text-nowrap">
                     Coffee by price point
                   </span>
-                  <ul className="text-[14px] font-normal list-disc ps-4 mt-3">
+                  <ul className="text-sm font-normal list-disc ps-4 mt-3">
                     <li className="sm:pt-2 pt-1 cursor-pointer py-2">
                       Advanced Search Functionality
                     </li>
@@ -44,10 +44,10 @@ export function NavigationMenuDemo() {
                   </ul>
                 </li>
                 <li className="px-5 text-nowrap pt-1 sm:min-w-[150px]">
-                  <span className="text-[14px] uppercase font-bold">
+                  <span className="text-sm uppercase font-bold">
                     Roast level
                   </span>
-                  <ul className="text-[14px] font-normal list-disc ps-4 mt-3">
+                  <ul className="text-sm font-normal list-disc ps-4 mt-3">
                     <li className="sm:pt-2 pt-1 cursor-pointer py-2">Light</li>
                     <li className=" cursor-pointer py-2">Medium</li>
                     <li className=" cursor-pointer py-2">Dark</li>
@@ -57,10 +57,8 @@ export function NavigationMenuDemo() {
               </ul>
               <ul className="flex flex-wrap sm:flex-nowrap">
                 <li className="px-5 pt-1 sm:min-w-[200px]">
-                  <span className="text-[14px] uppercase font-bold">
-                    Discover
-                  </span>
-                  <ul className="text-[14px] font-normal list-disc ps-4 mt-3">
+                  <span className="text-sm uppercase font-bold">Discover</span>
+                  <ul className="text-sm font-normal list-disc ps-4 mt-3">
                     <li className="sm:pt-2 pt-1 cursor-pointer py-2">Light</li>
                     <li className="sm:pt-2 pt-1 cursor-pointer py-2">
                       Advanced Search Functionality
@@ -74,10 +72,8 @@ export function NavigationMenuDemo() {
                   </ul>
                 </li>
                 <li className="px-5 pt-1 sm:min-w-[150px]">
-                  <span className="text-[14px] uppercase font-bold">
-                    Country
-                  </span>
-                  <ul className="text-[14px] font-normal list-disc ps-4 mt-3">
+                  <span className="text-sm uppercase font-bold">Country</span>
+                  <ul className="text-sm font-normal list-disc ps-4 mt-3">
                     <li className="sm:pt-2 pt-1 cursor-pointer py-2">Light</li>
                     <li className=" cursor-pointer py-2">Medium</li>
                     <li className=" cursor-pointer py-2">Dark</li>

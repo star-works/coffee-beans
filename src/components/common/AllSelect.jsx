@@ -24,7 +24,7 @@ export const LocationSelect = (props) => {
         </SelectTrigger>
         <SelectContent className="mt-5">
           <SelectGroup className="min-w-[150px] sm:min-w-[200px] p-2">
-            <SelectLabel className="text-[14px]">Location</SelectLabel>
+            <SelectLabel className="text-sm">Location</SelectLabel>
             <SelectItem value="India">India</SelectItem>
             <SelectItem value="Australia">Australia</SelectItem>
             <SelectItem value="Asia">Asia</SelectItem>
