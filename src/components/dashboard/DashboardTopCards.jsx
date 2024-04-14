@@ -1,8 +1,16 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { CardsData } from "./Helper";
 import { DataCardBadge } from "./CommonBadge";
+import CountUp from "react-countup";
+
 const DataCards = () => {
+  const [isCounted, setIsCounted] = useState(false);
+
+  useEffect(() => {
+    setIsCounted(true);
+  }, []);
   return (
     <div className="pt-2 lg:px-6 px-3">
       <div className="grid gap-3 lg:gap-4 xl:gap-6 lg:grid-cols-4 md:grid-cols-2 xs:grid-cols-2 ">
@@ -22,9 +30,21 @@ const DataCards = () => {
                   className={item.className}
                 />
               </div>
-              <h2 className="ff_inter text-gray-900 font-semibold text-2xl sm:text-3xl xl:text-[40px] pt-2">
-                {item.amount}
-              </h2>
+              {isCounted ? (
+                <h2 className="ff_inter text-gray-900 font-semibold text-2xl sm:text-3xl xl:text-[40px] pt-2">
+                  {index === 0 && "$"}
+                  <CountUp
+                    start={0}
+                    end={parseInt(item.amount.replace(/[^\d]/g, ""), 10)}
+                    duration={2.5}
+                    separator=","
+                  />
+                </h2>
+              ) : (
+                <h2 className="ff_inter text-gray-900 font-semibold text-2xl sm:text-3xl xl:text-[40px] pt-2">
+                  {item.amount}
+                </h2>
+              )}
             </CardContent>
           </Card>
         ))}
