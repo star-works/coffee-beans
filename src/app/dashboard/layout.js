@@ -12,14 +12,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body
-        className="inter_font bg-[#F9FAFB]"
-        style={{
-          overflow: "auto !important",
-          paddingRight: "0 !important",
-          marginRight: "0 !important",
-        }}
-      >
+      <body className="inter_font bg-[#F9FAFB]">
         <div className="flex items-start ">
           <Sidebar setShowNav={setShowNav} showNav={showNav} />
           <div className="w-full">

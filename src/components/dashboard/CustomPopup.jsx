@@ -21,7 +21,6 @@ const CustomPopup = () => {
       </PopoverTrigger>
       <PopoverContent className="max-w-80">
         <div>
-          <h3 className="text-center font-semibold">Top Coffee</h3>
           <p className="py-2 border-b">Hangadhi Village</p>
           <p className="border-b py-2">Jiwaka - Papua New Guniea</p>
           <p className="py-2 border-b">Yiver Vargas, Gesga</p>
