@@ -2,10 +2,17 @@
 import Header from "@/components/dashboard/Header";
 import Sidebar from "@/components/dashboard/Sidebar";
 import "../dashboard.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function RootLayout({ children }) {
   const [showNav, setShowNav] = useState(false);
+  useEffect(() => {
+    if (window !== undefined) {
+      if (window.innerWidth > 768) {
+        setShowNav(true);
+      }
+    }
+  }, []);
 
   return (
     <html lang="en">

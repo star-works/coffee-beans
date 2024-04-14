@@ -139,7 +139,7 @@ const AddBeanForm = () => {
       ) : value === 2 ? (
         <BeanDetails value={setvalue} />
       ) : (
-        <ProductPreview />
+        <ProductPreview value={setvalue} />
       )}
     </div>
   );

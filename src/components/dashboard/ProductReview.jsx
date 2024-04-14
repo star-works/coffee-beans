@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import { BackArrow, NextArrow } from "./Icons";
 
-const ProductPreview = () => {
+const ProductPreview = ({ value }) => {
   return (
     <div className="max-w-[1312px] bg-white rounded-xl p-6 lg:mx-6 mx-3 lg:my-6 my-3">
       <div className="flex md:flex-row flex-col-reverse lg:gap-24 gap-10">
@@ -100,12 +100,14 @@ const ProductPreview = () => {
         </div>
       </div>
       <div className="mt-6 flex justify-between items-center">
-        <Button className="sm:px-4 px-3 sm:py-2 py-1 group bg-transparent flex items-center gap-2 rounded-lg border border-solid border-[#E5E7EB] shadow-[0px_1px_2px_0px_#11182712] font-semibold sm:text-base text-sm leading-[20px] -tracking-[3%] text-[#1F2937] ff_inter">
-          <span className="group-hover:-translate-x-2 transition-all duration-300">
-            <BackArrow />
-          </span>
-          Back
-        </Button>
+        <div onClick={() => value(1)}>
+          <Button className="sm:px-4 px-3 sm:py-2 py-1 group bg-transparent flex items-center gap-2 rounded-lg border border-solid border-[#E5E7EB] shadow-[0px_1px_2px_0px_#11182712] font-semibold sm:text-base text-sm leading-[20px] -tracking-[3%] text-[#1F2937] ff_inter">
+            <span className="group-hover:-translate-x-2 transition-all duration-300">
+              <BackArrow />
+            </span>
+            Back
+          </Button>
+        </div>
         <Button className="sm:px-4 px-3 sm:py-2 py-1 group bg-[#D3756B] flex items-center gap-2 rounded-lg border border-solid border-[#E5E7EB] shadow-[0px_1px_2px_0px_#11182712] font-semibold sm:text-base text-sm leading-[20px] -tracking-[3%] text-white ff_inter">
           Publish
           <span className="group-hover:translate-x-2 transition-all duration-300">
