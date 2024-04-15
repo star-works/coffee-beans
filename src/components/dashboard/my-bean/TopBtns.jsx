@@ -6,7 +6,7 @@ const TopBtns = ({ value }) => {
   return (
     <div className="flex sm:flex-nowrap flex-wrap gap-4">
       <Button
-        className={` text-[#A2A8B3] w-full text-sm font-semibold flex justify-start border-[2px] border-[#E9BAB5] bg-transparent text-[#D3756B] ${
+        className={` text-[#A2A8B3] w-full text-sm font-semibold flex justify-start border-[2px] border-[#E9BAB5] bg-transparent text-lightRed ${
           value === 2 || value === 3 ? "bg-[#F6E3E1]" : ""
         } `}
       >
@@ -20,11 +20,9 @@ const TopBtns = ({ value }) => {
       <Button
         className={`bg-[#F9FAFB] text-[#A2A8B3] w-full text-sm font-semibold flex justify-start  border-[2px]  ${
           value === 2
-            ? "border-[#E9BAB5] bg-transparent text-[#D3756B]"
+            ? "border-[#E9BAB5] bg-transparent text-lightRed"
             : `border-transparent ${
-                value === 3
-                  ? "bg-[#F6E3E1] border-[#E9BAB5] text-[#D3756B]"
-                  : ""
+                value === 3 ? "bg-[#F6E3E1] border-[#E9BAB5] text-lightRed" : ""
               }`
         }`}
       >
@@ -40,7 +38,7 @@ const TopBtns = ({ value }) => {
       <Button
         className={`bg-[#F9FAFB] text-[#A2A8B3] w-full text-sm font-semibold flex justify-start   ${
           value === 3
-            ? "border-[#E9BAB5] bg-transparent text-[#D3756B]  border-[2px]"
+            ? "border-[#E9BAB5] bg-transparent text-lightRed  border-[2px]"
             : ""
         }`}
       >

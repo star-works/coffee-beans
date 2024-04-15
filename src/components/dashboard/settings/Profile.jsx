@@ -59,10 +59,10 @@ const Profile = () => {
               height={64}
               alt="avatar"
             />
-            <p className="cursor-pointer text-[#1F2937] text-xs font-semibold hover:text-[#D3756B] mb-0">
+            <p className="cursor-pointer text-[#1F2937] text-xs font-semibold hover:text-lightRed mb-0">
               Remove
             </p>
-            <p className="cursor-pointer text-[#1F2937] text-xs font-semibold hover:text-[#D3756B] mb-0 mt-0">
+            <p className="cursor-pointer text-[#1F2937] text-xs font-semibold hover:text-lightRed mb-0 mt-0">
               Update
             </p>
           </div>
@@ -97,7 +97,7 @@ const Profile = () => {
           />
         </div>
         <div className="text-end mt-6">
-          <Button className="bg-[#D3756B] px-10 font-normal hover:bg-transparent hover:text-[#D3756B] border border-[#D3756B]">
+          <Button className="bg-[#D3756B] px-10 font-normal hover:bg-transparent hover:text-lightRed border border-[#D3756B]">
             Save
           </Button>
         </div>

@@ -22,7 +22,7 @@ const Header = ({ showNav }) => {
           </label>
           <input
             id="searchInput"
-            className="border-none py-2 ps-[10px] outline-none font-normal text-sm sm:text-base text-[#9CA3AF] placeholder:text-[#9CA3AF] tracking-[-0.5px]"
+            className="border-none py-2 ps-[10px] outline-none font-normal text-sm sm:text-base text-middiumGray placeholder:text-middiumGray tracking-[-0.5px]"
             type="search"
             placeholder="Search here"
           />

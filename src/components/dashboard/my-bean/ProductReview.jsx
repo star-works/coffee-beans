@@ -8,7 +8,7 @@ const ProductPreview = ({ value }) => {
       <div className="flex md:flex-row flex-col-reverse lg:gap-24 gap-10">
         <div className="flex flex-col xs:gap-6 gap-3">
           <div className="flex xs:flex-row flex-col sm:gap-6 xs:gap-3 gap-1 lg:flex-row md:flex-col lg:gap-6 md:gap-1">
-            <p className="text-[#4B5563] font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
+            <p className="text-darkGray font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
               Title
             </p>
             <p className="text-[#111827] font-semibold sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full">
@@ -16,7 +16,7 @@ const ProductPreview = ({ value }) => {
             </p>
           </div>
           <div className="flex xs:flex-row flex-col sm:gap-6 xs:gap-3 gap-1 lg:flex-row md:flex-col lg:gap-6 md:gap-1">
-            <p className="text-[#4B5563] font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
+            <p className="text-darkGray font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
               Description
             </p>
             <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full">
@@ -28,7 +28,7 @@ const ProductPreview = ({ value }) => {
             </p>
           </div>
           <div className="flex xs:flex-row flex-col sm:gap-6 xs:gap-3 gap-1 lg:flex-row md:flex-col lg:gap-6 md:gap-1">
-            <p className="text-[#4B5563] font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
+            <p className="text-darkGray font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
               Notes
             </p>
             <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full">
@@ -36,7 +36,7 @@ const ProductPreview = ({ value }) => {
             </p>
           </div>
           <div className="flex xs:flex-row flex-col sm:gap-6 xs:gap-3 gap-1 lg:flex-row md:flex-col lg:gap-6 md:gap-1">
-            <p className="text-[#4B5563] font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
+            <p className="text-darkGray font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
               Weight & Price
             </p>
             <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full">
@@ -45,7 +45,7 @@ const ProductPreview = ({ value }) => {
             </p>
           </div>
           <div className="flex xs:flex-row flex-col sm:gap-6 xs:gap-3 gap-1 lg:flex-row md:flex-col lg:gap-6 md:gap-1">
-            <p className="text-[#4B5563] font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
+            <p className="text-darkGray font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
               Roast level
             </p>
             <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full">
@@ -53,7 +53,7 @@ const ProductPreview = ({ value }) => {
             </p>
           </div>
           <div className="flex xs:flex-row flex-col sm:gap-6 xs:gap-3 gap-1 lg:flex-row md:flex-col lg:gap-6 md:gap-1">
-            <p className="text-[#4B5563] font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
+            <p className="text-darkGray font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
               Bean sort
             </p>
             <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full">
@@ -61,7 +61,7 @@ const ProductPreview = ({ value }) => {
             </p>
           </div>
           <div className="flex xs:flex-row flex-col sm:gap-6 xs:gap-3 gap-1 lg:flex-row md:flex-col lg:gap-6 md:gap-1">
-            <p className="text-[#4B5563] font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
+            <p className="text-darkGray font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
               Plantation & Country
             </p>
             <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full">
@@ -69,7 +69,7 @@ const ProductPreview = ({ value }) => {
             </p>
           </div>
           <div className="flex xs:flex-row flex-col sm:gap-6 xs:gap-3 gap-1 lg:flex-row md:flex-col lg:gap-6 md:gap-1">
-            <p className="text-[#4B5563] font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
+            <p className="text-darkGray font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
               Recommended use
             </p>
             <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full">

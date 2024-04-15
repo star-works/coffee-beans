@@ -15,7 +15,7 @@ const Sidebar = ({ showNav, setShowNav }) => {
     >
       <div
         className={`flex items-center  justify-between  py-5 px-6  ${
-          showNav ? "bg-white" : "border-b border-b-solid border-b-[#F3F4F6]"
+          showNav ? "bg-white" : "border-b border-b-solid  border-b-lightGray"
         }`}
       >
         <Link href="/" className="flex gap-1 items-center">
@@ -60,7 +60,7 @@ const Sidebar = ({ showNav, setShowNav }) => {
       </div>
       <div className={`${showNav ? "w-[240px]" : "w-0"}`}>
         <div
-          className={`max-w-[240px] w-full transition-all duration-500 border-r border-r-solid border-r-[#F3F4F6] ${
+          className={`max-w-[240px] w-full transition-all duration-500 border-r border-r-solid border-r-lightGray ${
             showNav
               ? "absolute left-0 top-[72px]"
               : "absolute top-[72px] !-left-[100%]"
@@ -81,8 +81,8 @@ const Sidebar = ({ showNav, setShowNav }) => {
                   >
                     {obj.icon && <span>{obj.icon}</span>}
                     <div
-                      className={`text-sm -tracking-[3%] text-[#4B5563] font-semibold group-hover:text-[#D3756B] transition-all duration-300 w-full ${
-                        router === obj.path ? "text-[#D3756B]" : ""
+                      className={`text-sm -tracking-[3%] text-darkGray font-semibold group-hover:text-lightRed transition-all duration-300 w-full ${
+                        router === obj.path ? "text-lightRed" : ""
                       } `}
                     >
                       {obj.tittle}
@@ -97,7 +97,7 @@ const Sidebar = ({ showNav, setShowNav }) => {
               <span>
                 <SupportIcon />
               </span>
-              <p className="text-sm -tracking-[3%] text-[#4B5563] font-semibold group-hover:text-[#D3756B] transition-all duration-300">
+              <p className="text-sm -tracking-[3%] text-darkGray font-semibold group-hover:text-lightRed transition-all duration-300">
                 Support
               </p>
             </div>
@@ -113,8 +113,8 @@ const Sidebar = ({ showNav, setShowNav }) => {
                   <SettingsIcon />
                 </span>
                 <p
-                  className={`text-sm -tracking-[3%] text-[#4B5563] font-semibold group-hover:text-[#D3756B] transition-all duration-300 ${
-                    router === "/dashboard/settings" && "text-[#D3756B]"
+                  className={`text-sm -tracking-[3%] text-darkGray font-semibold group-hover:text-lightRed transition-all duration-300 ${
+                    router === "/dashboard/settings" && "text-lightRed"
                   }`}
                 >
                   Settings

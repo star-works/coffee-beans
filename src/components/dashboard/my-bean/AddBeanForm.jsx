@@ -52,7 +52,7 @@ const AddBeanForm = () => {
               </p>
 
               <div className="text-start mt-6">
-                <Button className="bg-[#D3756B] group px-4 text-xs font-semibold py-2 h-full hover:bg-transparent hover:text-[#D3756B] border border-[#D3756B] rounded-[6px]">
+                <Button className="bg-[#D3756B] group px-4 text-xs font-semibold py-2 h-full hover:bg-transparent hover:text-lightRed border border-[#D3756B] rounded-[6px]">
                   <Plus /> Add bag size option
                 </Button>
               </div>
@@ -62,7 +62,7 @@ const AddBeanForm = () => {
                     Bag size
                   </p>
                   <Select className="w-full">
-                    <SelectTrigger className=" border shadow-[0px_2px_4px_0px_#F0F1F2] rounded-[8px] text-base text-[#4B5563] w-full">
+                    <SelectTrigger className=" border shadow-[0px_2px_4px_0px_#F0F1F2] rounded-[8px] text-base text-darkGray w-full">
                       <SelectValue placeholder="Select size" />
                     </SelectTrigger>
                     <SelectContent className="max-w-[300px]">
@@ -87,7 +87,7 @@ const AddBeanForm = () => {
                       In SEK
                     </p>
                   </div>
-                  <p className=" border shadow-[0px_2px_4px_0px_#F0F1F2] rounded-[8px] text-base text-[#4B5563] w-full px-3 py-2">
+                  <p className=" border shadow-[0px_2px_4px_0px_#F0F1F2] rounded-[8px] text-base text-darkGray w-full px-3 py-2">
                     120
                   </p>
                 </div>
@@ -102,10 +102,10 @@ const AddBeanForm = () => {
                   <span className="inline-block mx-auto">
                     <ImgIcon />
                   </span>
-                  <p className="text-base font-normal text-[#4B5563] py-3">
+                  <p className="text-base font-normal text-darkGray py-3">
                     Drag and drop file here
                   </p>
-                  <p className="text-xs font-normal text-[#4B5563]">
+                  <p className="text-xs font-normal text-darkGray">
                     or click here to browse
                   </p>
                 </div>
@@ -117,7 +117,7 @@ const AddBeanForm = () => {
                 Grind type
               </p>
               <Select className="w-full max-w-[200px]">
-                <SelectTrigger className=" border shadow-[0px_2px_4px_0px_#F0F1F2] rounded-[8px] text-base text-[#4B5563] w-full max-w-[200px]">
+                <SelectTrigger className=" border shadow-[0px_2px_4px_0px_#F0F1F2] rounded-[8px] text-base text-darkGray w-full max-w-[200px]">
                   <SelectValue placeholder="Select type" />
                 </SelectTrigger>
                 <SelectContent className="max-w-[300px]">
@@ -135,7 +135,7 @@ const AddBeanForm = () => {
             </div>
           </div>
           <div className="text-end mt-6" onClick={() => setProgressNumber(2)}>
-            <Button className="bg-[#D3756B] px-4 group font-semibold text-sm sm:text-base hover:bg-transparent hover:text-[#D3756B] border border-[#D3756B]">
+            <Button className="bg-[#D3756B] px-4 group font-semibold text-sm sm:text-base hover:bg-transparent hover:text-lightRed border border-[#D3756B]">
               Continue to details
               <span className="ps-3">
                 <BtnRightArrow />

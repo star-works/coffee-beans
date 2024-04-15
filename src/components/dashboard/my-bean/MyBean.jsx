@@ -18,7 +18,7 @@ const MyBean = ({ setAddBean }) => {
             </h3>
             <div onClick={() => setAddBean(true)}>
               {" "}
-              <Button className="bg-[#D3756B] group px-4 text-xs font-semibold py-2 h-full hover:bg-transparent hover:text-[#D3756B] border border-[#D3756B] rounded-[6px]">
+              <Button className="bg-[#D3756B] group px-4 text-xs font-semibold py-2 h-full hover:bg-transparent hover:text-lightRed border border-[#D3756B] rounded-[6px]">
                 <Plus /> Add new bean
               </Button>
             </div>

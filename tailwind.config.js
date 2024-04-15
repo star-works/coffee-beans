@@ -26,6 +26,11 @@ module.exports = {
         "2xl": "1536px",
       },
       colors: {
+        darkGray: "#4B5563",
+        lightGray: "#F3F4F6",
+        middiumGray: "#9CA3AF",
+        grey: "#374151",
+        lightRed: "#D3756B",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

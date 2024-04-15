@@ -18,37 +18,37 @@ const TopCoffees = () => {
             <tr>
               <th
                 scope="col"
-                className="px-3 py-2 text-[#374151] text-left text-xs font-semibold"
+                className="px-3 py-2 text-grey text-left text-xs font-semibold"
               >
                 Name
               </th>
               <th
                 scope="col"
-                className="px-3 py-2 text-[#374151] text-center text-xs font-semibold"
+                className="px-3 py-2 text-grey text-center text-xs font-semibold"
               >
                 Sold units
               </th>
               <th
                 scope="col"
-                className="px-3 py-2 text-[#374151] text-center text-xs font-semibold"
+                className="px-3 py-2 text-grey text-center text-xs font-semibold"
               >
                 Star rating
               </th>
               <th
                 scope="col"
-                className="px-3 py-2 text-[#374151] text-center text-xs font-semibold"
+                className="px-3 py-2 text-grey text-center text-xs font-semibold"
               >
                 Favourites
               </th>
               <th
                 scope="col"
-                className="px-3 py-2 text-[#374151] text-center text-xs font-semibold"
+                className="px-3 py-2 text-grey text-center text-xs font-semibold"
               >
                 Comments
               </th>
               <th
                 scope="col"
-                className="px-3 py-2 text-[#374151] text-xs font-semibold text-center"
+                className="px-3 py-2 text-grey text-xs font-semibold text-center"
               >
                 Status
               </th>
@@ -68,13 +68,13 @@ const TopCoffees = () => {
                     {row.nameData}
                   </p>
                 </td>
-                <td className="sm:px-3 px-2 sm:py-2 whitespace-nowrap text-sm text-[#4B5563] text-center tracking-[-3%]">
+                <td className="sm:px-3 px-2 sm:py-2 whitespace-nowrap text-sm text-darkGray text-center tracking-[-3%]">
                   {row.soldUnits}
                 </td>
-                <td className="sm:px-3 px-2 sm:py-2 whitespace-nowrap text-sm text-[#4B5563] text-center tracking-[-3%]">
+                <td className="sm:px-3 px-2 sm:py-2 whitespace-nowrap text-sm text-darkGray text-center tracking-[-3%]">
                   {row.starRating}
                 </td>
-                <td className="sm:px-3 px-2 sm:py-2 whitespace-nowrap text-sm text-[#4B5563] text-center tracking-[-3%]">
+                <td className="sm:px-3 px-2 sm:py-2 whitespace-nowrap text-sm text-darkGray text-center tracking-[-3%]">
                   {row.favourites}
                 </td>
                 <td className="sm:px-3 px-2 sm:py-2 whitespace-nowrap text-sm text-black text-center tracking-[-3%]">

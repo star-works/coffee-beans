@@ -14,8 +14,8 @@ const MiniSidebar = ({ showNav, setShowNav }) => {
       }`}
     >
       <div
-        className={`flex items-center  justify-between bg-white py-5 px-2 border-r border-r-solid border-r-[#F3F4F6] ${
-          !showNav ? "" : "border-b border-b-solid border-b-[#F3F4F6]"
+        className={`flex items-center  justify-between bg-white py-5 px-2 border-r border-r-solid border-r-lightGray ${
+          !showNav ? "" : "border-b border-b-solid  border-b-lightGray"
         }`}
       >
         <Link href="/" className="flex justify-end items-end">
@@ -29,7 +29,7 @@ const MiniSidebar = ({ showNav, setShowNav }) => {
       </div>
       <div className={`${!showNav ? "w-[50px]" : "w-0"}`}>
         <div
-          className={`max-w-[240px] w-full transition-all duration-500 border-r border-r-solid border-r-[#F3F4F6] ${
+          className={`max-w-[240px] w-full transition-all duration-500 border-r border-r-solid border-r-lightGray ${
             !showNav
               ? "absolute left-0 top-[72px]"
               : "absolute top-[72px] !-left-[100%]"

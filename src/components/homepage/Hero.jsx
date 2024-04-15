@@ -26,8 +26,7 @@ const Hero = () => {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-normal capitalize text-center text-[#090909] !leading-[120%]">
               Unveiling the
               <span className="font-extrabold sm:block">
-                world of <span className="text-[#d3756b]">coffee</span>{" "}
-                varieties
+                world of <span className="text-lightRed">coffee</span> varieties
               </span>
             </h1>
             <p className="text-center !leading-[180%] text-sm font-light max-w-[592px] mx-auto text-[#090909] pt-6">

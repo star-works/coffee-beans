@@ -38,7 +38,7 @@ const BeanDetails = ({ value }) => {
           );
         })}
       </Accordion>
-      <Button className="text-[#D3756B] ff_inter font-semibold sm:text-base text-sm leading-[20px] -tracking-[3%] w-full sm:py-6 py-2 flex items-center justify-center gap-2 my-6 bg-transparent border-2 border-[#E5E7EB] border-dashed">
+      <Button className="text-lightRed ff_inter font-semibold sm:text-base text-sm leading-[20px] -tracking-[3%] w-full sm:py-6 py-2 flex items-center justify-center gap-2 my-6 bg-transparent border-2 border-[#E5E7EB] border-dashed">
         <span>
           <AddIcon />
         </span>{" "}

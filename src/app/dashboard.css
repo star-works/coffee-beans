@@ -2,11 +2,9 @@
 .custom_height {
   height: calc(100vh - 72px);
 }
-
 body.inter_font {
   font-family: "Inter", sans-serif !important;
 }
-html,
 html {
   max-width: 2000px !important;
   margin: 0 auto !important;
@@ -27,7 +25,6 @@ button:focus-visible {
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
-
 ::-webkit-scrollbar-thumb {
   background: #888;
   height: 3px;

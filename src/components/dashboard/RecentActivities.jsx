@@ -29,7 +29,7 @@ const RecentActivities = () => {
                   </div>
                 </div>
                 <div>
-                  <p className="mb-0 text-sm text-[#4B5563] leading-[17px]">
+                  <p className="mb-0 text-sm text-darkGray leading-[17px]">
                     {activity.action}
                   </p>
                   <p className="mb-0 text-sm font-medium text-[#1F2937] leading-[17px]">
@@ -37,7 +37,7 @@ const RecentActivities = () => {
                   </p>
                 </div>
               </div>
-              <div className="mb-0 text-sm text-[#4B5563] leading-[17px]">
+              <div className="mb-0 text-sm text-darkGray leading-[17px]">
                 {activity.time}
               </div>
             </div>
