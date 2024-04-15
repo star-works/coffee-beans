@@ -20,15 +20,15 @@ button:focus-visible {
   outline: none !important;
   box-shadow: none !important;
 }
-.Styled_scrollbar ::-webkit-scrollbar {
-  width: 3px;
+::-webkit-scrollbar {
+  width: 6px;
   height: 3px;
 }
-.Styled_scrollbar ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-.Styled_scrollbar ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: #888;
   height: 3px;
 }
