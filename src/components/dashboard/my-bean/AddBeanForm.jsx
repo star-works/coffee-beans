@@ -18,12 +18,11 @@ import ProductPreview from "./ProductReview";
 import TopBtns from "./TopBtns";
 
 const AddBeanForm = () => {
-  const [value, setvalue] = useState(1);
-  console.log(value);
+  const [processNumber, setProgressNumber] = useState(1);
   return (
     <div className="bg-white rounded-[12px] sm:p-6 p-4 ">
-      <TopBtns value={value} />
-      {value === 1 ? (
+      <TopBtns value={processNumber} />
+      {processNumber === 1 ? (
         <div>
           <div className="sm:flex gap-6 w-full">
             <div className="mt-6 w-full">
@@ -69,8 +68,12 @@ const AddBeanForm = () => {
                     <SelectContent className="max-w-[300px]">
                       <SelectGroup>
                         <SelectLabel>Fruits</SelectLabel>
-                        <SelectItem value="apple">SM</SelectItem>
-                        <SelectItem value="banana">XL</SelectItem>
+                        <SelectItem value="apple" className="cursor-pointer">
+                          SM
+                        </SelectItem>
+                        <SelectItem value="banana" className="cursor-pointer">
+                          XL
+                        </SelectItem>
                       </SelectGroup>
                     </SelectContent>
                   </Select>
@@ -120,14 +123,18 @@ const AddBeanForm = () => {
                 <SelectContent className="max-w-[300px]">
                   <SelectGroup>
                     <SelectLabel>Fruits</SelectLabel>
-                    <SelectItem value="apple">SM</SelectItem>
-                    <SelectItem value="banana">XL</SelectItem>
+                    <SelectItem value="apple" className="cursor-pointer">
+                      SM
+                    </SelectItem>
+                    <SelectItem value="banana" className="cursor-pointer">
+                      XL
+                    </SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
             </div>
           </div>
-          <div className="text-end mt-6" onClick={() => setvalue(2)}>
+          <div className="text-end mt-6" onClick={() => setProgressNumber(2)}>
             <Button className="bg-[#D3756B] px-4 group font-semibold text-sm sm:text-base hover:bg-transparent hover:text-[#D3756B] border border-[#D3756B]">
               Continue to details
               <span className="ps-3">
@@ -136,10 +143,10 @@ const AddBeanForm = () => {
             </Button>
           </div>
         </div>
-      ) : value === 2 ? (
-        <BeanDetails value={setvalue} />
+      ) : processNumber === 2 ? (
+        <BeanDetails value={setProgressNumber} />
       ) : (
-        <ProductPreview value={setvalue} />
+        <ProductPreview value={setProgressNumber} />
       )}
     </div>
   );

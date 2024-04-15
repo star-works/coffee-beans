@@ -18,16 +18,16 @@ const CategoryDetails = (props) => {
         </SelectTrigger>
         <SelectContent>
           <SelectGroup>
-            <SelectItem className="!px-2" value={props.item1}>
+            <SelectItem className="!px-2 cursor-pointer" value={props.item1}>
               {props.item1}
             </SelectItem>
-            <SelectItem className="!px-2" value={props.item2}>
+            <SelectItem className="!px-2 cursor-pointer" value={props.item2}>
               {props.item2}
             </SelectItem>
-            <SelectItem className="!px-2" value={props.item3}>
+            <SelectItem className="!px-2 cursor-pointer" value={props.item3}>
               {props.item3}
             </SelectItem>
-            <SelectItem className="!px-2" value={props.item4}>
+            <SelectItem className="!px-2 cursor-pointer" value={props.item4}>
               {props.item4}
             </SelectItem>
           </SelectGroup>
