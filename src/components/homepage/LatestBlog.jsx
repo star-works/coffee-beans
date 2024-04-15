@@ -29,7 +29,7 @@ const LatestBlog = () => {
           <Link href="#">
             <Card className="p-0 bg-white group transition-all duration-300 cursor-pointer">
               <CardHeader className="relative w-full">
-                <Badge className="absolute py-2 px-4 text-xs left-4 top-4 font-semibold hover:bg-opacity-90 duration-300 hover:bg-white bg-white text-[#090909] uppercase z-10">
+                <Badge className="absolute py-2 px-4 text-xs left-4 top-4 font-semibold hover:bg-opacity-90 duration-300 hover:bg-white bg-white text-lightBlack uppercase z-10">
                   Coffee
                 </Badge>
                 <div className="overflow-hidden rounded-[20px]">
@@ -49,10 +49,10 @@ const LatestBlog = () => {
                   </span>
                   September 18, 20230
                 </p>
-                <CardTitle className="!mt-4 text-base font-semibold text-[#090909]">
+                <CardTitle className="!mt-4 text-base font-semibold text-lightBlack">
                   How To Make Chemex Coffee
                 </CardTitle>
-                <CardDescription className="!mt-2 text-sm font-light text-[#090909] ">
+                <CardDescription className="!mt-2 text-sm font-light text-lightBlack ">
                   Pour over coffee sounds complicated, but this coffee brewing
                   process is surprisingly simple and the results can be amazing
                   with just a little practice. If you drink a single cup each

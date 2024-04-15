@@ -21,7 +21,7 @@ const RoasterTab = () => {
             <h2 className="mb-4 text-2xl font-semibold leading-[36px] text-[#000d07]">
               Sweet Coffee USA, Authorized Distributor
             </h2>
-            <p className="sm:mb-6 mb-4 font-normal text-sm leading-[21px] text-[#090909]">
+            <p className="sm:mb-6 mb-4 font-normal text-sm leading-[21px] text-lightBlack">
               <span className="font-medium text-black">
                 Coffee Machine Depot USA
               </span>

@@ -27,13 +27,13 @@ const BeanProductCard = ({ value }) => {
       </CardHeader>
       <div className="p-0">
         <CardContent className="pt-0">
-          <p className="text-lg text-[#090909] font-semibold !leading-[140%]">
+          <p className="text-lg text-lightBlack font-semibold !leading-[140%]">
             {value.title}
           </p>
-          <p className="text-base text-[#090909] font-light !leading-[140%]">
+          <p className="text-base text-lightBlack font-light !leading-[140%]">
             {value.description}
           </p>
-          <p className="flex items-center pt-2 text-[#090909] font-semibold text-xl">
+          <p className="flex items-center pt-2 text-lightBlack font-semibold text-xl">
             $80
             <span className="text-sm font-normal ms-1 text-[#c1c1c1] relative before:absolute before:w-full before:h-[1px] before:bg-[#c1c1c1] before:start-0 before:top-1/2 before:-translate-y-1/2">
               $55.99

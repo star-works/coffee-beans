@@ -16,7 +16,7 @@ const BlogCard = ({ value }) => {
         className={`flex flex-col sm:flex-row items-center p-0 gap-3 sm:gap-6 md:gap-3 lg:gap-6 bg-white group ${value.blogclass}`}
       >
         <CardHeader className="relative m-0 md:min-w-[150px] min-w-[120px] sm:min-w-[170px] lg:min-w-[170px]">
-          <Badge className="absolute py-2 mt-1 px-4 text-xs left-2 top-2 font-semibold hover:bg-opacity-90 duration-300 hover:bg-white bg-white text-[#090909] uppercase z-10">
+          <Badge className="absolute py-2 mt-1 px-4 text-xs left-2 top-2 font-semibold hover:bg-opacity-90 duration-300 hover:bg-white bg-white text-lightBlack uppercase z-10">
             {value.badge}
           </Badge>
           <div className="rounded-[20px] overflow-hidden">
@@ -36,10 +36,10 @@ const BlogCard = ({ value }) => {
             </span>
             {value.blogDate}
           </p>
-          <CardTitle className="!mt-2 text-base font-semibold text-[#090909] text-center sm:text-start">
+          <CardTitle className="!mt-2 text-base font-semibold text-lightBlack text-center sm:text-start">
             {value.title}
           </CardTitle>
-          <CardDescription className="!mt-1 text-sm font-light text-[#090909] text-center sm:text-start">
+          <CardDescription className="!mt-1 text-sm font-light text-lightBlack text-center sm:text-start">
             {value.description}
           </CardDescription>
         </CardContent>

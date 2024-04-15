@@ -24,10 +24,10 @@ const SliderCardItem = ({ value }) => {
                 alt="image slider"
               />
             </div>
-            <CardTitle className="font-semibold text-[15px] !mt-0 pt-3 text-[#090909]">
+            <CardTitle className="font-semibold text-[15px] !mt-0 pt-3 text-lightBlack">
               {value.title}
             </CardTitle>
-            <CardDescription className="font-light text-sm !mt-0 text-[#090909]">
+            <CardDescription className="font-light text-sm !mt-0 text-lightBlack">
               {value.description}
             </CardDescription>
           </CardHeader>
@@ -65,7 +65,7 @@ const SliderCardItem = ({ value }) => {
                 {value.badgeThird}
                 {value.badgeFourth}
               </div>
-              <p className="flex items-center text-[#090909] font-semibold text-xl ">
+              <p className="flex items-center text-lightBlack font-semibold text-xl ">
                 $80
                 <span className="text-sm font-normal ms-1 text-[#c1c1c1] relative before:absolute before:w-full before:h-[1px] before:bg-[#c1c1c1] before:start-0 before:top-1/2 before:-translate-y-1/2">
                   $55.99

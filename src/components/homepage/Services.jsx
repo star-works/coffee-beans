@@ -19,10 +19,10 @@ export function Services() {
               <Card className="p-0 bg-white">
                 <CardHeader>
                   <span className="mx-auto">{value.icon}</span>
-                  <CardTitle className="!mt-6 text-center text-lg font-semibold text-[#090909]">
+                  <CardTitle className="!mt-6 text-center text-lg font-semibold text-lightBlack">
                     {value.title}
                   </CardTitle>
-                  <CardDescription className="!mt-2 text-center text-sm font-light text-[#090909] ">
+                  <CardDescription className="!mt-2 text-center text-sm font-light text-lightBlack ">
                     {value.description}
                   </CardDescription>
                 </CardHeader>

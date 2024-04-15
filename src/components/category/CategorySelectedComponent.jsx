@@ -57,7 +57,7 @@ const CategorySelectedComponent = () => {
     <div className="pt-[45px] md:pb-20 pb-[45px] max-w-[1120px] mx-auto xl:px-0 px-3 ">
       <div className="flex gap-6  sm:flex-row flex-col mb-10 pt-20 sm:mt-12 min-h-[140px] ">
         <h2
-          className="font-semibold text-[32px] leading-[38.4px] text-[#090909] min-w-[220px]"
+          className="font-semibold text-[32px] leading-[38.4px] text-lightBlack min-w-[220px]"
           onClick={selectCategoryFilter}
         >
           Category Page
@@ -68,7 +68,7 @@ const CategorySelectedComponent = () => {
               <div className="flex space-x-1 items-center">
                 <span className="text-base whitespace-nowrap">Roast:</span>
                 <div className="flex space-x-2">
-                  <Button className="flex items-center py-2 px-2 text-xs font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
+                  <Button className="flex items-center py-2 px-2 text-xs font-normal text-lightBlack rounded-md bg-[#F2F4F4] h-full hover:opacity-70">
                     {roastLevel}
                     <span className="ms-1" onClick={() => setRoastLevel()}>
                       <CrossIcon />
@@ -84,7 +84,7 @@ const CategorySelectedComponent = () => {
                 </span>
                 {coffeeNotes.map((obj, i) => (
                   <div key={i} className="flex space-x-2">
-                    <Button className="flex items-center py-2 px-2 text-xs font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
+                    <Button className="flex items-center py-2 px-2 text-xs font-normal text-lightBlack rounded-md bg-[#F2F4F4] h-full hover:opacity-70">
                       {obj}
                       <span
                         className="ms-1"
@@ -99,12 +99,10 @@ const CategorySelectedComponent = () => {
             )}
             {beanSort && beanSort.length > 0 && (
               <div className="flex space-x-1 items-center">
-                <span className="text-base whitespace-nowrap">
-                  Bean Sort:
-                </span>
+                <span className="text-base whitespace-nowrap">Bean Sort:</span>
                 {beanSort.map((obj, i) => (
                   <div key={i} className="flex space-x-2">
-                    <Button className="flex items-center py-2 px-2 text-xs font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
+                    <Button className="flex items-center py-2 px-2 text-xs font-normal text-lightBlack rounded-md bg-[#F2F4F4] h-full hover:opacity-70">
                       {obj}
                       <span
                         className="ms-1"
@@ -123,7 +121,7 @@ const CategorySelectedComponent = () => {
                   Bean Origin:
                 </span>
                 <div className="flex space-x-2">
-                  <Button className="flex items-center py-2 px-2 text-xs font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
+                  <Button className="flex items-center py-2 px-2 text-xs font-normal text-lightBlack rounded-md bg-[#F2F4F4] h-full hover:opacity-70">
                     {beanOrigin}
                     <span className="ms-1" onClick={() => setBeanOrigin()}>
                       <CrossIcon />
@@ -138,7 +136,7 @@ const CategorySelectedComponent = () => {
                   Coffee Type:
                 </span>
                 <div className="flex space-x-2">
-                  <Button className="flex items-center py-2 px-2 text-xs font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
+                  <Button className="flex items-center py-2 px-2 text-xs font-normal text-lightBlack rounded-md bg-[#F2F4F4] h-full hover:opacity-70">
                     {coffeeType}
                     <span className="ms-1" onClick={() => setCoffeeType()}>
                       <CrossIcon />
@@ -154,7 +152,7 @@ const CategorySelectedComponent = () => {
                 </span>
                 {roasterLocation.map((obj, i) => (
                   <div key={i} className="flex space-x-2">
-                    <Button className="flex items-center py-2 px-2 text-xs font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
+                    <Button className="flex items-center py-2 px-2 text-xs font-normal text-lightBlack rounded-md bg-[#F2F4F4] h-full hover:opacity-70">
                       {obj}
                       <span
                         className="ms-1"
@@ -174,7 +172,7 @@ const CategorySelectedComponent = () => {
                 </span>
                 {certifications.map((obj, i) => (
                   <div key={i} className="flex space-x-2">
-                    <Button className="flex items-center py-2 px-2 text-xs font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
+                    <Button className="flex items-center py-2 px-2 text-xs font-normal text-lightBlack rounded-md bg-[#F2F4F4] h-full hover:opacity-70">
                       {obj}
                       <span
                         className="ms-1"
@@ -193,7 +191,7 @@ const CategorySelectedComponent = () => {
                   Subscription:
                 </span>
                 <div className="flex space-x-2">
-                  <Button className="flex items-center py-2 px-2 text-xs font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
+                  <Button className="flex items-center py-2 px-2 text-xs font-normal text-lightBlack rounded-md bg-[#F2F4F4] h-full hover:opacity-70">
                     {subscription}
                     <span className="ms-1" onClick={() => setSubscription()}>
                       <CrossIcon />
@@ -207,7 +205,7 @@ const CategorySelectedComponent = () => {
                 <span className="text-base whitespace-nowrap">Altitude:</span>
 
                 <div className="flex space-x-2">
-                  <Button className="flex items-center py-2 px-2 text-xs font-normal text-[#090909] rounded-[6px] bg-[#F2F4F4] h-full hover:opacity-70">
+                  <Button className="flex items-center py-2 px-2 text-xs font-normal text-lightBlack rounded-md bg-[#F2F4F4] h-full hover:opacity-70">
                     <span className="pe-3">MIN: {sliderValue[0]}</span> Max:
                     {sliderValue[1]}
                     <span

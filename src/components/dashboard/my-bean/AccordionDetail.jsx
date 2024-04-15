@@ -24,7 +24,7 @@ export const ProfileCharacteristic = () => {
           {qualityData.map((quality, index) => {
             return (
               <div key={index} className="flex gap-6 items-center">
-                <p className="max-w-20 w-full font-normal text-base text-[#090909]">
+                <p className="max-w-20 w-full font-normal text-base text-lightBlack">
                   {quality.title} <span>{quality.span}</span>
                 </p>
                 <Progress className="" value={quality.value} />

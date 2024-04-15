@@ -27,7 +27,7 @@ export const RadioInputs = (props) => {
               className="cursor-pointer"
             />
             <Label
-              className="text-base text-[#090909] font-normal cursor-pointer"
+              className="text-base text-lightBlack font-normal cursor-pointer"
               htmlFor={obj}
             >
               {obj}

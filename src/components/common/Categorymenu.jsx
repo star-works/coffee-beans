@@ -20,7 +20,7 @@ export function NavigationMenuDemo() {
           <NavigationMenuTrigger className="bg-transparent text-white font-normal text-base pe-0 ps-20">
             Categories
           </NavigationMenuTrigger>
-          <NavigationMenuContent className="z-10 pb-3 top-[10px] rounded-[8px] bg-white border ">
+          <NavigationMenuContent className="z-10 pb-3 top-[10px] rounded-lg bg-white border ">
             <div className="sm:p-4 p-3 flex flex-col md:flex-row gap-y-3 max-h-[70vh] overflow-auto">
               <ul className="flex flex-wrap sm:flex-nowrap">
                 <li className="px-5  pt-1 sm:min-w-[200px]">

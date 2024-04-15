@@ -18,13 +18,13 @@ const MyBean = ({ setAddBean }) => {
             </h3>
             <div onClick={() => setAddBean(true)}>
               {" "}
-              <Button className="bg-[#D3756B] group px-4 text-xs font-semibold py-2 h-full hover:bg-transparent hover:text-lightRed border border-[#D3756B] rounded-[6px]">
+              <Button className="bg-[#D3756B] group px-4 text-xs font-semibold py-2 h-full hover:bg-transparent hover:text-lightRed border border-[#D3756B] rounded-md">
                 <Plus /> Add new bean
               </Button>
             </div>
           </div>
           <div className="flex items-center w-full mt-3 sm:mt-0">
-            <div className="bg-white border border-[#E5E7EB] rounded-[6px] shadow-[0px_2px_4px_2px_#f9fafa] flex items-center w-full max-w-[240px] sm:ms-auto ">
+            <div className="bg-white border border-[#E5E7EB] rounded-md shadow-[0px_2px_4px_2px_#f9fafa] flex items-center w-full max-w-[240px] sm:ms-auto ">
               <img
                 className="ps-2"
                 src="/assets/images/png/search.png"
@@ -36,7 +36,7 @@ const MyBean = ({ setAddBean }) => {
                 className="text-xs font-normal bg-transparent border-0 focus:no-outline focus-visible:shadow-none ps-1 w-full placeholder-[#9CA3AF] "
               />
             </div>
-            <div className="flex border rounded-[6px] border-[#E5E7EB] bg-white ms-4">
+            <div className="flex border rounded-md border-[#E5E7EB] bg-white ms-4">
               <span
                 className="border-r inline-block py-3 px-3 border-[#E5E7EB] cursor-pointer"
                 onClick={() => setToggle(!gridToggle)}

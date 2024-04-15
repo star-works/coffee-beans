@@ -44,7 +44,7 @@ const Trending = ({ title }) => {
   return (
     <div className="w-full px-3 xl:px-0 max-w-[1140px] mx-auto">
       <div className="flex items-center justify-between">
-        <h3 className="text-2xl text-[#090909] font-semibold">{title}</h3>
+        <h3 className="text-2xl text-lightBlack font-semibold">{title}</h3>
         <Link
           href="/"
           className="text-black flex gap-1 items-center text-opacity-50 text-base font-normal hover:text-opacity-100 group duration-300"

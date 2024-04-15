@@ -33,7 +33,7 @@ const Hero = () => {
             {qualityData.map((quality, index) => {
               return (
                 <div key={index} className="flex gap-6 items-center">
-                  <p className="max-w-20 w-full font-normal text-base text-[#090909]">
+                  <p className="max-w-20 w-full font-normal text-base text-lightBlack">
                     {quality.title} <span>{quality.span}</span>
                   </p>
                   <Progress
@@ -49,10 +49,10 @@ const Hero = () => {
           <CardHeader>
             <div className="flex justify-between min-[500px]:flex-row flex-col mb-6 gap-6">
               <div>
-                <h2 className="font-semibold text-[32px] leading-[38.4px] text-[#090909] mb-1">
+                <h2 className="font-semibold text-[32px] leading-[38.4px] text-lightBlack mb-1">
                   Coffee Bean
                 </h2>
-                <p className="font-light text-lg text-[#090909] md:mb-4 mb-2">
+                <p className="font-light text-lg text-lightBlack md:mb-4 mb-2">
                   Malerapaso
                 </p>
                 <div className="flex items-center">
@@ -71,7 +71,7 @@ const Hero = () => {
                   <span>
                     <RatingStar />
                   </span>
-                  <p className="font-medium text-sm text-[#090909] ms-1 opacity-50">
+                  <p className="font-medium text-sm text-lightBlack ms-1 opacity-50">
                     128
                   </p>
                 </div>
@@ -114,7 +114,7 @@ const Hero = () => {
           </CardHeader>
           <CardContent className="p-0">
             <div className="bg-[#f9fafa] sm:p-6 px-4 py-[10px] rounded-[20px] mb-6">
-              <p className="font-normal text-base text-[#090909]">
+              <p className="font-normal text-base text-lightBlack">
                 Class aptent taciti sociosqu ad litora torquent per conubia
                 nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel
                 consequat nec, ultrices et ipsum. Nulla varius magna a consequat
@@ -122,7 +122,7 @@ const Hero = () => {
               </p>
             </div>
             <div className="flex items-center gap-2 mb-6">
-              <p className="text-[32px] leading-[48px] font-medium text-[#090909]">
+              <p className="text-[32px] leading-[48px] font-medium text-lightBlack">
                 $231⁹⁹
               </p>
               <p className="text-lg text-[#dddad6]">
@@ -159,10 +159,10 @@ const Hero = () => {
                     key={index}
                     className="bg-[#F9FAFA] rounded-2xl px-5 py-4 flex justify-between items-center"
                   >
-                    <p className="font-normal text-base text-[#090909]">
+                    <p className="font-normal text-base text-lightBlack">
                       {details.tittle}
                     </p>
-                    <p className="font-normal text-base text-[#090909] opacity-70">
+                    <p className="font-normal text-base text-lightBlack opacity-70">
                       {details.discription}
                     </p>
                   </div>

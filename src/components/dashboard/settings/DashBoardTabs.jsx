@@ -15,29 +15,29 @@ import Profile from "./Profile";
 
 const DashboardTabs = () => {
   return (
-    <div className="bg-white rounded-[12px] p-10">
+    <div className="bg-white rounded-xl p-10">
       <Tabs defaultValue="Profile">
-        <TabsList className="w-full flex bg-[#F9FAFB] border-0 rounded-[6px] px-4 py-4 justify-start gap-2 overflow-auto">
+        <TabsList className="w-full flex bg-[#F9FAFB] border-0 rounded-md px-4 py-4 justify-start gap-2 overflow-auto">
           <TabsTrigger
-            className="data-[state=active]:bg-white text-sm font-semibold text-grey py-2 data-[state=active]:text-lightRed rounded-[6px]"
+            className="data-[state=active]:bg-white text-sm font-semibold text-grey py-2 data-[state=active]:text-lightRed rounded-md"
             value="Profile"
           >
             Profile
           </TabsTrigger>
           <TabsTrigger
-            className="data-[state=active]:bg-white text-sm font-semibold text-grey py-2 data-[state=active]:text-lightRed rounded-[6px]"
+            className="data-[state=active]:bg-white text-sm font-semibold text-grey py-2 data-[state=active]:text-lightRed rounded-md"
             value="Security"
           >
             Security
           </TabsTrigger>
           <TabsTrigger
-            className="data-[state=active]:bg-white text-sm font-semibold text-grey py-2 data-[state=active]:text-lightRed rounded-[6px]"
+            className="data-[state=active]:bg-white text-sm font-semibold text-grey py-2 data-[state=active]:text-lightRed rounded-md"
             value="Billing"
           >
             Billing
           </TabsTrigger>
           <TabsTrigger
-            className="data-[state=active]:bg-white text-sm font-semibold text-grey py-2 data-[state=active]:text-lightRed rounded-[6px]"
+            className="data-[state=active]:bg-white text-sm font-semibold text-grey py-2 data-[state=active]:text-lightRed rounded-md"
             value="Notifications"
           >
             Notifications

@@ -18,10 +18,10 @@ const RoasterSliderCard = ({ value }) => {
               />
             </Link>
           </div>
-          <h3 className="font-semibold text-xl pt-4 text-[#090909]">
+          <h3 className="font-semibold text-xl pt-4 text-lightBlack">
             {value.title}
           </h3>
-          <p className="font-normal text-sm pt-2 text-[#090909]">
+          <p className="font-normal text-sm pt-2 text-lightBlack">
             {value.description}
           </p>
           <button className="py-4 hover:bg-black hover:text-white duration-300 border-opacity-15 border rounded-3xl mt-4 text-base font-normal active:scale-[.9]">

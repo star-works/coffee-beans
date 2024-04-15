@@ -25,7 +25,7 @@ export const sidebarLinks = [
     icon: <DashboardIcon />,
     tittle: "Dashboard",
     path: "/dashboard",
-    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
+    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-lg",
   },
   {
     tittle: (
@@ -44,7 +44,7 @@ export const sidebarLinks = [
     icon: <MyBeansIcon />,
     tittle: "My Beans",
     path: "/dashboard/my-beans",
-    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
+    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-lg",
   },
   {
     tittle: (
@@ -62,13 +62,13 @@ export const sidebarLinks = [
   {
     icon: <ReviewsIcon />,
     tittle: "Reviews",
-    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
+    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-lg",
     path: "#",
   },
   {
     icon: <NotificationsIcon />,
     tittle: "Notifications",
-    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
+    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-lg",
     path: "#",
   },
 ];
@@ -77,34 +77,34 @@ export const miniSidebarLinks = [
     icon: <DashboardIcon />,
     tittle: "Dashboard",
     path: "/dashboard",
-    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
+    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-lg",
   },
   {
     icon: <AnalyticsIcon me="me-0" />,
     path: "#",
-    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
+    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-lg",
   },
   {
     icon: <MyBeansIcon />,
     tittle: "My Beans",
     path: "/dashboard/my-beans",
-    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
+    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-lg",
   },
   {
     icon: <OrdersIcon me="me-0" />,
     path: "#",
-    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
+    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-lg",
   },
   {
     icon: <ReviewsIcon />,
     tittle: "Reviews",
-    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
+    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-lg",
     path: "#",
   },
   {
     icon: <NotificationsIcon />,
     tittle: "Notifications",
-    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
+    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-lg",
     path: "#",
   },
 ];

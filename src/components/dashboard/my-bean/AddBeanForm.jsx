@@ -20,7 +20,7 @@ import TopBtns from "./TopBtns";
 const AddBeanForm = () => {
   const [processNumber, setProgressNumber] = useState(1);
   return (
-    <div className="bg-white rounded-[12px] sm:p-6 p-4 ">
+    <div className="bg-white rounded-xl sm:p-6 p-4 ">
       <TopBtns value={processNumber} />
       {processNumber === 1 ? (
         <div>
@@ -46,13 +46,13 @@ const AddBeanForm = () => {
               >
                 Description
               </Label>
-              <Textarea className=" w-full xs:text-base text-sm font-normal min-h-[100px] sm:min-h-[120px] mt-3 xs:mt-0 rounded-[8px] shadow-[0px_2px_4px_0px_#F0F1F2]" />
+              <Textarea className=" w-full xs:text-base text-sm font-normal min-h-[100px] sm:min-h-[120px] mt-3 xs:mt-0 rounded-lg shadow-[0px_2px_4px_0px_#F0F1F2]" />
               <p className="text-xs font-normal text-[#6B7280] pe-2 mt-2">
                 Describe in a few sentences about your coffee
               </p>
 
               <div className="text-start mt-6">
-                <Button className="bg-[#D3756B] group px-4 text-xs font-semibold py-2 h-full hover:bg-transparent hover:text-lightRed border border-[#D3756B] rounded-[6px]">
+                <Button className="bg-[#D3756B] group px-4 text-xs font-semibold py-2 h-full hover:bg-transparent hover:text-lightRed border border-[#D3756B] rounded-md">
                   <Plus /> Add bag size option
                 </Button>
               </div>
@@ -62,7 +62,7 @@ const AddBeanForm = () => {
                     Bag size
                   </p>
                   <Select className="w-full">
-                    <SelectTrigger className=" border shadow-[0px_2px_4px_0px_#F0F1F2] rounded-[8px] text-base text-darkGray w-full">
+                    <SelectTrigger className=" border shadow-[0px_2px_4px_0px_#F0F1F2] rounded-lg text-base text-darkGray w-full">
                       <SelectValue placeholder="Select size" />
                     </SelectTrigger>
                     <SelectContent className="max-w-[300px]">
@@ -87,7 +87,7 @@ const AddBeanForm = () => {
                       In SEK
                     </p>
                   </div>
-                  <p className=" border shadow-[0px_2px_4px_0px_#F0F1F2] rounded-[8px] text-base text-darkGray w-full px-3 py-2">
+                  <p className=" border shadow-[0px_2px_4px_0px_#F0F1F2] rounded-lg text-base text-darkGray w-full px-3 py-2">
                     120
                   </p>
                 </div>
@@ -98,7 +98,7 @@ const AddBeanForm = () => {
                 Product photo
               </p>
               <Label htmlFor="img" className="shadow-[0px_2px_4px_0px_#F0F1F2]">
-                <div className="border-dashed text-center border-[2px] rounded-[8px] p-5 cursor-pointer">
+                <div className="border-dashed text-center border-[2px] rounded-lg p-5 cursor-pointer">
                   <span className="inline-block mx-auto">
                     <ImgIcon />
                   </span>
@@ -117,7 +117,7 @@ const AddBeanForm = () => {
                 Grind type
               </p>
               <Select className="w-full max-w-[200px]">
-                <SelectTrigger className=" border shadow-[0px_2px_4px_0px_#F0F1F2] rounded-[8px] text-base text-darkGray w-full max-w-[200px]">
+                <SelectTrigger className=" border shadow-[0px_2px_4px_0px_#F0F1F2] rounded-lg text-base text-darkGray w-full max-w-[200px]">
                   <SelectValue placeholder="Select type" />
                 </SelectTrigger>
                 <SelectContent className="max-w-[300px]">

@@ -14,7 +14,7 @@ const CustomSelect = () => {
   return (
     <Select>
       <SelectTrigger
-        className="w-[123px] py-[3px] border border-[#F3F4F6] rounded-[6px] shadow-[0px_1px_2px_0px_rgba(17px,24px],39px,0.07px)]
+        className="w-[123px] py-[3px] border border-[#F3F4F6] rounded-md shadow-[0px_1px_2px_0px_rgba(17px,24px],39px,0.07px)]
 "
       >
         <SelectValue

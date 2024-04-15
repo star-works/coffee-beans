@@ -11,7 +11,7 @@ export default function Settings() {
   return (
     <>
       <DashboardLayout>
-        <div className="rounded-[12px]">
+        <div className="rounded-xl">
           <DashboardTabs />
         </div>
       </DashboardLayout>
