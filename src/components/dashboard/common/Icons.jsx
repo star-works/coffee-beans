@@ -157,10 +157,10 @@ export const DashboardIcon = () => {
     </svg>
   );
 };
-export const AnalyticsIcon = () => {
+export const AnalyticsIcon = ({ me }) => {
   return (
     <svg
-      className="me-2"
+      className={me}
       width="16"
       height="16"
       viewBox="0 0 16 16"
@@ -209,10 +209,10 @@ export const MyBeansIcon = () => {
     </svg>
   );
 };
-export const OrdersIcon = () => {
+export const OrdersIcon = ({ me }) => {
   return (
     <svg
-      className="me-2"
+      className={me}
       width="16"
       height="16"
       viewBox="0 0 16 16"

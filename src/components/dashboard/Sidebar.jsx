@@ -10,7 +10,7 @@ const Sidebar = ({ showNav, setShowNav }) => {
   return (
     <div
       className={`w-[240px] h-screen transition-all duration-300 ease-in-out absolute md:relative z-10  ${
-        showNav ? "ms-[10px]" : "-ms-[240px]"
+        showNav ? "md:ms-[10px]" : "-ms-[240px]"
       }`}
     >
       <div
@@ -32,7 +32,7 @@ const Sidebar = ({ showNav, setShowNav }) => {
         <div
           onClick={() => setShowNav(!showNav)}
           className={`flex flex-col gap-[2px] cursor-pointer absolute  ${
-            showNav ? "left-[210px]" : "left-[250px]"
+            showNav ? "left-[210px]" : "md:left-[250px] left-[295px]"
           }`}
         >
           <span

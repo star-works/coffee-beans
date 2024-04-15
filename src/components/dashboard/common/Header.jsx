@@ -15,7 +15,7 @@ import Image from "next/image";
 const Header = ({ showNav }) => {
   return (
     <div className="bg-white border-b border-l border-solid border-[#F3F4F6] h-[72px]">
-      <div className="flex justify-between items-center pe-4 py-4 sm:pe-6 ps-12 sm:py-4">
+      <div className="flex justify-between items-center pe-4 py-4 sm:pe-6 ps-20 sm:py-4">
         <div className="w-[120px] sm:w-[202px] flex items-center ">
           <label htmlFor="searchInput" className="w-auto">
             <SearchIcon />

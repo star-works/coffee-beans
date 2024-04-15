@@ -7,13 +7,7 @@ import MiniSidebar from "../MiniSidebar";
 
 const DashboardLayout = ({ children }) => {
   const [showNav, setShowNav] = useState(true);
-  useEffect(() => {
-    if (window !== undefined) {
-      if (window.innerWidth < 768) {
-        setShowNav(false);
-      }
-    }
-  }, [showNav]);
+
   return (
     <div className="inter_font bg-[#F9FAFB]">
       <div className="flex items-start transition-all duration-300 ease-in-out">

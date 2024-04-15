@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { sidebarLinks } from "./common/Helper";
+import { miniSidebarLinks, sidebarLinks } from "./common/Helper";
 import { SettingsIcon, SupportIcon } from "./common/Icons";
 
 const MiniSidebar = ({ showNav, setShowNav }) => {
@@ -20,7 +20,7 @@ const MiniSidebar = ({ showNav, setShowNav }) => {
       >
         <Link href="/" className="flex justify-end items-end">
           <Image
-            src="/assets/images/dasboard/svg/logo.svg"
+            src="/assets/images/dasboard/png/logo.png"
             alt="logo"
             height={34}
             width={32}
@@ -36,7 +36,7 @@ const MiniSidebar = ({ showNav, setShowNav }) => {
           }`}
         >
           <div className="bg-white px-4 pb-4 h-[calc(100vh-176px)] overflow-auto flex flex-col gap-1 my_sidebar pt-4">
-            {sidebarLinks.map((obj, index) => {
+            {miniSidebarLinks.map((obj, index) => {
               return (
                 <Link href={`${obj.path}`} key={index}>
                   <div

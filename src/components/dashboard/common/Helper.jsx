@@ -31,7 +31,7 @@ export const sidebarLinks = [
     tittle: (
       <CommonAccordion
         heading={"Analytics"}
-        icon={<AnalyticsIcon />}
+        icon={<AnalyticsIcon me="me-2" />}
         option1={"Option 1"}
         option2={"Option 2"}
         option3={"Option 3"}
@@ -50,7 +50,7 @@ export const sidebarLinks = [
     tittle: (
       <CommonAccordion
         heading={"Orders"}
-        icon={<OrdersIcon />}
+        icon={<OrdersIcon me="me-2" />}
         option1={"Option 1"}
         option2={"Option 2"}
         option3={"Option 3"}
@@ -58,6 +58,42 @@ export const sidebarLinks = [
       />
     ),
     path: "#",
+  },
+  {
+    icon: <ReviewsIcon />,
+    tittle: "Reviews",
+    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
+    path: "#",
+  },
+  {
+    icon: <NotificationsIcon />,
+    tittle: "Notifications",
+    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
+    path: "#",
+  },
+];
+export const miniSidebarLinks = [
+  {
+    icon: <DashboardIcon />,
+    tittle: "Dashboard",
+    path: "/dashboard",
+    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
+  },
+  {
+    icon: <AnalyticsIcon me="me-0" />,
+    path: "#",
+    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
+  },
+  {
+    icon: <MyBeansIcon />,
+    tittle: "My Beans",
+    path: "/dashboard/my-beans",
+    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
+  },
+  {
+    icon: <OrdersIcon me="me-0" />,
+    path: "#",
+    class: "hover:bg-[#F9FAFB] px-2 py-2  rounded-[8px]",
   },
   {
     icon: <ReviewsIcon />,
