@@ -9,12 +9,12 @@ const MiniSidebar = ({ showNav, setShowNav }) => {
   const router = usePathname();
   return (
     <div
-      className={`w-[70px] h-screen transition-all duration-300 ease-in-out absolute md:relative z-10  ${
-        !showNav ? "ms-[0px] z-[20]" : "-ms-[70px]"
+      className={`w-[50px] h-screen transition-all duration-300 ease-in-out absolute md:relative z-10  ${
+        !showNav ? "ms-[0px] z-[20]" : "-ms-[50px]"
       }`}
     >
       <div
-        className={`flex items-center  justify-between bg-white py-5 px-6 border-r border-r-solid border-r-[#F3F4F6] ${
+        className={`flex items-center  justify-between bg-white py-5 px-2 border-r border-r-solid border-r-[#F3F4F6] ${
           !showNav ? "" : "border-b border-b-solid border-b-[#F3F4F6]"
         }`}
       >
@@ -27,7 +27,7 @@ const MiniSidebar = ({ showNav, setShowNav }) => {
           />
         </Link>
       </div>
-      <div className={`${!showNav ? "w-[70px]" : "w-0"}`}>
+      <div className={`${!showNav ? "w-[50px]" : "w-0"}`}>
         <div
           className={`max-w-[240px] w-full transition-all duration-500 border-r border-r-solid border-r-[#F3F4F6] ${
             !showNav
@@ -40,7 +40,7 @@ const MiniSidebar = ({ showNav, setShowNav }) => {
               return (
                 <Link href={`${obj.path}`} key={index}>
                   <div
-                    className={`w-full flex items-center transition-all group cursor-pointer justify-start gap-2 ${
+                    className={`w-full flex items-center transition-all group cursor-pointer justify-center gap-2 ${
                       obj.class
                     } ${
                       router === obj.path
@@ -54,7 +54,7 @@ const MiniSidebar = ({ showNav, setShowNav }) => {
               );
             })}
           </div>
-          <div className="px-4 bg-white py-[14px]">
+          <div className="px-2 bg-white py-[14px]">
             <div className="px-2 py-2 mb-1 rounded-[8px] hover:bg-[#F9FAFB] transition-all duration-300 flex items-center gap-2 group cursor-pointer">
               <span>
                 <SupportIcon />

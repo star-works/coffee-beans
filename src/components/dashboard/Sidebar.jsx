@@ -10,12 +10,12 @@ const Sidebar = ({ showNav, setShowNav }) => {
   return (
     <div
       className={`w-[240px] h-screen transition-all duration-300 ease-in-out absolute md:relative z-10  ${
-        showNav ? "ms-[0px]" : "-ms-[240px]"
+        showNav ? "ms-[10px]" : "-ms-[240px]"
       }`}
     >
       <div
         className={`flex items-center  justify-between  py-5 px-6  ${
-          showNav ? "" : "border-b border-b-solid border-b-[#F3F4F6]"
+          showNav ? "bg-white" : "border-b border-b-solid border-b-[#F3F4F6]"
         }`}
       >
         <Link href="/" className="flex gap-1 items-center">
@@ -66,7 +66,7 @@ const Sidebar = ({ showNav, setShowNav }) => {
               : "absolute top-[72px] !-left-[100%]"
           }`}
         >
-          <div className="bg-white px-4 pb-4 h-[calc(100vh-176px)] overflow-auto flex flex-col gap-1 my_sidebar pt-4">
+          <div className="bg-white px-4 pb-4 h-[calc(100vh-176px)] overflow-auto flex flex-col gap-1 my_sidebar ">
             {sidebarLinks.map((obj, index) => {
               return (
                 <Link href={`${obj.path}`} key={index}>
