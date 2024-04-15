@@ -118,13 +118,6 @@ const TopAreas = () => {
     <div className="xl:pt-6">
       <div className="bg-white sm:p-6 p-4 rounded-xl w-full">
         <p className=" font-bold text-lg text-darkGray pb-4">Top areas</p>
-        {/* <Image
-          className="w-full"
-          height="235"
-          width="875"
-          src="/assets/images/dasboard/svg/areas.svg"
-          alt="chart"
-        /> */}
         <div className="h-[300px]">
           <MyResponsiveBar />
         </div>

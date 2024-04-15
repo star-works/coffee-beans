@@ -10,6 +10,7 @@ const MyBeanCard = () => {
           src="/assets/images/png/my_bean_card.png"
           width={290}
           height={290}
+          alt="my-bean"
         />
         <p className="xs:text-base text-sm font-normal">
           Nordic Roasting & Co.
