@@ -14,7 +14,7 @@ const Sidebar = ({ showNav, setShowNav }) => {
       }`}
     >
       <div
-        className={`flex items-center  justify-between bg-white py-5 px-6 border-r border-r-solid border-r-[#F3F4F6] ${
+        className={`flex items-center  justify-between  py-5 px-6  ${
           showNav ? "" : "border-b border-b-solid border-b-[#F3F4F6]"
         }`}
       >
@@ -32,26 +32,26 @@ const Sidebar = ({ showNav, setShowNav }) => {
         <div
           onClick={() => setShowNav(!showNav)}
           className={`flex flex-col gap-[2px] cursor-pointer absolute  ${
-            showNav ? "left-[210px]" : "left-[260px]"
+            showNav ? "left-[210px]" : "left-[250px]"
           }`}
         >
           <span
             className={`transition-all duration-500 ${
-              showNav
+              !showNav
                 ? "translate-y-[1px] -rotate-[45deg] w-[16px] h-[2px] bg-[#111827] rounded block"
                 : "w-[16px] h-[2px] bg-[#111827] rounded block"
             }`}
           ></span>
           <span
             className={`transition-all duration-500 ${
-              showNav
+              !showNav
                 ? "opacity-0 -translate-x-2"
                 : "w-[16px] h-[2px] bg-[#111827] rounded block"
             }`}
           ></span>
           <span
             className={`transition-all duration-500 ${
-              showNav
+              !showNav
                 ? "-translate-y-[5px] rotate-[45deg] w-[16px] h-[2px] bg-[#111827] rounded block"
                 : "w-[16px] h-[2px] bg-[#111827] rounded block"
             }`}
@@ -66,7 +66,7 @@ const Sidebar = ({ showNav, setShowNav }) => {
               : "absolute top-[72px] !-left-[100%]"
           }`}
         >
-          <div className="bg-white px-4 pb-4 h-[calc(100vh-176px)] overflow-auto flex flex-col gap-1 my_sidebar">
+          <div className="bg-white px-4 pb-4 h-[calc(100vh-176px)] overflow-auto flex flex-col gap-1 my_sidebar pt-4">
             {sidebarLinks.map((obj, index) => {
               return (
                 <Link href={`${obj.path}`} key={index}>

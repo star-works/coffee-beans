@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Sidebar from "../Sidebar";
 import Header from "../common/Header";
 import "../../../app/dashboard.css";
+import MiniSidebar from "../MiniSidebar";
 
 const DashboardLayout = ({ children }) => {
   const [showNav, setShowNav] = useState(true);
@@ -15,7 +16,8 @@ const DashboardLayout = ({ children }) => {
   }, [showNav]);
   return (
     <div className="inter_font bg-[#F9FAFB]">
-      <div className="flex items-start ">
+      <div className="flex items-start transition-all duration-300 ease-in-out">
+        <MiniSidebar setShowNav={setShowNav} showNav={showNav} />
         <Sidebar setShowNav={setShowNav} showNav={showNav} />
         <div className="w-full">
           <Header showNav={showNav} />
