@@ -12,7 +12,7 @@ const DataCards = () => {
     setIsCounted(true);
   }, []);
   return (
-    <div className="pt-2 lg:px-6 px-3">
+    <div className="pt-2 lg:px-6 md:px-3 ps-12">
       <div className="grid gap-3 lg:gap-4 xl:gap-6 lg:grid-cols-4 md:grid-cols-2 xs:grid-cols-2 ">
         {CardsData.map((item, index) => (
           <Card

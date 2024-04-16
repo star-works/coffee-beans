@@ -15,7 +15,7 @@ const DashboardLayout = ({ children }) => {
         <Sidebar setShowNav={setShowNav} showNav={showNav} />
         <div className="w-full">
           <Header showNav={showNav} />
-          <div className="md:p-8 sm:p-6 xs:p-4 px-2 py-2 overflow-auto custom_height bg-[#F9FAFB]">
+          <div className="md:p-8 sm:py-4 ps-[60px] pe-3  py-2 overflow-auto custom_height bg-[#F9FAFB]">
             {children}
           </div>
         </div>

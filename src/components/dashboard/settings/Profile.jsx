@@ -34,7 +34,7 @@ const Profile = () => {
             Website
           </Label>
           <Label className="relative xs:w-[75%] w-full flex">
-            <span className="absolute inline-block p-3 border-r xs:text-base text-sm font-normal text-[#6B7280]">
+            <span className="absolute inline-block py-2 px-3 border-r xs:text-base text-sm font-normal text-[#6B7280]">
               https://
             </span>
             <Input

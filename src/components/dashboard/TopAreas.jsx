@@ -115,7 +115,7 @@ const MyResponsiveBar = () => (
 );
 const TopAreas = () => {
   return (
-    <div className="xl:pt-6">
+    <div className="xl:pt-6 md:ps-0 ps-12">
       <div className="bg-white sm:p-6 p-4 rounded-xl w-full">
         <p className=" font-bold text-lg text-darkGray pb-4">Top areas</p>
         <div className="h-[300px]">

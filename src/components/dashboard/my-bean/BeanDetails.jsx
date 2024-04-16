@@ -44,17 +44,17 @@ const BeanDetails = ({ value }) => {
         </span>{" "}
         Add new details
       </Button>
-      <div className="flex justify-between items-center gap-1">
-        <div onClick={() => value(1)}>
-          <Button className="sm:px-4 px-3  group bg-transparent flex items-center gap-2 rounded-lg border border-solid border-[#E5E7EB] shadow-[0px_1px_2px_0px_#11182712] font-semibold sm:text-base text-sm leading-[20px] -tracking-[3%] text-[#1F2937] ff_inter">
+      <div className="flex flex-col xs:flex-row justify-between items-center gap-1">
+        <div className="w-full xs:w-auto" onClick={() => value(1)}>
+          <Button className="sm:px-4 px-3 w-full xs:w-auto group bg-transparent flex items-center gap-2 rounded-lg border border-solid border-[#E5E7EB] shadow-[0px_1px_2px_0px_#11182712] font-semibold sm:text-base text-sm leading-[20px] -tracking-[3%] text-[#1F2937] ff_inter">
             <span className="group-hover:-translate-x-2 transition-all duration-300">
               <BackArrow />
             </span>
             Back
           </Button>
         </div>
-        <div onClick={() => value(3)}>
-          <Button className="sm:px-4 px-3 group bg-[#D3756B] flex items-center gap-2 rounded-lg border border-solid border-[#E5E7EB] shadow-[0px_1px_2px_0px_#11182712] font-semibold sm:text-base text-sm leading-[20px] -tracking-[3%] text-white ff_inter">
+        <div className="w-full xs:w-auto" onClick={() => value(3)}>
+          <Button className="sm:px-4 px-3 w-full xs:w-auto group bg-[#D3756B] flex items-center gap-2 rounded-lg border border-solid border-[#E5E7EB] shadow-[0px_1px_2px_0px_#11182712] font-semibold sm:text-base text-sm leading-[20px] -tracking-[3%] text-white ff_inter">
             Review and publish
             <span className="group-hover:translate-x-2 transition-all duration-300">
               <NextArrow />

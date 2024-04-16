@@ -15,7 +15,7 @@ const DashBoardContent = () => {
             <TopCoffees />
           </div> */}
         </div>
-        <div className="w-full xl:w-4/12 flex  xl:flex-col flex-wrap  sm:px-6 px-4 xl:ps-0 justify-between xl:justify-start">
+        <div className="w-full xl:w-4/12 flex  xl:flex-col flex-wrap  md:px-6  xl:ps-0 justify-between xl:justify-start">
           <div className="xl:w-full w-full md:w-1/2 xl:pe-0 md:pe-3">
             <TopAreas />
           </div>

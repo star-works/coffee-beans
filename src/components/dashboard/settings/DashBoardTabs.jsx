@@ -15,9 +15,9 @@ import Profile from "./Profile";
 
 const DashboardTabs = () => {
   return (
-    <div className="bg-white rounded-xl p-10">
+    <div className="bg-white rounded-xl lg:p-10 md:p-5 p-4">
       <Tabs defaultValue="Profile">
-        <TabsList className="w-full flex bg-[#F9FAFB] border-0 rounded-md px-4 py-4 justify-start gap-2 overflow-auto">
+        <TabsList className="w-full flex bg-[#F9FAFB] border-0 rounded-md md:px-4 px-2 md:py-4 py-2 justify-start gap-2 overflow-auto">
           <TabsTrigger
             className="data-[state=active]:bg-white text-sm font-semibold text-grey py-2 data-[state=active]:text-lightRed rounded-md"
             value="Profile"
