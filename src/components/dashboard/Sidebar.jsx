@@ -20,7 +20,7 @@ const Sidebar = ({ showNav, setShowNav }) => {
       >
         <Link href="/" className="flex gap-1 items-center">
           <Image
-            src="/assets/images/dasboard/svg/logo.svg"
+            src="/assets/images/dasboard/svg/Logo.svg"
             alt="logo"
             height={34}
             width={32}
