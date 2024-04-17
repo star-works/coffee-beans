@@ -122,7 +122,7 @@ const MyResponsiveLine = () => (
 );
 const SalesChart = () => {
   return (
-    <div className="lg:p-6 md:p-3 py-3  ps-12 ">
+    <div className="lg:p-6 md:p-3 py-3 ">
       <div className="border border-[#F3F4F6] bg-white sm:p-6 p-4 rounded-xl">
         <div className="flex justify-between items-center">
           <p className="font-semibold text-lg text-darkGray">Your sales</p>
