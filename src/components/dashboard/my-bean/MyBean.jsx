@@ -9,7 +9,7 @@ const MyBean = ({ setAddBean }) => {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const [gridToggle, setToggle] = useState(false);
   return (
-    <div>
+    <div className="xl:p-4">
       <div className="ps-4">
         <div className="sm:flex justify-between">
           <div className="flex items-center w-full">
@@ -18,7 +18,7 @@ const MyBean = ({ setAddBean }) => {
             </h3>
             <div onClick={() => setAddBean(true)}>
               {" "}
-              <Button className="bg-[#D3756B] group px-4 text-xs xl:text-sm 2xl:text-[20px] font-semibold py-2 h-full hover:bg-transparent hover:text-lightRed border border-[#D3756B] rounded-md">
+              <Button className="bg-[#D3756B] group px-4 text-xs xl:text-sm  font-semibold py-2 h-full hover:bg-transparent hover:text-lightRed border border-[#D3756B] rounded-md">
                 <Plus /> Add new bean
               </Button>
             </div>
