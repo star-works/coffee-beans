@@ -7,7 +7,7 @@ const TopCoffees = () => {
   return (
     <div className="lg:px-6 px-3 lg:pb-6 pb-3 !w-full xl:min-w-[600px]">
       <div className="border border-[#F3F4F6] bg-white rounded-t-xl w-full">
-        <div className="sm:px-6 px-4 md:py-[18px] sm:py-3 py-2 flex justify-between items-center">
+        <div className="sm:px-6 px-4  sm:py-[10px] py-2 flex justify-between items-center">
           <p className="font-semibold text-lg text-darkGray">Top coffees</p>
           <CustomPopup />
         </div>

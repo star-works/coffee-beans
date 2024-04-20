@@ -253,6 +253,7 @@ export const ReviewsIcon = () => {
 export const NotificationsIcon = () => {
   return (
     <svg
+      className="cursor-pointer"
       width="16"
       height="16"
       viewBox="0 0 16 16"
@@ -366,6 +367,7 @@ export const SearchIcon = () => {
 export const NotificationsIcons = () => {
   return (
     <svg
+      className="cursor-pointer hover:scale-[1.2] transition-all duration-300 ease-in-out"
       width="40"
       height="40"
       viewBox="0 0 40 40"

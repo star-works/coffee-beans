@@ -31,7 +31,7 @@ button:focus-visible {
 }
 
 @media (min-width: 2000px) {
-  body.inter_font {
+  body {
     overflow: hidden;
   }
 }

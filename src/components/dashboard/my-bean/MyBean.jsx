@@ -56,7 +56,7 @@ const MyBean = ({ setAddBean }) => {
           <p className="text-sm font-normal text-[#6B7280]">8 beans found</p>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap">
         {arr.map((obj, i) => (
           <MyBeanCard key={i} />
         ))}

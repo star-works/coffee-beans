@@ -15,10 +15,7 @@ const DataCards = () => {
     <div className="pt-2 lg:px-6 md:px-3">
       <div className="grid gap-3 lg:gap-4 xl:gap-6 lg:grid-cols-4 md:grid-cols-2 xs:grid-cols-2 ">
         {CardsData.map((item, index) => (
-          <Card
-            key={index}
-            className="bg-white p-0 hover:translate-y-[-5px] transition-all duration-300 ease-in-out"
-          >
+          <Card key={index} className="bg-white p-0 ">
             <CardContent className="p-3 xl:px-6 xl:py-[19px]">
               <div className="flex  items-center justify-between">
                 <h3 className="ff_inter text-xs sm:text-sm text-gray-900 font-normal  tracking-[-3%] leading-[17.5px] ">
@@ -36,7 +33,7 @@ const DataCards = () => {
                   <CountUp
                     start={0}
                     end={parseInt(item.amount.replace(/[^\d]/g, ""), 10)}
-                    duration={2.5}
+                    duration={0.5}
                     separator=","
                   />
                 </h2>

@@ -42,12 +42,9 @@ const Header = ({ showNav }) => {
                 <h4 className="text-gray-900 text-xs leading-[15px] tracking-[-3%]">
                   Acme Roasters
                 </h4>
-                <Link
-                  className="text-gray-600 text-xs leading-[15px] tracking-[-3%]"
-                  href="mailto:hello@acme-coffee.com"
-                >
+                <p className="text-gray-600 text-xs leading-[15px] tracking-[-3%]">
                   hello@acme-coffee.com
-                </Link>
+                </p>
               </div>
             </SelectTrigger>
             <SelectContent>
@@ -62,12 +59,9 @@ const Header = ({ showNav }) => {
                   <h4 className="text-gray-900 text-xs leading-[15px] tracking-[-3%] ff_inter">
                     Acme
                   </h4>
-                  <Link
-                    className="text-gray-600 text-xs leading-[15px] tracking-[-3%] ff_inter"
-                    href="mailto:hello@acme-coffee.com"
-                  >
+                  <p className="text-gray-600 text-xs leading-[15px] tracking-[-3%] ff_inter">
                     hello@acme-coffee.com
-                  </Link>
+                  </p>
                 </div>
               </div>
             </SelectContent>
