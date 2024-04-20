@@ -11,7 +11,7 @@ const ProductPreview = ({ value }) => {
             <p className="text-darkGray font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
               Title
             </p>
-            <p className="text-[#111827] font-semibold sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full">
+            <p className="text-[#111827] font-semibold sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full mt-0">
               Hanhadhi Village
             </p>
           </div>
@@ -19,7 +19,7 @@ const ProductPreview = ({ value }) => {
             <p className="text-darkGray font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
               Description
             </p>
-            <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full">
+            <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full mt-0">
               A complex coffee grown in the heart of the Guji appellation. After
               the harvest, the beans are sun-dried in the village of Hangadhi,
               resulting in a fruity profile with pleasant notes of blueberry and
@@ -31,48 +31,48 @@ const ProductPreview = ({ value }) => {
             <p className="text-darkGray font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
               Notes
             </p>
-            <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full">
+            <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full mt-0">
               Blueberry • Green apple • Lime
             </p>
           </div>
           <div className="flex xs:flex-row flex-col sm:gap-6 xs:gap-3 gap-1 lg:flex-row md:flex-col lg:gap-6 md:gap-1">
-            <p className="text-darkGray font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
+            <p className="text-darkGray font-normal text-xs leading-[15px] pt-1 -tracking-[3%] max-w-[120px] ff_inter w-full">
               Weight & Price
             </p>
-            <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full">
+            <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full mt-0">
               250g. 120 Kr.
               <span className="block"> 1kg. 320 Kr.</span>{" "}
             </p>
           </div>
           <div className="flex xs:flex-row flex-col sm:gap-6 xs:gap-3 gap-1 lg:flex-row md:flex-col lg:gap-6 md:gap-1">
-            <p className="text-darkGray font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
+            <p className="text-darkGray font-normal text-xs leading-[15px] pt-1 -tracking-[3%] max-w-[120px] ff_inter w-full">
               Roast level
             </p>
-            <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full">
+            <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full mt-0">
               Light Roast
             </p>
           </div>
           <div className="flex xs:flex-row flex-col sm:gap-6 xs:gap-3 gap-1 lg:flex-row md:flex-col lg:gap-6 md:gap-1">
-            <p className="text-darkGray font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
+            <p className="text-darkGray font-normal text-xs leading-[15px] pt-1 -tracking-[3%] max-w-[120px] ff_inter w-full">
               Bean sort
             </p>
-            <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full">
+            <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full mt-0">
               Arabica: Ethiopian landraces
             </p>
           </div>
           <div className="flex xs:flex-row flex-col sm:gap-6 xs:gap-3 gap-1 lg:flex-row md:flex-col lg:gap-6 md:gap-1">
-            <p className="text-darkGray font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
+            <p className="text-darkGray font-normal text-xs leading-[15px] pt-1 -tracking-[3%] max-w-[120px] ff_inter w-full">
               Plantation & Country
             </p>
-            <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full">
+            <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full mt-0">
               Hangadhi Village • Ethiopia
             </p>
           </div>
           <div className="flex xs:flex-row flex-col sm:gap-6 xs:gap-3 gap-1 lg:flex-row md:flex-col lg:gap-6 md:gap-1">
-            <p className="text-darkGray font-normal text-xs leading-[15px] -tracking-[3%] max-w-[120px] ff_inter w-full">
+            <p className="text-darkGray font-normal text-xs leading-[15px] pt-1 -tracking-[3%] max-w-[120px] ff_inter w-full">
               Recommended use
             </p>
-            <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full">
+            <p className="text-[#111827] font-normal sm:text-base text-sm leading-[20px] -tracking-[3%] max-w-[728.5px] ff_inter w-full mt-0">
               French press • Filter
             </p>
           </div>

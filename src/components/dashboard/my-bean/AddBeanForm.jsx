@@ -21,7 +21,7 @@ const AddBeanForm = () => {
   const [processNumber, setProgressNumber] = useState(1);
   return (
     <div className="bg-white rounded-xl sm:p-6 p-4 ">
-      <TopBtns value={processNumber} />
+      <TopBtns value={processNumber} setProgressNumber={setProgressNumber} />
       {processNumber === 1 ? (
         <div>
           <div className="sm:flex gap-6 w-full">
@@ -87,9 +87,11 @@ const AddBeanForm = () => {
                       In SEK
                     </p>
                   </div>
-                  <p className=" border shadow-[0px_2px_4px_0px_#F0F1F2] rounded-lg text-base text-darkGray w-full px-3 py-2">
-                    120
-                  </p>
+                  <input
+                    type="text"
+                    placeholder="120"
+                    className=" border shadow-[0px_2px_4px_0px_#F0F1F2] rounded-lg text-base text-darkGray w-full px-3 py-2 "
+                  />
                 </div>
               </div>
             </div>

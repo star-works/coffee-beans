@@ -13,12 +13,12 @@ const MyBean = ({ setAddBean }) => {
       <div className="ps-4">
         <div className="sm:flex justify-between">
           <div className="flex items-center w-full">
-            <h3 className="xs:text-[20px] text-[18px] font-semibold text-[#111827] me-4">
+            <h3 className="xs:text-[20px] xl:text-[25px] text-[18px] font-semibold text-[#111827] me-4">
               My Beans
             </h3>
             <div onClick={() => setAddBean(true)}>
               {" "}
-              <Button className="bg-[#D3756B] group px-4 text-xs font-semibold py-2 h-full hover:bg-transparent hover:text-lightRed border border-[#D3756B] rounded-md">
+              <Button className="bg-[#D3756B] group px-4 text-xs xl:text-sm 2xl:text-[20px] font-semibold py-2 h-full hover:bg-transparent hover:text-lightRed border border-[#D3756B] rounded-md">
                 <Plus /> Add new bean
               </Button>
             </div>
