@@ -13,7 +13,7 @@ const TopCoffees = () => {
         </div>
       </div>
       <div className="border border-[#F3F4F6] rounded-b-xl w-full overflow-x-auto max-w-full">
-        <table className="min-w-[780px]  w-full">
+        <table className="2xl:min-w-[723px]   w-full">
           <thead className="bg-gray-50">
             <tr>
               <th
@@ -57,7 +57,7 @@ const TopCoffees = () => {
           <tbody className="bg-white divide-y divide-gray-200">
             {coffeeData.map((row, index) => (
               <tr key={index} className="md:h-[60px] sm:h-[50px] h-[40px]">
-                <td className="md:px-6 sm:px-4 px-2 md:py-[11px] sm:py-2 whitespace-nowrap flex items-center gap-2">
+                <td className="md:px-4 sm:px-3 px-2 md:py-[11px] sm:py-2 whitespace-nowrap flex items-center gap-2 max-w-[250px]">
                   <Image
                     height="50"
                     width="44"
@@ -87,7 +87,7 @@ const TopCoffees = () => {
             ))}
           </tbody>
         </table>
-        <div className="flex justify-center items-center gap-1 border-t border-t-[#F3F4F6] bg-white rounded-b-xl w-full cursor-pointer group min-w-[780px]">
+        <div className="flex justify-center items-center gap-1 border-t border-t-[#F3F4F6] bg-white rounded-b-xl w-full cursor-pointer group min-w-[723px] 2xl:min-w-[780px]">
           <p className="text-center  py-4  font-semibold text-xs tracking-[-3%]">
             See all coffees
           </p>

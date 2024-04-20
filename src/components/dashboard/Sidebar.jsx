@@ -9,8 +9,8 @@ const Sidebar = ({ showNav, setShowNav }) => {
   const router = usePathname();
   return (
     <div
-      className={`w-[240px] h-screen transition-all duration-300 ease-in-out absolute md:relative z-10  ${
-        showNav ? "md:ms-[10px]" : "-ms-[240px]"
+      className={`w-[220px] h-screen transition-all duration-300 ease-in-out absolute md:relative z-10  ${
+        showNav ? "md:ms-[10px]" : "-ms-[220px]"
       }`}
     >
       <div
@@ -32,7 +32,7 @@ const Sidebar = ({ showNav, setShowNav }) => {
         <div
           onClick={() => setShowNav(!showNav)}
           className={`flex flex-col gap-[2px] cursor-pointer absolute  ${
-            showNav ? "left-[210px]" : "md:left-[250px] left-[295px]"
+            showNav ? "left-[190px]" : "md:left-[230px] left-[295px]"
           }`}
         >
           <span
@@ -58,9 +58,9 @@ const Sidebar = ({ showNav, setShowNav }) => {
           ></span>
         </div>
       </div>
-      <div className={`${showNav ? "w-[240px]" : "w-0"}`}>
+      <div className={`${showNav ? "w-[220px]" : "w-0"}`}>
         <div
-          className={`max-w-[240px] w-full transition-all duration-500 border-r border-r-solid border-r-lightGray ${
+          className={`max-w-[220px] w-full transition-all duration-500 border-r border-r-solid border-r-lightGray ${
             showNav
               ? "absolute left-0 top-[72px]"
               : "absolute top-[72px] !-left-[100%]"

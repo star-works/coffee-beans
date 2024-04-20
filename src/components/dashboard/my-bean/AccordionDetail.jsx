@@ -40,7 +40,7 @@ export const ProfileCharacteristic = () => {
           </span>
           Remove
         </Button>
-        <Button className="px-4 sm:px-[44px] sm:py-[10px] py-1 group bg-transparent flex items-center gap-2 rounded-lg border border-solid border-[#E5E7EB] shadow-[0px_1px_2px_0px_#11182712] font-semibold text-sm leading-[20px] -tracking-[3%] text-[#F83B3B] ff_inter  hover:border-[#F83B3B]">
+        <Button className="px-4 sm:px-[44px] sm:py-[10px] py-1 group bg-transparent flex items-center gap-2 rounded-lg border border-solid border-[#E5E7EB] shadow-[0px_1px_2px_0px_#11182712] font-semibold text-sm leading-[20px] -tracking-[3%] text-[#D3756B] ff_inter  hover:border-[#D3756B]">
           Save
         </Button>
       </div>
