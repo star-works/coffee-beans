@@ -1,18 +1,17 @@
 "use client";
-import React from "react";
-import Image from "next/image";
-import CustomSelect from "./my-bean/CustomSelect";
 import { ResponsiveLine } from "@nivo/line";
+import CustomSelect from "./my-bean/CustomSelect";
 const gradientDefs = [
   {
     id: "gradientA",
     type: "linearGradient",
     colors: [
-      { offset: 0, color: "#D3756B" },
-      { offset: 100, color: "#D3756B" },
+      { offset: 0, color: "rgba(211,117,107,1)" }, // Top color
+      { offset: 100, color: "rgba(211,117,107,0)" }, // Bottom color
     ],
   },
 ];
+
 const data = [
   {
     id: "japan",
@@ -71,12 +70,31 @@ const data = [
 ];
 const MyResponsiveLine = () => (
   <ResponsiveLine
+    isInteractive={true}
     data={data}
+    tooltip={({ point }) => {
+      return (
+        <div
+          style={{
+            background: "white",
+            padding: "9px 12px",
+            border: "1px solid #ccc",
+          }}
+        >
+          <div>
+            <strong>{point.serieId}</strong>
+          </div>
+          <div>
+            {point.data.x}: {point.data.yFormatted}
+          </div>
+        </div>
+      );
+    }}
     margin={{ top: 10, right: 15, bottom: 50, left: 50 }}
     xScale={{ type: "point" }}
     colors="#D3756B"
     gradientDefs={gradientDefs}
-    fill={[{ match: "red", id: "gradientA" }]}
+    fill={[{ match: "*", id: "gradientA" }]}
     yScale={{
       type: "linear",
       min: "auto",
@@ -84,6 +102,9 @@ const MyResponsiveLine = () => (
       stacked: true,
       reverse: false,
     }}
+    animate={true}
+    motionStiffness={90}
+    motionDamping={15}
     yFormat=" >-.2f"
     curve="basis"
     axisTop={null}
@@ -113,7 +134,6 @@ const MyResponsiveLine = () => (
     pointBorderColor={{ from: "serieColor" }}
     pointLabelYOffset={-19}
     areaOpacity={0.15}
-    isInteractive={false}
     enableTouchCrosshair={true}
     crosshairType="top-right"
     useMesh={true}
@@ -126,13 +146,11 @@ const SalesChart = () => {
       <div className="border border-[#F3F4F6] bg-white sm:p-6 p-4 rounded-xl">
         <div className="flex justify-between items-center">
           <p className="font-semibold text-lg text-darkGray">Your sales</p>
-
           <CustomSelect />
         </div>
         <h2 className="font-semibold text-3xl text-darkGray py-4">
           $12,543,97
         </h2>
-
         <div className="h-[300px]">
           <MyResponsiveLine />
         </div>

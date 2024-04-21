@@ -1,34 +1,56 @@
 "use client";
-import React from "react";
-import Image from "next/image";
-import { Arrow } from "./common/Icons";
 import { ResponsiveBar } from "@nivo/bar";
+import { Arrow } from "./common/Icons";
+
 const data = [
   {
     country: "DK",
-
     kebab: 24,
     kebabColor: "hsl(311, 70%, 50%)",
   },
   {
     country: "NO",
-
     kebab: 131,
     kebabColor: "hsl(187, 70%, 50%)",
   },
   {
     country: "SE",
-
     kebab: 22,
     kebabColor: "hsl(108, 70%, 50%)",
   },
   {
     country: "DE",
-
     kebab: 75,
     kebabColor: "hsl(120, 70%, 50%)",
   },
 ];
+
+const theme = {
+  axis: {
+    fontSize: "14px",
+    tickColor: "#eee",
+    ticks: {
+      line: {
+        stroke: "#555555",
+      },
+      text: {
+        fill: "#ffffff",
+      },
+    },
+    legend: {
+      text: {
+        fontSize: "16px",
+        fill: "#aaaaaa",
+      },
+    },
+  },
+  grid: {
+    line: {
+      stroke: "#dddddd",
+      strokeWidth: 1,
+    },
+  },
+};
 const MyResponsiveBar = () => (
   <ResponsiveBar
     data={data}
@@ -93,10 +115,10 @@ const MyResponsiveBar = () => (
       tickSize: 5,
       tickPadding: 5,
       tickRotation: 0,
-      legend: "count",
+      format: (value) => `$${value / 1000}K`,
       legendPosition: "middle",
       legendOffset: -40,
-      truncateTickAt: 0,
+      tickValues: 6,
     }}
     enableLabel={false}
     labelSkipWidth={12}
@@ -121,12 +143,12 @@ const TopAreas = () => {
         <div className="h-[300px]">
           <MyResponsiveBar />
         </div>
-        <div className="flex justify-center items-center gap-1 pt-3 cursor-pointer group">
+        <button className="flex justify-center items-center gap-1 pt-3 cursor-pointer group w-full">
           <p className="text-center  font-semibold text-xs tracking-[-3%]">
             See all analytics
           </p>
           <Arrow />
-        </div>
+        </button>
       </div>
     </div>
   );
