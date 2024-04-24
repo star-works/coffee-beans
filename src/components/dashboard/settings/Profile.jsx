@@ -22,7 +22,7 @@ const Profile = () => {
           </Label>
           <Input
             className="xs:text-base text-sm font-normal placeholder:text-black shadow-[0px_2px_4px_0px_#f9fafa] xs:w-[75%] w-full"
-            type="email"
+            type="text"
             placeholder="Acme Roasters"
           />
         </div>
@@ -39,7 +39,7 @@ const Profile = () => {
             </span>
             <Input
               className="xs:text-base text-sm font-normal placeholder:text-black shadow-[0px_2px_4px_0px_#f9fafa] w-full xs:ps-[85px] ps-[80px] "
-              type="email"
+              type="text"
               placeholder=""
             />
           </Label>

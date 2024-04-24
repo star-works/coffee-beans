@@ -12,7 +12,7 @@ const RecentActivities = () => {
 
         <div className="flex flex-col gap-4">
           {activitiesData.map((activity, index) => (
-            <div key={index} className="flex justify-between items-end">
+            <div key={index} className="flex justify-between items-center">
               <div className="flex items-center gap-3">
                 <div
                   className={`${activity.iconBg} h-10 w-10 rounded-xl flex justify-center items-center`}

@@ -19,6 +19,10 @@ import TopBtns from "./TopBtns";
 
 const AddBeanForm = () => {
   const [processNumber, setProgressNumber] = useState(1);
+  const [showBagSize, setShowBagSize] = useState(false);
+  const handleBagSize = () => {
+    setShowBagSize(!showBagSize);
+  };
   return (
     <div className="bg-white rounded-xl sm:p-6 p-4 ">
       <TopBtns value={processNumber} setProgressNumber={setProgressNumber} />
@@ -34,7 +38,7 @@ const AddBeanForm = () => {
               </Label>
               <Input
                 className="xs:text-base text-sm font-normal placeholder:text-black shadow-[0px_2px_4px_0px_#F0F1F2] w-full"
-                type="email"
+                type="text"
                 placeholder="Acme Roasters"
               />
               <p className="text-xs font-normal text-[#6B7280] pe-2 mt-2">
@@ -52,48 +56,53 @@ const AddBeanForm = () => {
               </p>
 
               <div className="text-start mt-6">
-                <Button className="bg-[#D3756B] group px-4 text-xs font-semibold py-2 h-full hover:bg-transparent hover:text-lightRed border border-[#D3756B] rounded-md">
+                <Button
+                  onClick={handleBagSize}
+                  className="bg-[#D3756B] group px-4 text-xs font-semibold py-2 h-full hover:bg-transparent hover:text-lightRed border border-[#D3756B] rounded-md"
+                >
                   <Plus /> Add bag size option
                 </Button>
               </div>
-              <div className="xs:flex gap-6">
-                <div className="w-full">
-                  <p className="text-xs font-semibold w-full inline-block mb-3 mt-6">
-                    Bag size
-                  </p>
-                  <Select className="w-full">
-                    <SelectTrigger className=" border shadow-[0px_2px_4px_0px_#F0F1F2] rounded-lg text-base text-darkGray w-full">
-                      <SelectValue placeholder="Select size" />
-                    </SelectTrigger>
-                    <SelectContent className="max-w-[300px]">
-                      <SelectGroup>
-                        <SelectLabel>Fruits</SelectLabel>
-                        <SelectItem value="apple" className="cursor-pointer">
-                          SM
-                        </SelectItem>
-                        <SelectItem value="banana" className="cursor-pointer">
-                          XL
-                        </SelectItem>
-                      </SelectGroup>
-                    </SelectContent>
-                  </Select>
-                </div>
-                <div className="w-full">
-                  <div className="flex mt-6">
-                    <p className="text-xs font-semibold w-full inline-block mb-3 ">
-                      Price
+              {showBagSize && (
+                <div className="xs:flex gap-6">
+                  <div className="w-full">
+                    <p className="text-xs font-semibold w-full inline-block mb-3 mt-6">
+                      Bag size
                     </p>
-                    <p className="text-xs text-[#6B7280] font-semibold w-full inline-block mb-3 text-end mt-0">
-                      In SEK
-                    </p>
+                    <Select className="w-full">
+                      <SelectTrigger className=" border shadow-[0px_2px_4px_0px_#F0F1F2] rounded-lg text-base text-darkGray w-full">
+                        <SelectValue placeholder="Select size" />
+                      </SelectTrigger>
+                      <SelectContent className="max-w-[300px]">
+                        <SelectGroup>
+                          <SelectLabel>Fruits</SelectLabel>
+                          <SelectItem value="apple" className="cursor-pointer">
+                            SM
+                          </SelectItem>
+                          <SelectItem value="banana" className="cursor-pointer">
+                            XL
+                          </SelectItem>
+                        </SelectGroup>
+                      </SelectContent>
+                    </Select>
                   </div>
-                  <input
-                    type="text"
-                    placeholder="120"
-                    className=" border shadow-[0px_2px_4px_0px_#F0F1F2] rounded-lg text-base text-darkGray w-full px-3 py-2 "
-                  />
+                  <div className="w-full">
+                    <div className="flex mt-6">
+                      <p className="text-xs font-semibold w-full inline-block mb-3 ">
+                        Price
+                      </p>
+                      <p className="text-xs text-[#6B7280] font-semibold w-full inline-block mb-3 text-end mt-0">
+                        In SEK
+                      </p>
+                    </div>
+                    <input
+                      type="text"
+                      placeholder="120"
+                      className=" border shadow-[0px_2px_4px_0px_#F0F1F2] rounded-lg text-base text-darkGray w-full px-3 py-2 "
+                    />
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
             <div className="mt-6 w-full">
               <p className="text-xs font-semibold w-full inline-block mb-3 ">
