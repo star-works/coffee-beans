@@ -106,7 +106,7 @@ const MyResponsiveLine = () => (
     motionStiffness={90}
     motionDamping={15}
     yFormat=" >-.2f"
-    curve="basis"
+    curve="cardinal"
     axisTop={null}
     axisRight={null}
     axisBottom={{
