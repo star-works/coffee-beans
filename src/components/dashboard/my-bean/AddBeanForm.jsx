@@ -75,7 +75,7 @@ const AddBeanForm = () => {
                       </SelectTrigger>
                       <SelectContent className="max-w-[300px]">
                         <SelectGroup>
-                          <SelectLabel>Fruits</SelectLabel>
+                          <SelectLabel>Bag size</SelectLabel>
                           <SelectItem value="apple" className="cursor-pointer">
                             SM
                           </SelectItem>
@@ -133,7 +133,7 @@ const AddBeanForm = () => {
                 </SelectTrigger>
                 <SelectContent className="max-w-[300px]">
                   <SelectGroup>
-                    <SelectLabel>Fruits</SelectLabel>
+                    <SelectLabel> Grind type</SelectLabel>
                     <SelectItem value="apple" className="cursor-pointer">
                       SM
                     </SelectItem>
